@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="اختر طريقة الدفع المناسبة لك للاشتراك في AI Fashion Academy." name="description"/>
+  <title>الدفع والاشتراك | أكاديمية AI Fashion</title>
+
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+
+  <style>
+    .payment-page {
+      min-height: 100vh;
+      padding: 7rem 1rem 4rem;
+      background:
+        radial-gradient(circle at top right, rgba(212,165,116,.18), transparent 32%),
+        radial-gradient(circle at bottom left, rgba(120,18,22,.18), transparent 35%),
+        linear-gradient(180deg, #090909 0%, #111 100%);
+    }
+
+    .payment-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .payment-header {
+      text-align: center;
+      max-width: 780px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .payment-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: .45rem .9rem;
+      border-radius: 999px;
+      background: rgba(212,165,116,.14);
+      border: 1px solid rgba(212,165,116,.28);
+      color: var(--sand, #d4a574);
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+
+    .payment-title {
+      color: var(--white, #fff);
+      font-size: clamp(2rem, 4vw, 3.1rem);
+      line-height: 1.25;
+      margin-bottom: 1rem;
+    }
+
+    .payment-desc {
+      color: var(--stone, #b8b1a7);
+      font-size: 1.1rem;
+      line-height: 1.9;
+      margin: 0;
+    }
+
+    .payment-desc strong {
+      color: var(--sand, #d4a574);
+    }
+
+    .payment-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 1.7rem;
+    }
+
+    .payment-card {
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.025));
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 26px;
+      padding: 1.7rem;
+      box-shadow: 0 24px 70px rgba(0,0,0,.28);
+    }
+
+    .payment-card.featured {
+      border-color: rgba(212,165,116,.42);
+      background: linear-gradient(180deg, rgba(212,165,116,.10), rgba(255,255,255,.035));
+    }
+
+    .payment-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      background: rgba(212,165,116,.13);
+      border: 1px solid rgba(212,165,116,.22);
+    }
+
+    .payment-card h2 {
+      color: var(--white, #fff);
+      font-size: 1.45rem;
+      margin: 0 0 .75rem;
+    }
+
+    .payment-card p {
+      color: var(--stone, #b8b1a7);
+      line-height: 1.85;
+      margin: 0 0 1.2rem;
+    }
+
+    .cliq-box {
+      display: none;
+      background: linear-gradient(180deg, rgba(212,165,116,.09), rgba(255,255,255,.035));
+      border: 1px solid rgba(212,165,116,.35);
+      border-radius: 28px;
+      padding: 1.7rem;
+      box-shadow: 0 24px 70px rgba(0,0,0,.28);
+      margin-top: 1.5rem;
+    }
+
+    .cliq-box.active {
+      display: block;
+    }
+
+    .cliq-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1.5rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .cliq-top h2 {
+      color: var(--white, #fff);
+      margin: 0 0 .55rem;
+      font-size: 1.55rem;
+    }
+
+    .cliq-top p {
+      color: var(--stone, #b8b1a7);
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    .order-pill {
+      direction: ltr;
+      white-space: nowrap;
+      color: #111;
+      background: linear-gradient(135deg, #d4a574, #f2d091);
+      padding: .75rem 1rem;
+      border-radius: 999px;
+      font-weight: 900;
+      box-shadow: 0 12px 30px rgba(212,165,116,.18);
+    }
+
+    .cliq-details {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: .9rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .cliq-detail {
+      background: rgba(0,0,0,.32);
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: 18px;
+      padding: 1rem;
+    }
+
+    .cliq-detail span {
+      display: block;
+      color: rgba(255,255,255,.55);
+      font-size: .9rem;
+      margin-bottom: .45rem;
+    }
+
+    .cliq-detail strong {
+      display: block;
+      color: var(--white, #fff);
+      font-size: 1.1rem;
+      direction: ltr;
+      text-align: right;
+    }
+
+    .cliq-form {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .form-field {
+      display: grid;
+      gap: .45rem;
+    }
+
+    .form-field.full {
+      grid-column: 1 / -1;
+    }
+
+    .form-field label {
+      color: var(--white, #fff);
+      font-weight: 800;
+      font-size: .98rem;
+    }
+
+    .form-field input {
+      width: 100%;
+      box-sizing: border-box;
+      min-height: 52px;
+      border-radius: 15px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(0,0,0,.30);
+      color: #fff;
+      padding: .85rem 1rem;
+      font-family: inherit;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    .form-field input:focus {
+      border-color: rgba(212,165,116,.65);
+      box-shadow: 0 0 0 4px rgba(212,165,116,.10);
+    }
+
+    .form-field input[type="file"] {
+      padding: .9rem;
+      color: var(--stone, #b8b1a7);
+    }
+
+    .form-note {
+      grid-column: 1 / -1;
+      color: var(--stone, #b8b1a7);
+      line-height: 1.8;
+      font-size: .95rem;
+      margin: .2rem 0 0;
+    }
+
+    .form-note strong {
+      color: var(--sand, #d4a574);
+    }
+
+    .payment-back {
+      display: inline-flex;
+      margin-top: 1.5rem;
+      color: var(--stone, #b8b1a7);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .payment-back:hover {
+      color: var(--sand, #d4a574);
+    }
+
+    @media(max-width: 860px) {
+      .payment-grid,
+      .cliq-details,
+      .cliq-form {
+        grid-template-columns: 1fr;
+      }
+
+      .cliq-top {
+        flex-direction: column;
+      }
+
+      .order-pill {
+        white-space: normal;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <img alt="AI Fashion Academy" class="logo-img" src="assets/logo/logo.png"/>
+        <div class="logo-text">أكاديمية AI Fashion</div>
+      </a>
+
+      <nav class="nav-desktop">
+        <a href="index.html#about">عن الكورس</a>
+        <a href="index.html#modules">الوحدات</a>
+        <a href="index.html#pricing">السعر</a>
+        <a href="index.html#faq">الأسئلة</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-outline-white btn-sm" href="login.html">تسجيل الدخول</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="payment-page">
+    <div class="payment-wrap">
+
+      <div class="payment-header">
+        <div class="payment-badge">AI Fashion Academy</div>
+        <h1 class="payment-title">اختر طريقة الدفع المناسبة لك</h1>
+        <p class="payment-desc">
+          وصول كامل للدورة المكتوبة + الوحدات + البرومبتات + الموارد.
+          سعر الإطلاق الحالي : <strong> 50$  دولار</strong>.
+        </p>
+      </div>
+
+      <div class="payment-grid">
+
+        <div class="payment-card featured">
+          <div class="payment-icon">💳</div>
+          <h2>الدفع بالبطاقة / Payhip</h2>
+          <p>
+            ادفع مباشرة عبر صفحة Payhip الآمنة باستخدام البطاقة أو وسائل الدفع المتاحة هناك.
+            هذا الخيار مناسب إذا بدك دفع إلكتروني مباشر.
+          </p>
+
+          <a id="payhipBtn" class="btn btn-primary btn-full" href="#" target="_blank" rel="noopener">
+            الدفع عبر Payhip
+          </a>
+        </div>
+
+        <div class="payment-card">
+          <div class="payment-icon">📲</div>
+          <h2>الدفع عبر CliQ</h2>
+          <p>
+            حوّل المبلغ عبر كليك على الاسم والـ Alias الظاهرين بالأسفل، ثم ارفع صورة التحويل من نفس الصفحة.
+          </p>
+
+          <button class="btn btn-secondary btn-full" type="button" onclick="showCliqBox()">
+            الدفع عبر CliQ
+          </button>
+        </div>
+
+      </div>
+
+      <section id="cliqBox" class="cliq-box">
+        <div class="cliq-top">
+          <div>
+            <h2>بيانات الدفع عبر CliQ</h2>
+            <p>
+              بعد التحويل، عبّي النموذج وارفع صورة التحويل.
+              الطلب سيصلنا مع رقم الطلب، وبعد التأكد من الدفع سيتم تفعيل وصولك يدويًا.
+            </p>
+          </div>
+
+          <div class="order-pill">
+            <span id="orderIdText">AIFA-...</span>
+          </div>
+        </div>
+
+        <div class="cliq-details">
+          <div class="cliq-detail">
+            <span>الاسم</span>
+            <strong>Ammar Sa'ed</strong>
+          </div>
+
+          <div class="cliq-detail">
+            <span>CliQ Alias</span>
+            <strong>AI2026</strong>
+          </div>
+
+          <div class="cliq-detail">
+            <span>المبلغ</span>
+            <strong> VIP 60 JD - الباقة العادية JD 35 </strong>
+          </div>
+        </div>
+
+        <form
+          name="cliq-payment"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          enctype="multipart/form-data"
+          action="/thank-you.html"
+          class="cliq-form"
+        >
+          <input type="hidden" name="form-name" value="cliq-payment">
+          <input type="hidden" name="order_id" id="orderIdInput">
+
+          <p style="display:none;">
+            <label>لا تملأ هذا الحقل: <input name="bot-field"></label>
+          </p>
+
+          <div class="form-field">
+            <label for="full_name">الاسم الكامل</label>
+            <input id="full_name" type="text" name="full_name" required>
+          </div>
+
+          <div class="form-field">
+            <label for="email">الإيميل المستخدم للدورة</label>
+            <input id="email" type="email" name="email" required>
+          </div>
+
+          <div class="form-field">
+            <label for="whatsapp">رقم الواتساب</label>
+            <input id="whatsapp" type="tel" name="whatsapp" required>
+          </div>
+
+          <div class="form-field">
+            <label for="transfer_image">صورة التحويل</label>
+            <input id="transfer_image" type="file" name="transfer_image" accept="image/*" required>
+          </div>
+
+          <p class="form-note">
+            <strong>مهم:</strong>
+            استخدم نفس الإيميل الذي تريد الدخول به إلى الدورة. بعد مراجعة التحويل سيتم تفعيل الوصول على هذا الإيميل.
+          </p>
+
+          <div class="form-field full">
+            <button type="submit" class="btn btn-primary btn-full">
+              إرسال صورة التحويل
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <a class="payment-back" href="index.html">← الرجوع إلى صفحة الدورة</a>
+
+    </div>
+  </main>
+
+  <script>
+    const PAYHIP_LINK = "https://payhip.com/buy?s=1&cart_links%5B%5D=aZ9Oi&qty%5BaZ9Oi%5D=1";
+
+    function generateOrderId() {
+      const now = new Date();
+      const yyyy = now.getFullYear();
+      const mm = String(now.getMonth() + 1).padStart(2, "0");
+      const dd = String(now.getDate()).padStart(2, "0");
+      const random = Math.floor(1000 + Math.random() * 9000);
+      return `AIFA-${yyyy}${mm}${dd}-${random}`;
+    }
+
+    const orderId = generateOrderId();
+
+    document.getElementById("payhipBtn").href = PAYHIP_LINK;
+    document.getElementById("orderIdText").textContent = orderId;
+    document.getElementById("orderIdInput").value = orderId;
+
+    function showCliqBox() {
+      const box = document.getElementById("cliqBox");
+      box.classList.add("active");
+      box.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  </script>
+
+</body>
+</html>

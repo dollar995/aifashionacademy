@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
+<head>
+  
+  
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>الداشبورد | أكاديمية AI Fashion</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<style>
+    .quick-access-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2rem; }
+    @media (max-width: 768px) { .quick-access-grid { grid-template-columns: repeat(2, 1fr); } }
+    .quick-card { background: var(--white); border-radius: var(--radius-lg); padding: 1.5rem; text-align: center; box-shadow: var(--shadow-sm); border: 1px solid rgba(0,0,0,0.04); text-decoration: none; color: inherit; transition: all 0.3s; }
+    .quick-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--cyan); }
+    .quick-card .icon { font-size: 2rem; margin-bottom: 0.75rem; display: block; }
+    .quick-card h4 { font-size: 0.95rem; color: var(--navy); margin-bottom: 0.25rem; }
+    .quick-card p { font-size: 0.8rem; color: var(--stone); margin: 0; }
+    .modules-progress { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }
+    .module-progress-card { background: var(--white); border-radius: var(--radius-md); padding: 1.25rem; border: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center; gap: 1rem; text-decoration: none; color: inherit; transition: all 0.3s; }
+    .module-progress-card:hover { border-color: var(--cyan); box-shadow: var(--shadow-md); }
+    .module-progress-num { width: 40px; height: 40px; border-radius: 50%; background: var(--off-white); display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--navy); font-size: 0.9rem; flex-shrink: 0; }
+    .module-progress-info { flex: 1; }
+    .module-progress-info h4 { font-size: 0.95rem; margin-bottom: 0.25rem; color: var(--navy); }
+    .module-progress-bar { height: 6px; background: var(--off-white); border-radius: 3px; overflow: hidden; }
+    .module-progress-fill { height: 100%; background: var(--gradient-cyan); border-radius: 3px; transition: width 0.5s ease; }
+    .module-progress-status { font-size: 0.75rem; color: var(--stone); }
+    .welcome-banner { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%); border-radius: var(--radius-xl); padding: 2rem; color: var(--white); margin-bottom: 2rem; position: relative; overflow: hidden; }
+    .welcome-banner::before { content: ''; position: absolute; top: -50%; right: -20%; width: 60%; height: 200%; background: radial-gradient(circle, rgba(6,182,212,0.1) 0%, transparent 70%); pointer-events: none; }
+    .welcome-banner h2 { font-size: 1.5rem; margin-bottom: 0.5rem; position: relative; z-index: 1; }
+    .welcome-banner p { color: var(--stone); margin: 0; position: relative; z-index: 1; }
+    .continue-btn { margin-top: 1rem; position: relative; z-index: 1; }
+  </style>
+<script src="js/auth-gate.js" defer></script>
+</head>
+<body>
+
+<!-- PROTECTED MEMBER-ONLY CONTENT -->
+<!-- MEMBERSTACK FULL ACCESS PLAN REQUIRED -->
+<header class="site-header">
+<div class="header-inner">
+<a class="logo" href="index.html"><img alt="AI Fashion Academy" class="logo-img" src="assets/logo/logo.png"/><div class="logo-text">أكاديمية AI Fashion</div></a>
+<nav class="nav-desktop">
+<a class="active" href="dashboard.html">الداشبورد</a>
+<a href="roadmap.html">الخريطة</a>
+<a href="modules/module-1.html">الوحدات</a>
+<a href="prompt-library.html">الـ Prompts</a>
+</nav>
+<div class="header-actions">
+
+
+<!-- REDIRECT AFTER LOGOUT TO index.html -->
+</div>
+</div>
+</header>
+<div class="dashboard-page">
+<div class="dashboard-header">
+<div class="container">
+<div class="dashboard-header-inner">
+<div class="dashboard-welcome">
+<h1>أهلاً بك مجدداً! 👋</h1><p class="full-access-pill">دورة مكتوبة بالكامل: اقرأ، طبّق، واحفظ مخرجاتك داخل ملفات العمل.</p>
+<p>مستعد تكمل رحلتك اليوم؟</p>
+</div>
+<div class="progress-ring">
+<svg height="80" viewbox="0 0 80 80" width="80">
+<circle class="progress-ring-bg" cx="40" cy="40" r="36"></circle>
+<circle class="progress-ring-fill" cx="40" cy="40" data-progress="0" r="36" stroke-dashoffset="226"></circle>
+</svg>
+<div class="progress-text">0%</div>
+</div>
+</div>
+</div>
+</div>
+<div class="dashboard-grid">
+<aside class="sidebar">
+<h3 class="sidebar-title">التنقل السريع</h3>
+<ul class="sidebar-nav">
+<li><a class="active" href="dashboard.html"><span class="icon">📊</span> الداشبورد</a></li>
+<li><a href="roadmap.html"><span class="icon">🗺️</span> خريطة التعلم</a></li>
+<li><a href="modules/module-1.html"><span class="icon">📚</span> الوحدات</a></li>
+<li><a href="lessons/lesson-1-1.html"><span class="icon">▶️</span> أكمل التعلم</a></li>
+<li><a href="prompt-library.html"><span class="icon">🤖</span> مكتبة الـ Prompts</a></li>
+<li><a href="worksheets.html"><span class="icon">📝</span> أوراق العمل</a></li>
+<li><a href="downloads.html"><span class="icon">📥</span> التحميلات</a></li>
+</ul>
+</aside>
+<main class="main-content">
+<div class="welcome-banner">
+<h2>ابدأ رحلتك من اليوم الأول</h2>
+<p>الوحدة الأولى جاهزة — "مقدمة إلى ريادة أعمال الأزياء"</p>
+<a class="btn btn-primary continue-btn" href="lessons/lesson-1-1.html">▶️ أكمل التعلم</a>
+</div>
+<div class="quick-access-grid">
+<a class="quick-card" href="prompt-library.html">
+<span class="icon">🤖</span>
+<h4>مكتبة الـ Prompts</h4>
+<p>مكتبة برومبتات جاهزة</p>
+</a>
+<a class="quick-card" href="worksheets.html">
+<span class="icon">📝</span>
+<h4>أوراق العمل</h4>
+<p>7 قوالب تطبيقية</p>
+</a>
+<a class="quick-card" href="downloads.html">
+<span class="icon">📥</span>
+<h4>التحميلات</h4>
+<p>مصادر وملفات</p>
+</a>
+<a class="quick-card" href="roadmap.html">
+<span class="icon">🗺️</span>
+<h4>خريطة الكورس</h4>
+<p>خطتك الكاملة</p>
+</a>
+</div>
+<div class="content-card">
+<h3 style="margin-bottom:1.5rem;">تقدمك في الوحدات</h3>
+<div class="modules-progress"><a class="module-progress-card" href="modules/module-1.html"><div class="module-progress-num">1</div><div class="module-progress-info"><h4>مقدمة إلى ريادة أعمال الأزياء</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/6 دروس</span></div></a><a class="module-progress-card" href="modules/module-2.html"><div class="module-progress-num">2</div><div class="module-progress-info"><h4>أبحاث السوق والتحقق من الفرصة</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/6 دروس</span></div></a><a class="module-progress-card" href="modules/module-3.html"><div class="module-progress-num">3</div><div class="module-progress-info"><h4>استراتيجية البراند والتموضع</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/6 دروس</span></div></a><a class="module-progress-card" href="modules/module-4.html"><div class="module-progress-num">4</div><div class="module-progress-info"><h4>فن سرد القصة وبناء السردية</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/6 دروس</span></div></a><a class="module-progress-card" href="modules/module-5.html"><div class="module-progress-num">5</div><div class="module-progress-info"><h4>التسمية والرسائل</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/6 دروس</span></div></a><a class="module-progress-card" href="modules/module-6.html"><div class="module-progress-num">6</div><div class="module-progress-info"><h4>تصميم الهوية البصرية</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/7 دروس</span></div></a><a class="module-progress-card" href="modules/module-7.html"><div class="module-progress-num">7</div><div class="module-progress-info"><h4>أساسيات تصميم الملابس</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/5 دروس</span></div></a><a class="module-progress-card" href="modules/module-8.html"><div class="module-progress-num">8</div><div class="module-progress-info"><h4>تطوير المجموعة</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/5 دروس</span></div></a><a class="module-progress-card" href="modules/module-9.html"><div class="module-progress-num">9</div><div class="module-progress-info"><h4>الخامات والإنتاج والتصنيع</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/6 دروس</span></div></a><a class="module-progress-card" href="modules/module-10.html"><div class="module-progress-num">10</div><div class="module-progress-info"><h4>التسعير والاقتصاديات</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/5 دروس</span></div></a><a class="module-progress-card" href="modules/module-11.html"><div class="module-progress-num">11</div><div class="module-progress-info"><h4>هندسة Prompts للذكاء الاصطناعي</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/7 دروس</span></div></a><a class="module-progress-card" href="modules/module-12.html"><div class="module-progress-num">12</div><div class="module-progress-info"><h4>توليد الصور بالذكاء الاصطناعي</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/6 دروس</span></div></a><a class="module-progress-card" href="modules/module-13.html"><div class="module-progress-num">13</div><div class="module-progress-info"><h4>Mockups وتصوير المنتجات</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/6 دروس</span></div></a><a class="module-progress-card" href="modules/module-14.html"><div class="module-progress-num">14</div><div class="module-progress-info"><h4>المحتوى البصري والإعلانات الإبداعية</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/7 دروس</span></div></a><a class="module-progress-card" href="modules/module-15.html"><div class="module-progress-num">15</div><div class="module-progress-info"><h4>استراتيجية المحتوى ووسائل التواصل</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/6 دروس</span></div></a><a class="module-progress-card" href="modules/module-16.html"><div class="module-progress-num">16</div><div class="module-progress-info"><h4>بناء متجر Shopify</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/8 دروس</span></div></a><a class="module-progress-card" href="modules/module-17.html"><div class="module-progress-num">17</div><div class="module-progress-info"><h4>صفحات المنتجات وتحسين التحويل</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/6 دروس</span></div></a><a class="module-progress-card" href="modules/module-18.html"><div class="module-progress-num">18</div><div class="module-progress-info"><h4>بوابات الدفع والامتثال</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/5 دروس</span></div></a><a class="module-progress-card" href="modules/module-19.html"><div class="module-progress-num">19</div><div class="module-progress-info"><h4>الشحن والتوصيل</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/5 دروس</span></div></a><a class="module-progress-card" href="modules/module-20.html"><div class="module-progress-num">20</div><div class="module-progress-info"><h4>التسويق العضوي</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/5 دروس</span></div></a><a class="module-progress-card" href="modules/module-21.html"><div class="module-progress-num">21</div><div class="module-progress-info"><h4>التسويق عبر المؤثرين</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/5 دروس</span></div></a><a class="module-progress-card" href="modules/module-22.html"><div class="module-progress-num">22</div><div class="module-progress-info"><h4>إعلانات Meta والاستحواذ المدفوع</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/7 دروس</span></div></a><a class="module-progress-card" href="modules/module-23.html"><div class="module-progress-num">23</div><div class="module-progress-info"><h4>التسويق عبر البريد الإلكتروني والاحتفاظ</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/6 دروس</span></div></a><a class="module-progress-card" href="modules/module-24.html"><div class="module-progress-num">24</div><div class="module-progress-info"><h4>التحليلات ومؤشرات الأداء</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/5 دروس</span></div></a><a class="module-progress-card" href="modules/module-25.html"><div class="module-progress-num">25</div><div class="module-progress-info"><h4>استراتيجية الإطلاق</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/5 دروس</span></div></a><a class="module-progress-card" href="modules/module-26.html"><div class="module-progress-num">26</div><div class="module-progress-info"><h4>أنظمة التوسع والأتمتة</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/5 دروس</span></div></a><a class="module-progress-card" href="modules/module-27.html"><div class="module-progress-num">27</div><div class="module-progress-info"><h4>خدمة العملاء والعمليات</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/4 دروس</span></div></a><a class="module-progress-card" href="modules/module-28.html"><div class="module-progress-num">28</div><div class="module-progress-info"><h4>الإطار القانوني وتأسيس الشركة</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/4 دروس</span></div></a><a class="module-progress-card" href="modules/module-29.html"><div class="module-progress-num">29</div><div class="module-progress-info"><h4>بناء الأصول الرقمية</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/4 دروس</span></div></a><a class="module-progress-card" href="modules/module-30.html"><div class="module-progress-num">30</div><div class="module-progress-info"><h4>تحقيق الدخل من القوالب والـ Prompts</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/4 دروس</span></div></a><a class="module-progress-card" href="modules/module-31.html"><div class="module-progress-num">31</div><div class="module-progress-info"><h4>بناء المجتمع</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/4 دروس</span></div></a><a class="module-progress-card" href="modules/module-32.html"><div class="module-progress-num">32</div><div class="module-progress-info"><h4>مشروع التخرج والاحتفال</h4><div class="module-progress-bar"><div class="module-progress-fill" style="width:0%"></div></div><span class="module-progress-status">0/5 دروس</span></div></a></div>
+<div style="text-align:center; margin-top:1.5rem;">
+<a class="btn btn-secondary" href="modules/module-1.html">شوف كل الوحدات الـ 32</a>
+</div>
+</div>
+<div class="content-card">
+<h3 style="margin-bottom:1rem;">📌 تذكير سريع</h3>
+<div class="note-box" style="margin:0;">
+<strong>نصيحة اليوم:</strong> خصص وقت ثابت أسبوعياً للكورس (4-6 ساعات). عاملها كوظيفة — الالتزام هو الفرق بين اللي بيبني براند واللي بيظل يحلم.
+        </div>
+</div>
+</main>
+</div>
+</div>
+<script src="js/main.js"></script>
+<script src="js/progress.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1100" width="1000" height="1100">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#080808"/>
+      <stop offset="100%" style="stop-color:#0d0d0d"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E4B832"/>
+      <stop offset="100%" style="stop-color:#C9A017"/>
+    </linearGradient>
+    <linearGradient id="stage1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a1a1a"/>
+      <stop offset="100%" style="stop-color:#222"/>
+    </linearGradient>
+    <linearGradient id="stage2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#181810"/>
+      <stop offset="100%" style="stop-color:#201a08"/>
+    </linearGradient>
+    <linearGradient id="stage3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a1208"/>
+      <stop offset="100%" style="stop-color:#201508"/>
+    </linearGradient>
+    <linearGradient id="stage4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#180a0a"/>
+      <stop offset="100%" style="stop-color:#1e0d0d"/>
+    </linearGradient>
+    <linearGradient id="stage5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0a1a0a"/>
+      <stop offset="100%" style="stop-color:#0d200d"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="1100" fill="url(#bg)"/>
+
+  <!-- BG pattern -->
+  <pattern id="grid" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+    <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#C9A017" stroke-width="0.2" opacity="0.15"/>
+  </pattern>
+  <rect width="1000" height="1100" fill="url(#grid)"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1000" height="60" fill="#060606" opacity="0.95"/>
+  <rect x="0" y="59" width="1000" height="1" fill="#1e1e1e"/>
+  <rect x="40" y="16" width="26" height="26" rx="5" fill="url(#gold)"/>
+  <text x="53" y="33" font-family="Arial,sans-serif" font-size="11" font-weight="900" fill="#000" text-anchor="middle">AI</text>
+  <text x="78" y="27" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#fff">AI FASHION ACADEMY</text>
+  <text x="78" y="42" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" letter-spacing="2">SALES FUNNEL SYSTEM</text>
+  <text x="960" y="35" font-family="Arial,sans-serif" font-size="10" fill="#666" text-anchor="end">قمع المبيعات المتكامل</text>
+
+  <!-- Title -->
+  <text x="500" y="100" font-family="Georgia,serif" font-size="26" font-weight="900" fill="#fff" text-anchor="middle">Sales Funnel System</text>
+  <text x="500" y="124" font-family="Arial,sans-serif" font-size="13" fill="#888" text-anchor="middle">من أول مشاهدة للإعلان — حتى أول مبيعة</text>
+  <rect x="460" y="134" width="80" height="2" rx="1" fill="url(#gold)"/>
+
+  <!-- FUNNEL STAGES -->
+
+  <!-- Stage 1: AWARENESS -->
+  <polygon points="100,160 900,160 820,240 180,240" fill="url(#stage1)" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="500" y="192" font-family="Arial,sans-serif" font-size="11" fill="#C9A017" text-anchor="middle" font-weight="700" letter-spacing="2">AWARENESS — الوعي</text>
+  <text x="500" y="210" font-family="Arial,sans-serif" font-size="10" fill="#888" text-anchor="middle">Instagram Reels · TikTok · Meta Ads · Organic Content</text>
+  <!-- Number badge -->
+  <circle cx="130" cy="197" r="18" fill="rgba(201,160,23,0.15)" stroke="#C9A017" stroke-width="1"/>
+  <text x="130" y="203" font-family="Arial,sans-serif" font-size="14" font-weight="900" fill="#C9A017" text-anchor="middle">01</text>
+  <!-- Metric -->
+  <rect x="820" y="172" width="140" height="40" rx="6" fill="rgba(0,0,0,0.4)"/>
+  <text x="890" y="190" font-family="Arial,sans-serif" font-size="9" fill="#666" text-anchor="middle">REACH</text>
+  <text x="890" y="206" font-family="Arial,sans-serif" font-size="16" font-weight="900" fill="#fff" text-anchor="middle">10,000+</text>
+
+  <!-- Stage 2: INTEREST -->
+  <polygon points="180,248 820,248 750,328 250,328" fill="url(#stage2)" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="500" y="280" font-family="Arial,sans-serif" font-size="11" fill="#C9A017" text-anchor="middle" font-weight="700" letter-spacing="2">INTEREST — الاهتمام</text>
+  <text x="500" y="298" font-family="Arial,sans-serif" font-size="10" fill="#888" text-anchor="middle">DM "براند" → Auto-Reply → Landing Page Visit</text>
+  <circle cx="218" cy="285" r="18" fill="rgba(201,160,23,0.15)" stroke="#C9A017" stroke-width="1"/>
+  <text x="218" y="291" font-family="Arial,sans-serif" font-size="14" font-weight="900" fill="#C9A017" text-anchor="middle">02</text>
+  <rect x="740" y="260" width="130" height="40" rx="6" fill="rgba(0,0,0,0.4)"/>
+  <text x="805" y="278" font-family="Arial,sans-serif" font-size="9" fill="#666" text-anchor="middle">CLICKS</text>
+  <text x="805" y="294" font-family="Arial,sans-serif" font-size="16" font-weight="900" fill="#fff" text-anchor="middle">2,500</text>
+
+  <!-- Stage 3: CONSIDERATION -->
+  <polygon points="250,336 750,336 680,416 320,416" fill="url(#stage3)" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="500" y="368" font-family="Arial,sans-serif" font-size="11" fill="#E4B832" text-anchor="middle" font-weight="700" letter-spacing="2">CONSIDERATION — التقييم</text>
+  <text x="500" y="386" font-family="Arial,sans-serif" font-size="10" fill="#888" text-anchor="middle">Landing Page · Product Pages · Reviews · FAQ</text>
+  <circle cx="290" cy="373" r="18" fill="rgba(228,184,50,0.15)" stroke="#E4B832" stroke-width="1"/>
+  <text x="290" y="379" font-family="Arial,sans-serif" font-size="14" font-weight="900" fill="#E4B832" text-anchor="middle">03</text>
+  <rect x="660" y="348" width="130" height="40" rx="6" fill="rgba(0,0,0,0.4)"/>
+  <text x="725" y="366" font-family="Arial,sans-serif" font-size="9" fill="#666" text-anchor="middle">ADD TO CART</text>
+  <text x="725" y="382" font-family="Arial,sans-serif" font-size="16" font-weight="900" fill="#fff" text-anchor="middle">800</text>
+
+  <!-- Stage 4: DECISION -->
+  <polygon points="320,424 680,424 620,504 380,504" fill="url(#stage4)" stroke="#C41010" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="500" y="456" font-family="Arial,sans-serif" font-size="11" fill="#ff6b6b" text-anchor="middle" font-weight="700" letter-spacing="2">DECISION — القرار</text>
+  <text x="500" y="474" font-family="Arial,sans-serif" font-size="10" fill="#888" text-anchor="middle">Checkout · Payment · Order Confirm</text>
+  <circle cx="364" cy="461" r="18" fill="rgba(196,16,16,0.15)" stroke="#C41010" stroke-width="1"/>
+  <text x="364" y="467" font-family="Arial,sans-serif" font-size="14" font-weight="900" fill="#ff6b6b" text-anchor="middle">04</text>
+  <rect x="592" y="436" width="130" height="40" rx="6" fill="rgba(0,0,0,0.4)"/>
+  <text x="657" y="454" font-family="Arial,sans-serif" font-size="9" fill="#666" text-anchor="middle">PURCHASES</text>
+  <text x="657" y="470" font-family="Arial,sans-serif" font-size="16" font-weight="900" fill="#fff" text-anchor="middle">100 🎉</text>
+
+  <!-- Stage 5: RETENTION -->
+  <polygon points="380,512 620,512 580,592 420,592" fill="url(#stage5)" stroke="#22c55e" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="500" y="544" font-family="Arial,sans-serif" font-size="11" fill="#4ade80" text-anchor="middle" font-weight="700" letter-spacing="2">RETENTION — الاحتفاظ</text>
+  <text x="500" y="562" font-family="Arial,sans-serif" font-size="10" fill="#888" text-anchor="middle">Email · Reviews · Repeat Purchase</text>
+  <circle cx="424" cy="549" r="16" fill="rgba(34,197,94,0.15)" stroke="#22c55e" stroke-width="1"/>
+  <text x="424" y="555" font-family="Arial,sans-serif" font-size="12" font-weight="900" fill="#4ade80" text-anchor="middle">05</text>
+  <rect x="556" y="524" width="120" height="40" rx="6" fill="rgba(0,0,0,0.4)"/>
+  <text x="616" y="542" font-family="Arial,sans-serif" font-size="9" fill="#666" text-anchor="middle">REPEAT BUYERS</text>
+  <text x="616" y="558" font-family="Arial,sans-serif" font-size="16" font-weight="900" fill="#4ade80" text-anchor="middle">25+</text>
+
+  <!-- Stage 6: ADVOCACY -->
+  <polygon points="420,600 580,600 560,660 440,660" fill="rgba(201,160,23,0.12)" stroke="#C9A017" stroke-width="1.5"/>
+  <text x="500" y="636" font-family="Arial,sans-serif" font-size="10" fill="#C9A017" text-anchor="middle" font-weight="700" letter-spacing="1">ADVOCACY</text>
+  <text x="500" y="652" font-family="Arial,sans-serif" font-size="9" fill="#888" text-anchor="middle">Word of Mouth · UGC</text>
+
+  <!-- DIAMOND bottom -->
+  <polygon points="500,668 540,700 500,732 460,700" fill="url(#gold)" opacity="0.9"/>
+  <text x="500" y="705" font-family="Arial,sans-serif" font-size="9" fill="#000" text-anchor="middle" font-weight="900">$$$</text>
+
+  <!-- ============ RIGHT SIDE: TOOLS PER STAGE ============ -->
+  <text x="960" y="100" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" text-anchor="end" font-weight="700" letter-spacing="1">TOOLS</text>
+
+  <!-- Tool annotations -->
+  <line x1="900" y1="197" x2="968" y2="197" stroke="#333" stroke-width="1"/>
+  <text x="972" y="193" font-family="Arial,sans-serif" font-size="8.5" fill="#666">Instagram Reels</text>
+  <text x="972" y="205" font-family="Arial,sans-serif" font-size="8.5" fill="#666">TikTok · Meta Ads</text>
+
+  <line x1="820" y1="285" x2="968" y2="285" stroke="#333" stroke-width="1"/>
+  <text x="972" y="281" font-family="Arial,sans-serif" font-size="8.5" fill="#666">Auto DM Reply</text>
+  <text x="972" y="293" font-family="Arial,sans-serif" font-size="8.5" fill="#666">Landing Page</text>
+
+  <!-- ============ METRICS SECTION ============ -->
+  <rect x="40" y="760" width="920" height="240" rx="14" fill="#0d0d0d" stroke="#1e1e1e" stroke-width="1"/>
+  <rect x="40" y="760" width="920" height="3" rx="2 2 0 0" fill="url(#gold)"/>
+  <text x="500" y="788" font-family="Arial,sans-serif" font-size="11" fill="#C9A017" text-anchor="middle" font-weight="700" letter-spacing="2">KEY METRICS — المؤشرات الرئيسية</text>
+
+  <!-- Metric cards -->
+  <!-- CTR -->
+  <rect x="65" y="800" width="160" height="100" rx="10" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="145" y="825" font-family="Arial,sans-serif" font-size="9" fill="#888" text-anchor="middle">CTR (نسبة النقر)</text>
+  <text x="145" y="860" font-family="Arial,sans-serif" font-size="32" font-weight="900" fill="#fff" text-anchor="middle">2%</text>
+  <text x="145" y="880" font-family="Arial,sans-serif" font-size="9" fill="#4ade80" text-anchor="middle">✓ Target: >2%</text>
+  <text x="145" y="893" font-family="Arial,sans-serif" font-size="8" fill="#555" text-anchor="middle">Ads Click Rate</text>
+
+  <!-- Conv Rate -->
+  <rect x="245" y="800" width="160" height="100" rx="10" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="325" y="825" font-family="Arial,sans-serif" font-size="9" fill="#888" text-anchor="middle">Conversion Rate</text>
+  <text x="325" y="860" font-family="Arial,sans-serif" font-size="32" font-weight="900" fill="#C9A017" text-anchor="middle">4%</text>
+  <text x="325" y="880" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" text-anchor="middle">✓ Industry Avg: 2-3%</text>
+  <text x="325" y="893" font-family="Arial,sans-serif" font-size="8" fill="#555" text-anchor="middle">Visitors → Buyers</text>
+
+  <!-- AOV -->
+  <rect x="425" y="800" width="160" height="100" rx="10" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="505" y="825" font-family="Arial,sans-serif" font-size="9" fill="#888" text-anchor="middle">AOV (متوسط الطلبية)</text>
+  <text x="505" y="860" font-family="Arial,sans-serif" font-size="32" font-weight="900" fill="#fff" text-anchor="middle">$65</text>
+  <text x="505" y="880" font-family="Arial,sans-serif" font-size="9" fill="#888" text-anchor="middle">Target: $50-80</text>
+  <text x="505" y="893" font-family="Arial,sans-serif" font-size="8" fill="#555" text-anchor="middle">Average Order Value</text>
+
+  <!-- ROAS -->
+  <rect x="605" y="800" width="160" height="100" rx="10" fill="#161610" stroke="#C9A017" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="685" y="825" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" text-anchor="middle">ROAS (عائد الإعلانات)</text>
+  <text x="685" y="860" font-family="Arial,sans-serif" font-size="32" font-weight="900" fill="#C9A017" text-anchor="middle">3.5x</text>
+  <text x="685" y="880" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" text-anchor="middle">✓ Break-even: 2x</text>
+  <text x="685" y="893" font-family="Arial,sans-serif" font-size="8" fill="#888" text-anchor="middle">Return on Ad Spend</text>
+
+  <!-- CAC -->
+  <rect x="785" y="800" width="160" height="100" rx="10" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="865" y="825" font-family="Arial,sans-serif" font-size="9" fill="#888" text-anchor="middle">CAC (تكلفة العميل)</text>
+  <text x="865" y="860" font-family="Arial,sans-serif" font-size="32" font-weight="900" fill="#fff" text-anchor="middle">$15</text>
+  <text x="865" y="880" font-family="Arial,sans-serif" font-size="9" fill="#4ade80" text-anchor="middle">✓ Excellent &lt;$20</text>
+  <text x="865" y="893" font-family="Arial,sans-serif" font-size="8" fill="#555" text-anchor="middle">Customer Acq. Cost</text>
+
+  <!-- Bottom note -->
+  <text x="500" y="950" font-family="Arial,sans-serif" font-size="10" fill="#555" text-anchor="middle">$100 إعلانات → ~7 مبيعات → $455 إيراد = ROAS 4.55x</text>
+  <text x="500" y="968" font-family="Arial,sans-serif" font-size="9" fill="#444" text-anchor="middle">حساب تقريبي بناءً على متوسطات السوق العربي</text>
+
+  <!-- Footer -->
+  <rect x="0" y="1072" width="1000" height="28" fill="#050505"/>
+  <text x="40" y="1090" font-family="Arial,sans-serif" font-size="9" fill="#333">AI Fashion Academy — Sales Funnel System</text>
+  <text x="960" y="1090" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" text-anchor="end">© 2025</text>
+</svg>

@@ -1,0 +1,246 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 720" width="1400" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#070707"/><stop offset="100%" style="stop-color:#0d0d0d"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E4B832"/><stop offset="100%" style="stop-color:#C9A017"/>
+    </linearGradient>
+    <linearGradient id="phase1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#141414"/><stop offset="100%" style="stop-color:#0f0f0f"/>
+    </linearGradient>
+    <linearGradient id="launchDay" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1008"/><stop offset="100%" style="stop-color:#120a04"/>
+    </linearGradient>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#C9A017" opacity="0.7"/>
+    </marker>
+  </defs>
+
+  <rect width="1400" height="720" fill="url(#bg)"/>
+  <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <circle cx="20" cy="20" r="0.5" fill="#C9A017" opacity="0.07"/>
+  </pattern>
+  <rect width="1400" height="720" fill="url(#dots)"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1400" height="56" fill="#060606"/>
+  <rect x="0" y="55" width="1400" height="1" fill="#1e1e1e"/>
+  <rect x="40" y="14" width="26" height="26" rx="5" fill="url(#gold)"/>
+  <text x="53" y="31" font-family="Arial,sans-serif" font-size="11" font-weight="900" fill="#000" text-anchor="middle">AI</text>
+  <text x="78" y="26" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#fff">AI FASHION ACADEMY</text>
+  <text x="78" y="41" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" letter-spacing="2">LAUNCH SYSTEM — MODULE 15</text>
+
+  <!-- Title -->
+  <text x="700" y="88" font-family="Georgia,serif" font-size="22" font-weight="900" fill="#fff" text-anchor="middle">نظام الإطلاق الكامل</text>
+  <text x="700" y="108" font-family="Arial,sans-serif" font-size="11" fill="#666" text-anchor="middle">من الصفر إلى أول مبيعة — خطة 12 أسبوع محكمة</text>
+  <rect x="660" y="116" width="80" height="2" rx="1" fill="url(#gold)"/>
+
+  <!-- ── TIMELINE RAIL ── -->
+  <line x1="70" y1="300" x2="1360" y2="300" stroke="#1e1e1e" stroke-width="2"/>
+  <!-- Gold progress (first 8 weeks) -->
+  <line x1="70" y1="300" x2="900" y2="300" stroke="#C9A017" stroke-width="3" opacity="0.4"/>
+
+  <!-- ── PHASE BLOCKS ── -->
+
+  <!-- Week -8 to -5: Foundation -->
+  <rect x="60" y="140" width="200" height="130" rx="10" fill="url(#phase1)" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="60" y="140" width="200" height="3" rx="2 2 0 0" fill="#444"/>
+  <text x="160" y="162" font-family="Arial,sans-serif" font-size="8" fill="#666" text-anchor="middle" font-weight="700" letter-spacing="1">أسبوع -8 إلى -5</text>
+  <text x="160" y="180" font-family="Arial,sans-serif" font-size="12" fill="#888" text-anchor="middle" font-weight="700">التأسيس</text>
+  <text x="160" y="196" font-family="Arial,sans-serif" font-size="8" fill="#555" text-anchor="middle">Foundation Phase</text>
+  <text x="75" y="216" font-family="Arial,sans-serif" font-size="9" fill="#666">□ إنهاء تسجيل المحتوى</text>
+  <text x="75" y="230" font-family="Arial,sans-serif" font-size="9" fill="#666">□ رفع الكورس على Whop</text>
+  <text x="75" y="244" font-family="Arial,sans-serif" font-size="9" fill="#666">□ Landing Page جاهزة</text>
+  <text x="75" y="258" font-family="Arial,sans-serif" font-size="9" fill="#666">□ Email System مفعّل</text>
+  <!-- Node -->
+  <circle cx="160" cy="300" r="14" fill="#1a1a1a" stroke="#444" stroke-width="2"/>
+  <text x="160" y="305" font-family="Arial,sans-serif" font-size="9" fill="#666" text-anchor="middle" font-weight="700">-8w</text>
+
+  <!-- Week -5 to -2: Build Audience -->
+  <rect x="280" y="140" width="220" height="130" rx="10" fill="url(#phase1)" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="280" y="140" width="220" height="3" rx="2 2 0 0" fill="#C9A017" opacity="0.5"/>
+  <text x="390" y="162" font-family="Arial,sans-serif" font-size="8" fill="#888" text-anchor="middle" font-weight="700" letter-spacing="1">أسبوع -5 إلى -2</text>
+  <text x="390" y="180" font-family="Arial,sans-serif" font-size="12" fill="#aaa" text-anchor="middle" font-weight="700">بناء الجمهور</text>
+  <text x="390" y="196" font-family="Arial,sans-serif" font-size="8" fill="#666" text-anchor="middle">Audience Building</text>
+  <text x="295" y="216" font-family="Arial,sans-serif" font-size="9" fill="#777">□ نشر محتوى يومي</text>
+  <text x="295" y="230" font-family="Arial,sans-serif" font-size="9" fill="#777">□ بناء Waitlist 500+</text>
+  <text x="295" y="244" font-family="Arial,sans-serif" font-size="9" fill="#777">□ 1,000+ متابع جديد</text>
+  <text x="295" y="258" font-family="Arial,sans-serif" font-size="9" fill="#777">□ Lead Magnet نشط</text>
+  <circle cx="390" cy="300" r="14" fill="#1e1e14" stroke="#C9A017" stroke-width="1.5" opacity="0.7"/>
+  <text x="390" y="305" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" text-anchor="middle" font-weight="700" opacity="0.7">-5w</text>
+
+  <!-- Metric badge -->
+  <rect x="320" y="318" width="140" height="28" rx="6" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="390" y="332" font-family="Arial,sans-serif" font-size="8" fill="#888" text-anchor="middle">هدف:</text>
+  <text x="430" y="332" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" font-weight="700">500 Waitlist</text>
+  <text x="390" y="342" font-family="Arial,sans-serif" font-size="7" fill="#555" text-anchor="middle">قائمة انتظار قبل الإطلاق</text>
+
+  <!-- Week -2 to 0: Hype -->
+  <rect x="520" y="140" width="200" height="130" rx="10" fill="url(#phase1)" stroke="#C9A017" stroke-width="1" stroke-opacity="0.5"/>
+  <rect x="520" y="140" width="200" height="3" rx="2 2 0 0" fill="#C9A017" opacity="0.8"/>
+  <text x="620" y="162" font-family="Arial,sans-serif" font-size="8" fill="#C9A017" text-anchor="middle" font-weight="700" letter-spacing="1">أسبوع -2 إلى 0</text>
+  <text x="620" y="180" font-family="Arial,sans-serif" font-size="12" fill="#C9A017" text-anchor="middle" font-weight="700">التسخين 🔥</text>
+  <text x="620" y="196" font-family="Arial,sans-serif" font-size="8" fill="#888" text-anchor="middle">Hype Phase</text>
+  <text x="535" y="216" font-family="Arial,sans-serif" font-size="9" fill="#999">□ Countdown Stories</text>
+  <text x="535" y="230" font-family="Arial,sans-serif" font-size="9" fill="#999">□ Sneak Peek المنتجات</text>
+  <text x="535" y="244" font-family="Arial,sans-serif" font-size="9" fill="#999">□ 5 Emails Teaser</text>
+  <text x="535" y="258" font-family="Arial,sans-serif" font-size="9" fill="#999">□ إعداد الإعلانات</text>
+  <circle cx="620" cy="300" r="16" fill="#1a1408" stroke="#C9A017" stroke-width="2"/>
+  <text x="620" y="305" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" text-anchor="middle" font-weight="700">-2w</text>
+
+  <!-- LAUNCH DAY — BIG -->
+  <rect x="735" y="100" width="180" height="170" rx="12" fill="url(#launchDay)" stroke="#C9A017" stroke-width="2.5"/>
+  <rect x="735" y="100" width="180" height="5" rx="3 3 0 0" fill="url(#gold)"/>
+  <!-- Glow effect -->
+  <rect x="730" y="95" width="190" height="180" rx="14" fill="none" stroke="#C9A017" stroke-width="0.5" opacity="0.3"/>
+  <text x="825" y="128" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" text-anchor="middle" font-weight="700" letter-spacing="2">🚀 LAUNCH DAY</text>
+  <text x="825" y="152" font-family="Georgia,serif" font-size="20" fill="#fff" text-anchor="middle" font-weight="900">يوم</text>
+  <text x="825" y="172" font-family="Georgia,serif" font-size="20" fill="#C9A017" text-anchor="middle" font-weight="900">الإطلاق</text>
+  <text x="825" y="196" font-family="Arial,sans-serif" font-size="8" fill="#888" text-anchor="middle">08:00 Email + Post</text>
+  <text x="825" y="210" font-family="Arial,sans-serif" font-size="8" fill="#888" text-anchor="middle">14:00 Stories Update</text>
+  <text x="825" y="224" font-family="Arial,sans-serif" font-size="8" fill="#888" text-anchor="middle">22:00 Last Call</text>
+  <text x="825" y="242" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" text-anchor="middle" font-weight="700">هدف: 50+ مبيعة 💰</text>
+  <!-- Big node -->
+  <circle cx="825" cy="300" r="22" fill="url(#gold)"/>
+  <text x="825" y="294" font-family="Arial,sans-serif" font-size="9" fill="#000" text-anchor="middle" font-weight="900">DAY</text>
+  <text x="825" y="308" font-family="Arial,sans-serif" font-size="9" fill="#000" text-anchor="middle" font-weight="900">ZERO</text>
+
+  <!-- Post Launch week 1-2 -->
+  <rect x="960" y="140" width="200" height="130" rx="10" fill="url(#phase1)" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="960" y="140" width="200" height="3" rx="2 2 0 0" fill="#22c55e" opacity="0.7"/>
+  <text x="1060" y="162" font-family="Arial,sans-serif" font-size="8" fill="#4ade80" text-anchor="middle" font-weight="700" letter-spacing="1">أسبوع 1-2</text>
+  <text x="1060" y="180" font-family="Arial,sans-serif" font-size="12" fill="#4ade80" text-anchor="middle" font-weight="700">ما بعد الإطلاق</text>
+  <text x="1060" y="196" font-family="Arial,sans-serif" font-size="8" fill="#666" text-anchor="middle">Post-Launch</text>
+  <text x="975" y="216" font-family="Arial,sans-serif" font-size="9" fill="#777">□ جمع شهادات العملاء</text>
+  <text x="975" y="230" font-family="Arial,sans-serif" font-size="9" fill="#777">□ تحليل الأداء</text>
+  <text x="975" y="244" font-family="Arial,sans-serif" font-size="9" fill="#777">□ تحسين الإعلانات</text>
+  <text x="975" y="258" font-family="Arial,sans-serif" font-size="9" fill="#777">□ نشر UGC العملاء</text>
+  <circle cx="1060" cy="300" r="14" fill="#0a130a" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="1060" y="305" font-family="Arial,sans-serif" font-size="9" fill="#4ade80" text-anchor="middle" font-weight="700">+2w</text>
+
+  <!-- Scale phase -->
+  <rect x="1180" y="140" width="190" height="130" rx="10" fill="url(#phase1)" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="1180" y="140" width="190" height="3" rx="2 2 0 0" fill="#8b5cf6" opacity="0.7"/>
+  <text x="1275" y="162" font-family="Arial,sans-serif" font-size="8" fill="#a78bfa" text-anchor="middle" font-weight="700" letter-spacing="1">شهر 2+</text>
+  <text x="1275" y="180" font-family="Arial,sans-serif" font-size="12" fill="#a78bfa" text-anchor="middle" font-weight="700">التوسع</text>
+  <text x="1275" y="196" font-family="Arial,sans-serif" font-size="8" fill="#666" text-anchor="middle">Scale Phase</text>
+  <text x="1195" y="216" font-family="Arial,sans-serif" font-size="9" fill="#777">□ Evergreen Funnel</text>
+  <text x="1195" y="230" font-family="Arial,sans-serif" font-size="9" fill="#777">□ رفع السعر تدريجياً</text>
+  <text x="1195" y="244" font-family="Arial,sans-serif" font-size="9" fill="#777">□ برنامج Affiliate</text>
+  <text x="1195" y="258" font-family="Arial,sans-serif" font-size="9" fill="#777">□ كورس متقدم</text>
+  <circle cx="1275" cy="300" r="14" fill="#0d0a1a" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="1275" y="305" font-family="Arial,sans-serif" font-size="9" fill="#a78bfa" text-anchor="middle" font-weight="700">∞</text>
+
+  <!-- ── EMAIL SEQUENCE BELOW ── -->
+  <text x="700" y="388" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" text-anchor="middle" font-weight="700" letter-spacing="2">EMAIL LAUNCH SEQUENCE — 7 رسائل في 7 أيام</text>
+
+  <!-- Email timeline -->
+  <line x1="60" y1="440" x2="1360" y2="440" stroke="#1e1e1e" stroke-width="1"/>
+
+  <!-- Emails -->
+  <g font-family="Arial,sans-serif">
+    <!-- E1 -->
+    <circle cx="110" cy="440" r="10" fill="#1a1a1a" stroke="#C9A017" stroke-width="1.5"/>
+    <text x="110" y="444" font-size="8" fill="#C9A017" text-anchor="middle" font-weight="700">1</text>
+    <rect x="60" y="400" width="100" height="36" rx="5" fill="#111" stroke="#1e1e1e" stroke-width="1"/>
+    <text x="110" y="414" font-size="8" fill="#888" text-anchor="middle">يوم -14</text>
+    <text x="110" y="428" font-size="8" fill="#fff" text-anchor="middle">الإعلان</text>
+    <text x="110" y="462" font-size="8" fill="#666" text-anchor="middle">"شيء قادم"</text>
+    <text x="110" y="474" font-size="7" fill="#555" text-anchor="middle">Open Rate: 45%</text>
+
+    <!-- E2 -->
+    <circle cx="305" cy="440" r="10" fill="#1a1a1a" stroke="#C9A017" stroke-width="1.5"/>
+    <text x="305" y="444" font-size="8" fill="#C9A017" text-anchor="middle" font-weight="700">2</text>
+    <rect x="255" y="400" width="100" height="36" rx="5" fill="#111" stroke="#1e1e1e" stroke-width="1"/>
+    <text x="305" y="414" font-size="8" fill="#888" text-anchor="middle">يوم -10</text>
+    <text x="305" y="428" font-size="8" fill="#fff" text-anchor="middle">المحتوى</text>
+    <text x="305" y="462" font-size="8" fill="#666" text-anchor="middle">"ماذا ستتعلم"</text>
+    <text x="305" y="474" font-size="7" fill="#555" text-anchor="middle">Open Rate: 38%</text>
+
+    <!-- E3 -->
+    <circle cx="500" cy="440" r="10" fill="#1a1a1a" stroke="#C9A017" stroke-width="1.5"/>
+    <text x="500" y="444" font-size="8" fill="#C9A017" text-anchor="middle" font-weight="700">3</text>
+    <rect x="450" y="400" width="100" height="36" rx="5" fill="#111" stroke="#1e1e1e" stroke-width="1"/>
+    <text x="500" y="414" font-size="8" fill="#888" text-anchor="middle">يوم -7</text>
+    <text x="500" y="428" font-size="8" fill="#fff" text-anchor="middle">القصة</text>
+    <text x="500" y="462" font-size="8" fill="#666" text-anchor="middle">"سبب البراند"</text>
+    <text x="500" y="474" font-size="7" fill="#555" text-anchor="middle">Open Rate: 42%</text>
+
+    <!-- E4 -->
+    <circle cx="700" cy="440" r="10" fill="#1a1a1a" stroke="#C9A017" stroke-width="1.5"/>
+    <text x="700" y="444" font-size="8" fill="#C9A017" text-anchor="middle" font-weight="700">4</text>
+    <rect x="650" y="400" width="100" height="36" rx="5" fill="#111" stroke="#1e1e1e" stroke-width="1"/>
+    <text x="700" y="414" font-size="8" fill="#888" text-anchor="middle">يوم -3</text>
+    <text x="700" y="428" font-size="8" fill="#fff" text-anchor="middle">Sneak Peek</text>
+    <text x="700" y="462" font-size="8" fill="#666" text-anchor="middle">"أول نظرة"</text>
+    <text x="700" y="474" font-size="7" fill="#555" text-anchor="middle">Open Rate: 51%</text>
+
+    <!-- E5 LAUNCH -->
+    <circle cx="850" cy="440" r="14" fill="url(#gold)"/>
+    <text x="850" y="444" font-size="9" fill="#000" text-anchor="middle" font-weight="900">🚀</text>
+    <rect x="792" y="396" width="116" height="40" rx="5" fill="rgba(201,160,23,0.15)" stroke="#C9A017" stroke-width="1"/>
+    <text x="850" y="410" font-size="8" fill="#C9A017" text-anchor="middle" font-weight="700">يوم 0 — الإطلاق</text>
+    <text x="850" y="425" font-size="8" fill="#fff" text-anchor="middle">الباب مفتوح!</text>
+    <text x="850" y="468" font-size="8" fill="#C9A017" text-anchor="middle" font-weight="700">"احجز مكانك"</text>
+    <text x="850" y="480" font-size="7" fill="#888" text-anchor="middle">Open Rate: 68%</text>
+
+    <!-- E6 -->
+    <circle cx="1050" cy="440" r="10" fill="#1a1a1a" stroke="#C9A017" stroke-width="1.5"/>
+    <text x="1050" y="444" font-size="8" fill="#C9A017" text-anchor="middle" font-weight="700">6</text>
+    <rect x="1000" y="400" width="100" height="36" rx="5" fill="#111" stroke="#1e1e1e" stroke-width="1"/>
+    <text x="1050" y="414" font-size="8" fill="#888" text-anchor="middle">يوم +2</text>
+    <text x="1050" y="428" font-size="8" fill="#fff" text-anchor="middle">Social Proof</text>
+    <text x="1050" y="462" font-size="8" fill="#666" text-anchor="middle">"الشهادات"</text>
+    <text x="1050" y="474" font-size="7" fill="#555" text-anchor="middle">Open Rate: 35%</text>
+
+    <!-- E7 -->
+    <circle cx="1250" cy="440" r="10" fill="#180a0a" stroke="#C41010" stroke-width="1.5"/>
+    <text x="1250" y="444" font-size="8" fill="#ff6b6b" text-anchor="middle" font-weight="700">7</text>
+    <rect x="1200" y="400" width="100" height="36" rx="5" fill="#110808" stroke="#C41010" stroke-width="1" stroke-opacity="0.5"/>
+    <text x="1250" y="414" font-size="8" fill="#ff6b6b" text-anchor="middle">يوم +3</text>
+    <text x="1250" y="428" font-size="8" fill="#fff" text-anchor="middle">الإغلاق</text>
+    <text x="1250" y="462" font-size="8" fill="#ff6b6b" text-anchor="middle">"آخر 24 ساعة"</text>
+    <text x="1250" y="474" font-size="7" fill="#888" text-anchor="middle">Open Rate: 58%</text>
+  </g>
+
+  <!-- ── METRICS BAR ── -->
+  <rect x="40" y="500" width="1320" height="90" rx="10" fill="#0d0d0d" stroke="#1e1e1e" stroke-width="1"/>
+  <rect x="40" y="500" width="1320" height="3" rx="2 2 0 0" fill="url(#gold)"/>
+  <text x="700" y="522" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" text-anchor="middle" font-weight="700" letter-spacing="2">توقعات الإطلاق — Launch Projections</text>
+
+  <g font-family="Arial,sans-serif" font-size="10">
+    <!-- Metric 1 -->
+    <rect x="70" y="534" width="220" height="46" rx="8" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="180" y="552" font-size="9" fill="#888" text-anchor="middle">Waitlist Conversion</text>
+    <text x="180" y="573" font-size="20" fill="#C9A017" text-anchor="middle" font-weight="900">15-25%</text>
+
+    <!-- Metric 2 -->
+    <rect x="310" y="534" width="220" height="46" rx="8" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="420" y="552" font-size="9" fill="#888" text-anchor="middle">أول 72 ساعة</text>
+    <text x="420" y="573" font-size="20" fill="#fff" text-anchor="middle" font-weight="900">30-50 مبيعة</text>
+
+    <!-- Metric 3 -->
+    <rect x="550" y="534" width="220" height="46" rx="8" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="660" y="552" font-size="9" fill="#888" text-anchor="middle">أول أسبوع</text>
+    <text x="660" y="573" font-size="20" fill="#fff" text-anchor="middle" font-weight="900">50-100 مبيعة</text>
+
+    <!-- Metric 4 -->
+    <rect x="790" y="534" width="220" height="46" rx="8" fill="rgba(201,160,23,0.08)" stroke="#C9A017" stroke-width="1" stroke-opacity="0.5"/>
+    <text x="900" y="552" font-size="9" fill="#C9A017" text-anchor="middle">إيراد الإطلاق</text>
+    <text x="900" y="573" font-size="20" fill="#C9A017" text-anchor="middle" font-weight="900">$2,500-$5,000</text>
+
+    <!-- Metric 5 -->
+    <rect x="1030" y="534" width="300" height="46" rx="8" fill="#0a130a" stroke="#22c55e" stroke-width="1" stroke-opacity="0.5"/>
+    <text x="1180" y="552" font-size="9" fill="#4ade80" text-anchor="middle">بعد رفع السعر لـ $97</text>
+    <text x="1180" y="573" font-size="20" fill="#4ade80" text-anchor="middle" font-weight="900">$9,700+/شهر</text>
+  </g>
+
+  <!-- Footer note -->
+  <text x="700" y="618" font-family="Arial,sans-serif" font-size="9" fill="#555" text-anchor="middle">* التوقعات مبنية على متوسطات السوق العربي · النتائج تختلف حسب الجهد والتطبيق</text>
+
+  <!-- Footer -->
+  <rect x="0" y="700" width="1400" height="20" fill="#050505"/>
+  <text x="40" y="714" font-family="Arial,sans-serif" font-size="8" fill="#333">AI Fashion Academy — Launch System · Module 15</text>
+  <text x="1360" y="714" font-family="Arial,sans-serif" font-size="8" fill="#C9A017" text-anchor="end">© 2025</text>
+</svg>

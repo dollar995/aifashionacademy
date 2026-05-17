@@ -1,0 +1,272 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060606"/>
+      <stop offset="100%" style="stop-color:#0f0f0f"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E4B832"/>
+      <stop offset="100%" style="stop-color:#C9A017"/>
+    </linearGradient>
+    <linearGradient id="goldV" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E4B832"/>
+      <stop offset="100%" style="stop-color:#C9A017"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1e1e"/>
+      <stop offset="100%" style="stop-color:#141414"/>
+    </linearGradient>
+    <linearGradient id="activeNode" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#201a08"/>
+      <stop offset="100%" style="stop-color:#150f04"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#C9A017" opacity="0.6"/>
+    </marker>
+    <marker id="arrowWhite" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#444"/>
+    </marker>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="900" fill="url(#bg)"/>
+
+  <!-- Subtle dot grid -->
+  <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <circle cx="20" cy="20" r="0.8" fill="#C9A017" opacity="0.08"/>
+  </pattern>
+  <rect width="1400" height="900" fill="url(#dots)"/>
+
+  <!-- HEADER -->
+  <rect x="0" y="0" width="1400" height="64" fill="#080808" opacity="0.95"/>
+  <rect x="0" y="63" width="1400" height="1" fill="#1e1e1e"/>
+  <rect x="40" y="20" width="28" height="28" rx="5" fill="url(#gold)"/>
+  <text x="54" y="38" font-family="Arial,sans-serif" font-size="12" font-weight="900" fill="#000" text-anchor="middle">AI</text>
+  <text x="80" y="30" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#fff">AI FASHION ACADEMY</text>
+  <text x="80" y="46" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" letter-spacing="2">AI BRAND-BUILDING WORKFLOW</text>
+  <rect x="1180" y="18" width="180" height="28" rx="5" fill="none" stroke="#C9A017" stroke-width="1" opacity="0.4"/>
+  <text x="1270" y="37" font-family="Arial,sans-serif" font-size="10" fill="#C9A017" text-anchor="middle" font-weight="700">COMPLETE SYSTEM MAP</text>
+
+  <!-- PHASE LABELS -->
+  <!-- Phase 1 -->
+  <rect x="40" y="80" width="200" height="26" rx="4" fill="rgba(201,160,23,0.1)" stroke="rgba(201,160,23,0.3)" stroke-width="1"/>
+  <text x="140" y="97" font-family="Arial,sans-serif" font-size="10" fill="#C9A017" text-anchor="middle" font-weight="700" letter-spacing="1">PHASE 1 — STRATEGY</text>
+  <!-- Phase 2 -->
+  <rect x="320" y="80" width="200" height="26" rx="4" fill="rgba(201,160,23,0.1)" stroke="rgba(201,160,23,0.3)" stroke-width="1"/>
+  <text x="420" y="97" font-family="Arial,sans-serif" font-size="10" fill="#C9A017" text-anchor="middle" font-weight="700" letter-spacing="1">PHASE 2 — IDENTITY</text>
+  <!-- Phase 3 -->
+  <rect x="600" y="80" width="200" height="26" rx="4" fill="rgba(201,160,23,0.1)" stroke="rgba(201,160,23,0.3)" stroke-width="1"/>
+  <text x="700" y="97" font-family="Arial,sans-serif" font-size="10" fill="#C9A017" text-anchor="middle" font-weight="700" letter-spacing="1">PHASE 3 — DESIGN</text>
+  <!-- Phase 4 -->
+  <rect x="880" y="80" width="200" height="26" rx="4" fill="rgba(201,160,23,0.1)" stroke="rgba(201,160,23,0.3)" stroke-width="1"/>
+  <text x="980" y="97" font-family="Arial,sans-serif" font-size="10" fill="#C9A017" text-anchor="middle" font-weight="700" letter-spacing="1">PHASE 4 — LAUNCH</text>
+  <!-- Phase 5 -->
+  <rect x="1160" y="80" width="200" height="26" rx="4" fill="rgba(196,16,16,0.1)" stroke="rgba(196,16,16,0.3)" stroke-width="1"/>
+  <text x="1260" y="97" font-family="Arial,sans-serif" font-size="10" fill="#ff6b6b" text-anchor="middle" font-weight="700" letter-spacing="1">PHASE 5 — SCALE</text>
+
+  <!-- ============ ROW 1 NODES ============ -->
+
+  <!-- Node: Market Research -->
+  <rect x="40" y="130" width="200" height="100" rx="10" fill="url(#activeNode)" stroke="#C9A017" stroke-width="1.5"/>
+  <rect x="40" y="130" width="200" height="3" rx="2 2 0 0" fill="url(#gold)"/>
+  <text x="50" y="152" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" font-weight="700" letter-spacing="1">01 · MARKET RESEARCH</text>
+  <text x="50" y="170" font-family="Arial,sans-serif" font-size="11" fill="#fff" font-weight="600">دراسة السوق</text>
+  <text x="50" y="185" font-family="Arial,sans-serif" font-size="9" fill="#888">Google Trends</text>
+  <text x="50" y="198" font-family="Arial,sans-serif" font-size="9" fill="#888">Instagram Research</text>
+  <text x="50" y="218" font-family="Arial,sans-serif" font-size="8" fill="#C9A017">Tool: ChatGPT + Claude</text>
+
+  <!-- Arrow right -->
+  <line x1="242" y1="180" x2="316" y2="180" stroke="#C9A017" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)" opacity="0.6"/>
+
+  <!-- Node: Brand Strategy -->
+  <rect x="320" y="130" width="200" height="100" rx="10" fill="url(#activeNode)" stroke="#C9A017" stroke-width="1.5"/>
+  <rect x="320" y="130" width="200" height="3" rx="2 2 0 0" fill="url(#gold)"/>
+  <text x="330" y="152" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" font-weight="700" letter-spacing="1">02 · BRAND STRATEGY</text>
+  <text x="330" y="170" font-family="Arial,sans-serif" font-size="11" fill="#fff" font-weight="600">استراتيجية البراند</text>
+  <text x="330" y="185" font-family="Arial,sans-serif" font-size="9" fill="#888">Positioning Statement</text>
+  <text x="330" y="198" font-family="Arial,sans-serif" font-size="9" fill="#888">Brand Archetype</text>
+  <text x="330" y="218" font-family="Arial,sans-serif" font-size="8" fill="#C9A017">Tool: Claude</text>
+
+  <!-- Arrow right -->
+  <line x1="522" y1="180" x2="596" y2="180" stroke="#C9A017" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)" opacity="0.6"/>
+
+  <!-- Node: Visual Identity -->
+  <rect x="600" y="130" width="200" height="100" rx="10" fill="url(#activeNode)" stroke="#C9A017" stroke-width="1.5"/>
+  <rect x="600" y="130" width="200" height="3" rx="2 2 0 0" fill="url(#gold)"/>
+  <text x="610" y="152" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" font-weight="700" letter-spacing="1">03 · VISUAL IDENTITY</text>
+  <text x="610" y="170" font-family="Arial,sans-serif" font-size="11" fill="#fff" font-weight="600">الهوية البصرية</text>
+  <text x="610" y="185" font-family="Arial,sans-serif" font-size="9" fill="#888">Logo + Colors + Type</text>
+  <text x="610" y="198" font-family="Arial,sans-serif" font-size="9" fill="#888">Brand Guidelines</text>
+  <text x="610" y="218" font-family="Arial,sans-serif" font-size="8" fill="#C9A017">Tool: Midjourney + Canva</text>
+
+  <!-- Arrow right -->
+  <line x1="802" y1="180" x2="876" y2="180" stroke="#C9A017" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)" opacity="0.6"/>
+
+  <!-- Node: Collection Design -->
+  <rect x="880" y="130" width="200" height="100" rx="10" fill="url(#activeNode)" stroke="#C9A017" stroke-width="1.5"/>
+  <rect x="880" y="130" width="200" height="3" rx="2 2 0 0" fill="url(#gold)"/>
+  <text x="890" y="152" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" font-weight="700" letter-spacing="1">04 · COLLECTION DESIGN</text>
+  <text x="890" y="170" font-family="Arial,sans-serif" font-size="11" fill="#fff" font-weight="600">تصميم المجموعة</text>
+  <text x="890" y="185" font-family="Arial,sans-serif" font-size="9" fill="#888">AI-Generated Designs</text>
+  <text x="890" y="198" font-family="Arial,sans-serif" font-size="9" fill="#888">Mockups + Vectorize</text>
+  <text x="890" y="218" font-family="Arial,sans-serif" font-size="8" fill="#C9A017">Tool: Midjourney + Kling</text>
+
+  <!-- Arrow right -->
+  <line x1="1082" y1="180" x2="1156" y2="180" stroke="#C9A017" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)" opacity="0.6"/>
+
+  <!-- Node: Content Production -->
+  <rect x="1160" y="130" width="200" height="100" rx="10" fill="url(#nodeGrad)" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="1160" y="130" width="200" height="3" rx="2 2 0 0" fill="#C41010"/>
+  <text x="1170" y="152" font-family="Arial,sans-serif" font-size="9" fill="#ff6b6b" font-weight="700" letter-spacing="1">05 · CONTENT PROD.</text>
+  <text x="1170" y="170" font-family="Arial,sans-serif" font-size="11" fill="#fff" font-weight="600">إنتاج المحتوى</text>
+  <text x="1170" y="185" font-family="Arial,sans-serif" font-size="9" fill="#888">Cinematic Visuals</text>
+  <text x="1170" y="198" font-family="Arial,sans-serif" font-size="9" fill="#888">Social + Ads</text>
+  <text x="1170" y="218" font-family="Arial,sans-serif" font-size="8" fill="#ff6b6b">Tool: Runway + CapCut</text>
+
+  <!-- ============ DOWN ARROWS ============ -->
+  <line x1="140" y1="232" x2="140" y2="290" stroke="#C9A017" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)" opacity="0.5"/>
+  <line x1="420" y1="232" x2="420" y2="290" stroke="#C9A017" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)" opacity="0.5"/>
+  <line x1="700" y1="232" x2="700" y2="290" stroke="#C9A017" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)" opacity="0.5"/>
+  <line x1="980" y1="232" x2="980" y2="290" stroke="#C9A017" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)" opacity="0.5"/>
+  <line x1="1260" y1="232" x2="1260" y2="290" stroke="#C41010" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowWhite)" opacity="0.5"/>
+
+  <!-- ============ ROW 2 NODES ============ -->
+
+  <!-- Node: Buyer Persona -->
+  <rect x="40" y="294" width="200" height="100" rx="10" fill="url(#nodeGrad)" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="50" y="314" font-family="Arial,sans-serif" font-size="9" fill="#888" font-weight="700" letter-spacing="1">BUYER PERSONA</text>
+  <text x="50" y="330" font-family="Arial,sans-serif" font-size="10" fill="#ccc">شخصية العميل</text>
+  <text x="50" y="345" font-family="Arial,sans-serif" font-size="8.5" fill="#666">Age · Income · Pain Points</text>
+  <text x="50" y="358" font-family="Arial,sans-serif" font-size="8.5" fill="#666">Goals · Behavior · Channels</text>
+  <text x="50" y="378" font-family="Arial,sans-serif" font-size="8" fill="#555">Claude Prompt →</text>
+
+  <!-- Node: Brand Story -->
+  <rect x="320" y="294" width="200" height="100" rx="10" fill="url(#nodeGrad)" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="330" y="314" font-family="Arial,sans-serif" font-size="9" fill="#888" font-weight="700" letter-spacing="1">BRAND STORY</text>
+  <text x="330" y="330" font-family="Arial,sans-serif" font-size="10" fill="#ccc">قصة البراند</text>
+  <text x="330" y="345" font-family="Arial,sans-serif" font-size="8.5" fill="#666">Origin Story</text>
+  <text x="330" y="358" font-family="Arial,sans-serif" font-size="8.5" fill="#666">Hero's Journey Map</text>
+  <text x="330" y="378" font-family="Arial,sans-serif" font-size="8" fill="#555">Claude Prompt →</text>
+
+  <!-- Node: Name + Tagline -->
+  <rect x="600" y="294" width="200" height="100" rx="10" fill="url(#nodeGrad)" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="610" y="314" font-family="Arial,sans-serif" font-size="9" fill="#888" font-weight="700" letter-spacing="1">NAME + TAGLINE</text>
+  <text x="610" y="330" font-family="Arial,sans-serif" font-size="10" fill="#ccc">الاسم والـ Tagline</text>
+  <text x="610" y="345" font-family="Arial,sans-serif" font-size="8.5" fill="#666">100+ Name Generation</text>
+  <text x="610" y="358" font-family="Arial,sans-serif" font-size="8.5" fill="#666">Domain + Social Check</text>
+  <text x="610" y="378" font-family="Arial,sans-serif" font-size="8" fill="#555">ChatGPT Prompt →</text>
+
+  <!-- Node: AI Design Workflow -->
+  <rect x="880" y="294" width="200" height="100" rx="10" fill="url(#nodeGrad)" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="890" y="314" font-family="Arial,sans-serif" font-size="9" fill="#888" font-weight="700" letter-spacing="1">AI DESIGN FLOW</text>
+  <text x="890" y="330" font-family="Arial,sans-serif" font-size="10" fill="#ccc">سلسلة التصميم</text>
+  <text x="890" y="345" font-family="Arial,sans-serif" font-size="8.5" fill="#666">Prompt → Image → Vector</text>
+  <text x="890" y="358" font-family="Arial,sans-serif" font-size="8.5" fill="#666">Mockup → Production</text>
+  <text x="890" y="378" font-family="Arial,sans-serif" font-size="8" fill="#555">Midjourney + Vectorizer →</text>
+
+  <!-- Node: Shopify Store -->
+  <rect x="1160" y="294" width="200" height="100" rx="10" fill="url(#nodeGrad)" stroke="#333" stroke-width="1"/>
+  <text x="1170" y="314" font-family="Arial,sans-serif" font-size="9" fill="#888" font-weight="700" letter-spacing="1">SHOPIFY STORE</text>
+  <text x="1170" y="330" font-family="Arial,sans-serif" font-size="10" fill="#ccc">متجر Shopify</text>
+  <text x="1170" y="345" font-family="Arial,sans-serif" font-size="8.5" fill="#666">Theme + Products</text>
+  <text x="1170" y="358" font-family="Arial,sans-serif" font-size="8.5" fill="#666">Printful Integration</text>
+  <text x="1170" y="378" font-family="Arial,sans-serif" font-size="8" fill="#555">Shopify + Printful →</text>
+
+  <!-- Down arrows row 2 -->
+  <line x1="140" y1="396" x2="140" y2="454" stroke="#444" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrowWhite)" opacity="0.4"/>
+  <line x1="420" y1="396" x2="420" y2="454" stroke="#444" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrowWhite)" opacity="0.4"/>
+  <line x1="700" y1="396" x2="700" y2="454" stroke="#444" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrowWhite)" opacity="0.4"/>
+  <line x1="980" y1="396" x2="980" y2="454" stroke="#444" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrowWhite)" opacity="0.4"/>
+  <line x1="1260" y1="396" x2="1260" y2="454" stroke="#444" stroke-width="1" stroke-dasharray="3,3" marker-end="url(#arrowWhite)" opacity="0.4"/>
+
+  <!-- ============ ROW 3 NODES (TOOLS) ============ -->
+
+  <rect x="40" y="458" width="200" height="80" rx="8" fill="#0d0d0d" stroke="#1e1e1e" stroke-width="1"/>
+  <text x="50" y="476" font-family="Arial,sans-serif" font-size="8" fill="#555" letter-spacing="1">OUTPUT</text>
+  <text x="50" y="494" font-family="Arial,sans-serif" font-size="10" fill="#888">Niche Selection Matrix</text>
+  <text x="50" y="509" font-family="Arial,sans-serif" font-size="10" fill="#888">Competitor Analysis</text>
+  <text x="50" y="526" font-family="Arial,sans-serif" font-size="10" fill="#888">Validation Report</text>
+
+  <rect x="320" y="458" width="200" height="80" rx="8" fill="#0d0d0d" stroke="#1e1e1e" stroke-width="1"/>
+  <text x="330" y="476" font-family="Arial,sans-serif" font-size="8" fill="#555" letter-spacing="1">OUTPUT</text>
+  <text x="330" y="494" font-family="Arial,sans-serif" font-size="10" fill="#888">Origin Story (200 words)</text>
+  <text x="330" y="509" font-family="Arial,sans-serif" font-size="10" fill="#888">Hero's Journey Map</text>
+  <text x="330" y="526" font-family="Arial,sans-serif" font-size="10" fill="#888">3-Version Story Pack</text>
+
+  <rect x="600" y="458" width="200" height="80" rx="8" fill="#0d0d0d" stroke="#1e1e1e" stroke-width="1"/>
+  <text x="610" y="476" font-family="Arial,sans-serif" font-size="8" fill="#555" letter-spacing="1">OUTPUT</text>
+  <text x="610" y="494" font-family="Arial,sans-serif" font-size="10" fill="#888">Final Brand Name</text>
+  <text x="610" y="509" font-family="Arial,sans-serif" font-size="10" fill="#888">Tagline + Messaging</text>
+  <text x="610" y="526" font-family="Arial,sans-serif" font-size="10" fill="#888">Domain + Socials Live</text>
+
+  <rect x="880" y="458" width="200" height="80" rx="8" fill="#0d0d0d" stroke="#1e1e1e" stroke-width="1"/>
+  <text x="890" y="476" font-family="Arial,sans-serif" font-size="8" fill="#555" letter-spacing="1">OUTPUT</text>
+  <text x="890" y="494" font-family="Arial,sans-serif" font-size="10" fill="#888">5+ AI Designs Ready</text>
+  <text x="890" y="509" font-family="Arial,sans-serif" font-size="10" fill="#888">Vector Files + Mockups</text>
+  <text x="890" y="526" font-family="Arial,sans-serif" font-size="10" fill="#888">Production-Ready Files</text>
+
+  <rect x="1160" y="458" width="200" height="80" rx="8" fill="#0d0d0d" stroke="#1e1e1e" stroke-width="1"/>
+  <text x="1170" y="476" font-family="Arial,sans-serif" font-size="8" fill="#555" letter-spacing="1">OUTPUT</text>
+  <text x="1170" y="494" font-family="Arial,sans-serif" font-size="10" fill="#888">Store Live + Checkout</text>
+  <text x="1170" y="509" font-family="Arial,sans-serif" font-size="10" fill="#888">Products + Payments</text>
+  <text x="1170" y="526" font-family="Arial,sans-serif" font-size="10" fill="#888">Printful Auto-Fulfillment</text>
+
+  <!-- ============ BOTTOM FLOW: LAUNCH + SCALE ============ -->
+
+  <!-- Convergence arrow -->
+  <line x1="140" y1="540" x2="140" y2="600" stroke="#333" stroke-width="1" opacity="0.3"/>
+  <line x1="420" y1="540" x2="420" y2="600" stroke="#333" stroke-width="1" opacity="0.3"/>
+  <line x1="700" y1="540" x2="700" y2="600" stroke="#333" stroke-width="1" opacity="0.3"/>
+  <line x1="980" y1="540" x2="980" y2="600" stroke="#333" stroke-width="1" opacity="0.3"/>
+  <line x1="1260" y1="540" x2="1260" y2="600" stroke="#333" stroke-width="1" opacity="0.3"/>
+
+  <!-- Horizontal convergence line -->
+  <line x1="140" y1="600" x2="1260" y2="600" stroke="#C9A017" stroke-width="1" opacity="0.3"/>
+
+  <!-- Down to launch -->
+  <line x1="700" y1="600" x2="700" y2="640" stroke="#C9A017" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Launch node - BIG -->
+  <rect x="380" y="644" width="640" height="90" rx="12" fill="rgba(201,160,23,0.07)" stroke="#C9A017" stroke-width="1.5"/>
+  <rect x="380" y="644" width="640" height="4" rx="2 2 0 0" fill="url(#gold)"/>
+  <text x="700" y="668" font-family="Arial,sans-serif" font-size="10" fill="#C9A017" text-anchor="middle" font-weight="700" letter-spacing="2">🚀 LAUNCH SYSTEM</text>
+  <text x="700" y="692" font-family="Arial,sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="800">خطة الإطلاق المتكاملة</text>
+
+  <!-- Launch sub-steps -->
+  <text x="420" y="720" font-family="Arial,sans-serif" font-size="9" fill="#888" text-anchor="middle">Pre-Launch</text>
+  <text x="420" y="732" font-family="Arial,sans-serif" font-size="9" fill="#888" text-anchor="middle">Waitlist Build</text>
+  <line x1="460" y1="726" x2="490" y2="726" stroke="#333" stroke-width="1"/>
+  <text x="545" y="720" font-family="Arial,sans-serif" font-size="9" fill="#888" text-anchor="middle">Email Sequence</text>
+  <text x="545" y="732" font-family="Arial,sans-serif" font-size="9" fill="#888" text-anchor="middle">7 Emails · 7 Days</text>
+  <line x1="590" y1="726" x2="620" y2="726" stroke="#333" stroke-width="1"/>
+  <text x="700" y="720" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" text-anchor="middle" font-weight="700">LAUNCH DAY</text>
+  <text x="700" y="732" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" text-anchor="middle">First Sales 🎉</text>
+  <line x1="740" y1="726" x2="770" y2="726" stroke="#333" stroke-width="1"/>
+  <text x="855" y="720" font-family="Arial,sans-serif" font-size="9" fill="#888" text-anchor="middle">Meta Ads</text>
+  <text x="855" y="732" font-family="Arial,sans-serif" font-size="9" fill="#888" text-anchor="middle">Paid Acquisition</text>
+  <line x1="910" y1="726" x2="940" y2="726" stroke="#333" stroke-width="1"/>
+  <text x="980" y="720" font-family="Arial,sans-serif" font-size="9" fill="#888" text-anchor="middle">Automation</text>
+  <text x="980" y="732" font-family="Arial,sans-serif" font-size="9" fill="#888" text-anchor="middle">Scale Systems</text>
+
+  <!-- Down to result -->
+  <line x1="700" y1="736" x2="700" y2="790" stroke="#C9A017" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- RESULT BAR -->
+  <rect x="240" y="794" width="920" height="60" rx="10" fill="rgba(201,160,23,0.05)" stroke="rgba(201,160,23,0.2)" stroke-width="1"/>
+  <text x="700" y="820" font-family="Arial,sans-serif" font-size="12" fill="#888" text-anchor="middle">من</text>
+  <text x="700" y="840" font-family="Georgia,serif" font-size="11" fill="#888" text-anchor="middle">"لا أعرف من أين أبدأ"</text>
+
+  <text x="380" y="830" font-family="Arial,sans-serif" font-size="22" fill="#C9A017" text-anchor="end" font-weight="900">→</text>
+
+  <rect x="760" y="800" width="380" height="48" rx="8" fill="rgba(201,160,23,0.12)" stroke="#C9A017" stroke-width="1"/>
+  <text x="950" y="820" font-family="Arial,sans-serif" font-size="11" fill="#C9A017" text-anchor="middle" font-weight="700">براند ملابس حقيقي يبيع على الإنترنت</text>
+  <text x="950" y="838" font-family="Arial,sans-serif" font-size="9" fill="#888" text-anchor="middle">Real Clothing Brand · Real Sales · 90 Days</text>
+
+  <!-- Footer -->
+  <rect x="0" y="872" width="1400" height="28" fill="#050505"/>
+  <text x="40" y="890" font-family="Arial,sans-serif" font-size="9" fill="#333">AI Fashion Academy — AI Brand-Building Workflow Diagram</text>
+  <text x="1360" y="890" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" text-anchor="end">© 2025</text>
+</svg>

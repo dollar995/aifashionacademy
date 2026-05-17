@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
+<head>
+  
+  
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="أكاديمية AI Fashion - الكورس العربي الأول لبناء براند ملابس احترافي باستخدام الذكاء الاصطناعي. من الصفر للإطلاق في 90 يوم." name="description"/>
+<title>أكاديمية AI Fashion | بناء براند ملابس بالذكاء الاصطناعي</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+
+<style>
+/* Launch pricing + countdown updates */
+.launch-timer-card{
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1.5rem;
+  padding:1.5rem;
+  border:1px solid rgba(212,165,116,.35);
+  border-radius:24px;
+  background:linear-gradient(135deg,rgba(212,165,116,.12),rgba(120,18,22,.14)), rgba(10,10,10,.45);
+  box-shadow:0 22px 60px rgba(0,0,0,.25);
+}
+.timer-copy{ text-align:right; }
+.timer-badge{
+  display:inline-flex;
+  margin-bottom:.55rem;
+  padding:.35rem .75rem;
+  border-radius:999px;
+  background:rgba(212,165,116,.14);
+  color:var(--sand, #d4a574);
+  font-weight:800;
+  font-size:.85rem;
+}
+.launch-timer-card h3{ margin:0 0 .4rem; font-size:1.35rem; color:var(--white,#fff); }
+.launch-timer-card h3 strong{ color:var(--sand,#d4a574); font-size:1.55rem; }
+.launch-timer-card del{ color:rgba(255,255,255,.55); margin:0 .25rem; }
+.launch-timer-card p{ margin:0; color:var(--stone,#b8b1a7); }
+.countdown-grid{ display:flex; gap:.65rem; direction:ltr; flex-shrink:0; }
+.countdown-box{
+  min-width:82px;
+  padding:.85rem .65rem;
+  border-radius:18px;
+  background:rgba(0,0,0,.38);
+  border:1px solid rgba(255,255,255,.1);
+  text-align:center;
+}
+.countdown-box span{ display:block; color:var(--sand,#d4a574); font-size:2rem; line-height:1; font-weight:900; }
+.countdown-box small{ display:block; margin-top:.35rem; color:var(--stone,#b8b1a7); font-size:.78rem; }
+.pricing-grid-two{
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  align-items:stretch;
+  gap:1.5rem;
+}
+.price-meta{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:.5rem;
+  margin:.6rem 0 .2rem;
+  color:var(--stone,#b8b1a7);
+  font-size:.95rem;
+}
+.price-meta del{ color:rgba(255,255,255,.45); font-weight:700; }
+.pricing-note{ color:var(--stone,#b8b1a7); text-align:center; margin:.35rem 0 1rem; font-size:.95rem; }
+.vip-card{
+  border-color:rgba(212,165,116,.45) !important;
+  background:linear-gradient(180deg,rgba(212,165,116,.1),rgba(255,255,255,.03));
+}
+.vip-badge{ background:linear-gradient(135deg,#d4a574,#f2d091); color:#111 !important; }
+@media(max-width:860px){
+  .launch-timer-card{ flex-direction:column; text-align:center; }
+  .timer-copy{ text-align:center; }
+  .pricing-grid-two{ grid-template-columns:1fr !important; }
+}
+@media(max-width:520px){
+  .countdown-grid{ width:100%; justify-content:center; gap:.45rem; }
+  .countdown-box{ min-width:0; flex:1; padding:.75rem .35rem; }
+  .countdown-box span{ font-size:1.55rem; }
+  .launch-timer-card{ padding:1.1rem; border-radius:18px; }
+}
+/* ── Hero Image ── */
+.hero-visual--img {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  padding: 0;
+  min-height: 500px;
+}
+.hero-main-img {
+  width: 100%;
+  height: auto;
+  max-height: 640px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 20px;
+  display: block;
+}
+@media(max-width:900px){
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .hero-visual--img {
+    order: 2;
+    margin-top: 1.5rem;
+    min-height: unset;
+  }
+  .hero-content {
+    order: 1;
+  }
+  .hero-main-img {
+    max-height: 280px;
+    border-radius: 16px;
+  }
+}
+</style>
+
+</head>
+<body>
+
+
+<!-- Header -->
+<header class="site-header">
+<div class="header-inner">
+<a class="logo" href="index.html"><img alt="AI Fashion Academy" class="logo-img" src="assets/logo/logo.png"/><div class="logo-text">أكاديمية AI Fashion</div></a>
+<nav class="nav-desktop">
+<a href="#about">عن الكورس</a>
+<a href="#roadmap">الخريطة</a>
+<a href="#modules">الوحدات</a>
+<a href="#pricing">السعر</a>
+<a href="#faq">الأسئلة</a>
+</nav>
+<div class="header-actions">
+<a class="btn btn-outline-white btn-sm" href="login.html">تسجيل الدخول</a>
+<a class="btn btn-primary btn-full checkout-btn" href="payment.html">احجز مقعدك</a>
+<button aria-expanded="false" aria-label="القائمة" class="mobile-toggle">☰</button>
+</div>
+</div>
+<nav class="mobile-nav">
+<a href="#about">عن الكورس</a>
+<a href="#roadmap">خريطة التعلم</a>
+<a href="#modules">الوحدات</a>
+<a href="#pricing">السعر والباقات</a>
+<a href="#faq">الأسئلة الشائعة</a>
+<a href="login.html">تسجيل الدخول</a>
+<a class="btn btn-primary btn-full checkout-btn" href="payment.html" style="margin-top:1rem">احجز مقعدك الآن</a>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="hero">
+<div class="hero-grid">
+<div class="hero-content">
+<div class="hero-badge">
+<span class="pulse"></span>
+        الكورس العربي الأول من نوعه
+      </div>
+<h1 class="hero-title">
+        في <span class="highlight">90 يوماً</span>، ستملك براند ملابس يبيع
+      </h1><p class="full-access-pill">دورة مكتوبة بالكامل — بدون قطع محتوى مرئية — وصول كامل بعد الشراء</p>
+<p class="hero-subtitle">
+        بدون خبرة تصميم. بدون رأس مال ضخم. بدون فريق. فقط باستخدام أدوات الذكاء الاصطناعي والمنهج العملي الذي يأخذك من الفكرة إلى أول مبيعاتك.
+      </p>
+<div class="hero-cta">
+<a class="btn btn-primary btn-full checkout-btn" href="payment.html">ابدأ رحلتك الآن</a>
+<a class="btn btn-outline-white" href="#roadmap">شوف خريطة الكورس</a>
+</div>
+<div class="hero-stats">
+<div class="hero-stat">
+<span class="hero-stat-number">32</span>
+<span class="hero-stat-label">وحدة تدريبية</span>
+</div>
+<div class="hero-stat">
+<span class="hero-stat-number">177</span>
+<span class="hero-stat-label">درس مكتوب</span>
+</div>
+<div class="hero-stat">
+<span class="hero-stat-number">مكتوب</span>
+<span class="hero-stat-label">شرح + تطبيق + برومبتات</span>
+</div>
+</div>
+</div>
+<div class="hero-visual hero-visual--img">
+<img src="assets/images/hero-image.png" alt="AI Fashion Academy — Where AI Meets Fashion" class="hero-main-img"/>
+</div>
+</div>
+</section>
+<!-- Pain Points Section -->
+<section class="section" id="about">
+<div class="container">
+<div class="section-header">
+<span class="section-label">نصيحة لا تضيع الترند</span>
+<h2 class="section-title">"اللي بيتعلم AI بيملك المستقبل "</h2>
+<p class="section-desc">تعلم كيف تخلي الـAI يصنعلك براند عالمي وافتح مشروعك الخاص </p>
+</div>
+<div class="pain-grid">
+<div>
+<ul class="pain-list">
+<li>
+<span class="pain-icon">😤</span>
+<span class="pain-text">تراقب براندات تانية بتنجح وتقول "كان ممكن أنا كمان" بس ما بتحرك</span>
+</li>
+<li>
+<span class="pain-icon">😰</span>
+<span class="pain-text">جربت تبدأ عشرات المرات بس وقفت لأنك ما بتعرف تصميم أو ما معك رأس مال</span>
+</li>
+<li>
+<span class="pain-icon">😵</span>
+<span class="pain-text">بتتابع محتوى مجاني على يوتيوب بس مبعثر وما بيعطيك الصورة الكاملة</span>
+</li>
+<li>
+<span class="pain-icon">😔</span>
+<span class="pain-text">بتخاف الفكرة "وقتها فات" أو السوق "ممتلئ" وما في مكان لك</span>
+</li>
+</ul>
+</div>
+<div>
+<h3 style="margin-bottom:1.5rem; color:var(--cyan-dark);">بعد الكورس، رح تكون...</h3>
+<ul class="gain-list">
+<li>
+<span class="gain-icon">🎯</span>
+<span class="gain-text">صاحب براند واضح باسم + هوية + متجر + محتوى + أول مبيعات</span>
+</li>
+<li>
+<span class="gain-icon">🤖</span>
+<span class="gain-text">بتتقن 12+ أداة AI احترافية بتصمملك وتسوّقلك بدون ما تدفع آلاف للمصممين</span>
+</li>
+<li>
+<span class="gain-icon">📈</span>
+<span class="gain-text">عندك نظام واضح للتوسع والأتمتة — البراند بيشتغل حتى وأنت نايم</span>
+</li>
+<li>
+<span class="gain-icon">💪</span>
+<span class="gain-text">واثق من خطوتك القادمة لأنك مش عم تمشي عشوائي، عندك خارطة طريق</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Why AI Section -->
+<section class="section section-dark">
+<div class="container">
+<div class="section-header">
+<span class="section-label" style="background:rgba(212,165,116,0.15); color:var(--sand);">لماذا الآن؟</span>
+<h2 class="section-title text-white">الذكاء الاصطناعي غيّر قواعد اللعبة</h2>
+<p class="section-desc">قبل 5 سنوات، بناء براند ملابس كان يكلف عشرات آلاف الدولارات. اليوم؟ أقل من 100 دولار شهرياً.</p>
+</div>
+<div class="card-grid card-grid-4">
+<div class="card card-dark">
+<div class="card-icon">🎨</div>
+<h3 class="card-title">Midjourney</h3>
+<p class="card-text">صمم مجموعات كاملة من وصف نصي. ما بتحتاج مصمم بـ 3000 دولار. بـ 30$ شهرياً بتصمم كل شي.</p>
+</div>
+<div class="card card-dark">
+<div class="card-icon">✍️</div>
+<h3 class="card-title">ChatGPT + Claude</h3>
+<p class="card-text">اكتب كل النصوص، الاستراتيجية، أوصاف المنتجات، وإعلاناتك بـ 20$ شهرياً.</p>
+</div>
+<div class="card card-dark">
+<div class="card-icon">🎬</div>
+<h3 class="card-title">Runway + Kling AI</h3>
+<p class="card-text">أنتج إعلانات محتوى مرئي سينمائية من صورة واحدة. بدون كاميرا، بدون مصور، بدون استوديو.</p>
+</div>
+<div class="card card-dark">
+<div class="card-icon">🛒</div>
+<h3 class="card-title">Shopify</h3>
+<p class="card-text">ابنِ متجر احترافي يستقبل الطلبات بـ 29$ شهرياً. جاهز للبيع من اليوم الأول.</p>
+</div>
+</div>
+<div class="text-center mt-3">
+<p style="color:var(--sand); font-size:1.1rem; font-weight:600;">
+        المجموع: أقل من 100$ شهرياً — بدلاً من 10,000$+ كانت تكلف سابقاً
+      </p>
+</div>
+</div>
+</section>
+<!-- Course Promise Section -->
+<section class="section section-sand">
+<div class="container">
+<div class="section-header">
+<span class="section-label">الوعد</span>
+<h2 class="section-title">شو رح تبني بالضبط؟</h2>
+</div>
+<div class="card-grid card-grid-3">
+<div class="card">
+<div class="card-icon">🏷️</div>
+<h3 class="card-title">براند بهوية واضحة</h3>
+<p class="card-text">اسم مسجل + هوية بصرية كاملة + قصة + قيم + شخصية. مش مجرد متجر، براند حقيقي بيحكي قصة.</p>
+</div>
+<div class="card">
+<div class="card-icon">👕</div>
+<h3 class="card-title">مجموعة ملابس مصممة بـ AI</h3>
+<p class="card-text">تصاميم كاملة باستخدام Midjourney وAdobe Firefly. Mockups احترافية بدون تصوير حقيقي.</p>
+</div>
+<div class="card">
+<div class="card-icon">🏪</div>
+<h3 class="card-title">متجر Shopify يبيع</h3>
+<p class="card-text">متجر كامل مربوط ببوابة دفع وشحن. صفحات منتجات محوّلة. جاهز لاستقبال أول طلبية.</p>
+</div>
+<div class="card">
+<div class="card-icon">📱</div>
+<h3 class="card-title">محتوى سينمائي للإعلانات</h3>
+<p class="card-text">قطع محتوى مرئية Fashion احترافية باستخدام Runway وKling AI. Reels وTikToks جاهزة للنشر.</p>
+</div>
+<div class="card">
+<div class="card-icon">📢</div>
+<h3 class="card-title">حملات تسويق مربحة</h3>
+<p class="card-text">إعلانات Meta Ads مدروسة. استراتيجية محتوى على Instagram وTikTok. Email marketing آلي.</p>
+</div>
+<div class="card">
+<div class="card-icon">💰</div>
+<h3 class="card-title">أول مبيعاتك الحقيقية</h3>
+<p class="card-text">عملاء حقيقيين، أموال حقيقية. مش مجرد أفكار على ورقة — براند شغّال على الأرض.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Roadmap Section -->
+<section class="section" id="roadmap">
+<div class="container">
+<div class="section-header">
+<span class="section-label">الرحلة</span>
+<h2 class="section-title">خريطة التعلم: من الفكرة للإطلاق</h2>
+<p class="section-desc">90 يوم مقسمة على 5 مراحل واضحة. كل مرحلة لها هدف محدد وخرجات عملية.</p>
+</div>
+<div class="roadmap-timeline">
+<div class="roadmap-item">
+<div class="roadmap-dot">1</div>
+<div class="roadmap-card">
+<h3>الأسبوع 1-2: الأساس الفكري</h3>
+<p>تتعلم لماذا صناعة الملابس، تختار نموذج العمل المناسب (POD/مخزون/هجين)، وتحدد أهدافك الواقعية للـ 90 يوم القادمة.</p>
+</div>
+</div>
+<div class="roadmap-item">
+<div class="roadmap-dot">2</div>
+<div class="roadmap-card">
+<h3>الأسبوع 3-6: بناء البراند والهوية</h3>
+<p>تبحث عن النيش المربح، تبني استراتيجية البراند، تكتب قصتك، تختار اسمك، وتصمم الهوية البصرية كاملة باستخدام AI.</p>
+</div>
+</div>
+<div class="roadmap-item">
+<div class="roadmap-dot">3</div>
+<div class="roadmap-card">
+<h3>الأسبوع 7-10: التصميم والإنتاج</h3>
+<p>تتقن هندسة الـ Prompts، تصمم مجموعتك الأولى بـ Midjourney، تعمل Mockups احترافية، وتنتج قطع محتوى مرئية سينمائية.</p>
+</div>
+</div>
+<div class="roadmap-item">
+<div class="roadmap-dot">4</div>
+<div class="roadmap-card">
+<h3>الأسبوع 11-14: المتجر والبنية التحتية</h3>
+<p>تبني متجر Shopify كامل، تضبط بوابات الدفع العربية والدولية، تحدد سياسات الشحن، وتحسّن صفحات المنتجات للتحويل.</p>
+</div>
+</div>
+<div class="roadmap-item">
+<div class="roadmap-dot">5</div>
+<div class="roadmap-card">
+<h3>الأسبوع 15-18: التسويق والإطلاق</h3>
+<p>تطلق حملات Meta Ads، تبني استراتيجية محتوى، تستخدم Email Marketing، وتنفذ خطة إطلاق محكمة تحقق مبيعات من اليوم الأول.</p>
+</div>
+</div>
+</div>
+<div class="text-center mt-2">
+<a class="btn btn-secondary" href="roadmap.html">شوف الخريطة الكاملة</a>
+</div>
+</div>
+</section>
+<!-- Modules Preview Section -->
+<section class="section section-alt" id="modules">
+<div class="container">
+<div class="section-header">
+<span class="section-label">المحتوى</span>
+<h2 class="section-title">32 وحدة — 177 درس مكتوب — وصول كامل</h2>
+<p class="section-desc">منهج متكامل بيغطي كل شيء من أبحاث السوق لحد التوسع والأتمتة</p>
+</div>
+<div class="card-grid">
+<!-- Module 1 -->
+<div class="module-card">
+<div class="module-header">
+<span class="module-number">وحدة 1</span>
+<h3 class="module-title">مقدمة إلى ريادة أعمال الأزياء</h3>
+<div class="module-title-en">Introduction to Fashion Entrepreneurship</div>
+</div>
+<div class="module-body">
+<ul class="module-lessons">
+<li><span class="lesson-check">○</span> مرحباً بك — ما الذي ستبنيه بالضبط؟</li>
+<li><span class="lesson-check">○</span> لماذا صناعة الملابس؟ أرقام وحقائق صادمة</li>
+<li><span class="lesson-check">○</span> أنواع نماذج أعمال الملابس</li>
+<li><span class="lesson-check">○</span> العقلية الريادية في عالم الأزياء</li>
+<li><span class="lesson-check">○</span> كيف غيّر الذكاء الاصطناعي قواعد اللعبة</li>
+<li><span class="lesson-check">○</span> خارطة رحلتك في الـ 90 يوماً القادمة</li>
+</ul>
+<div class="module-meta">
+<span>⏱ 6 دروس</span>
+<span>🎯 3 مخرجات</span>
+</div>
+</div>
+</div>
+<!-- Module 2 -->
+<div class="module-card">
+<div class="module-header">
+<span class="module-number">وحدة 2</span>
+<h3 class="module-title">أبحاث السوق والتحقق من الفرصة</h3>
+<div class="module-title-en">Market Research &amp; Opportunity Validation</div>
+</div>
+<div class="module-body">
+<ul class="module-lessons">
+<li><span class="lesson-check">○</span> ما هو النيش ولماذا اختياره يحدد كل شيء؟</li>
+<li><span class="lesson-check">○</span> أدوات بحث السوق: من Google Trends إلى Instagram</li>
+<li><span class="lesson-check">○</span> كيف تحلل منافسيك بعمق باستخدام ChatGPT</li>
+<li><span class="lesson-check">○</span> خريطة الفرص: إيجاد الفجوات في السوق</li>
+<li><span class="lesson-check">○</span> التحقق السريع من الفكرة</li>
+<li><span class="lesson-check">○</span> بناء Buyer Persona مفصّل</li>
+</ul>
+<div class="module-meta">
+<span>⏱ 6 دروس</span>
+<span>🎯 4 مخرجات</span>
+</div>
+</div>
+</div>
+<!-- Module 3 -->
+<div class="module-card">
+<div class="module-header">
+<span class="module-number">وحدة 3</span>
+<h3 class="module-title">استراتيجية البراند والتموضع</h3>
+<div class="module-title-en">Brand Strategy &amp; Positioning</div>
+</div>
+<div class="module-body">
+<ul class="module-lessons">
+<li><span class="lesson-check">○</span> الفرق بين البراند والمتجر والشركة</li>
+<li><span class="lesson-check">○</span> الرؤية، الرسالة، والقيم</li>
+<li><span class="lesson-check">○</span> أركيتايبات البراند الـ 12</li>
+<li><span class="lesson-check">○</span> بيان التموضع المثالي</li>
+<li><span class="lesson-check">○</span> استخدام Claude في بناء الاستراتيجية</li>
+<li><span class="lesson-check">○</span> ورشة: بناء استراتيجية براندك الكاملة</li>
+</ul>
+<div class="module-meta">
+<span>⏱ 6 دروس</span>
+<span>🎯 3 مخرجات</span>
+</div>
+</div>
+</div>
+<!-- Module 4 -->
+<div class="module-card">
+<div class="module-header">
+<span class="module-number">وحدة 4</span>
+<h3 class="module-title">فن سرد القصة وبناء السردية</h3>
+<div class="module-title-en">Storytelling &amp; Brand Narrative</div>
+</div>
+<div class="module-body">
+<ul class="module-lessons">
+<li><span class="lesson-check">○</span> لماذا القصة أقوى من المنتج؟</li>
+<li><span class="lesson-check">○</span> هيكل القصة الكلاسيكي للبراند</li>
+<li><span class="lesson-check">○</span> بناء قصة الأصل الأصيلة</li>
+<li><span class="lesson-check">○</span> قصة المجموعة — من الإلهام إلى العميل</li>
+<li><span class="lesson-check">○</span> كتابة القصص بـ Claude و ChatGPT</li>
+<li><span class="lesson-check">○</span> تحويل القصة إلى محتوى على كل قناة</li>
+</ul>
+<div class="module-meta">
+<span>⏱ 6 دروس</span>
+<span>🎯 3 مخرجات</span>
+</div>
+</div>
+</div>
+<!-- Module 5 -->
+<div class="module-card">
+<div class="module-header">
+<span class="module-number">وحدة 5</span>
+<h3 class="module-title">التسمية والرسائل</h3>
+<div class="module-title-en">Naming &amp; Messaging</div>
+</div>
+<div class="module-body">
+<ul class="module-lessons">
+<li><span class="lesson-check">○</span> معايير الاسم الذهبي (6 معايير أساسية)</li>
+<li><span class="lesson-check">○</span> أنواع أسماء البراندات</li>
+<li><span class="lesson-check">○</span> استخدام ChatGPT لتوليد 100 اسم</li>
+<li><span class="lesson-check">○</span> التحقق من توفر الاسم</li>
+<li><span class="lesson-check">○</span> كتابة Tagline يُحفر في الذاكرة</li>
+<li><span class="lesson-check">○</span> بناء Messaging Framework كامل</li>
+</ul>
+<div class="module-meta">
+<span>⏱ 6 دروس</span>
+<span>🎯 3 مخرجات</span>
+</div>
+</div>
+</div>
+<!-- Module 6 -->
+<div class="module-card">
+<div class="module-header">
+<span class="module-number">وحدة 6</span>
+<h3 class="module-title">تصميم الهوية البصرية</h3>
+<div class="module-title-en">Visual Identity Design</div>
+</div>
+<div class="module-body">
+<ul class="module-lessons">
+<li><span class="lesson-check">○</span> عناصر الهوية البصرية الكاملة</li>
+<li><span class="lesson-check">○</span> نظرية الألوان في الأزياء</li>
+<li><span class="lesson-check">○</span> الخطوط (Typography)</li>
+<li><span class="lesson-check">○</span> توليد مفاهيم اللوغو بـ Midjourney</li>
+<li><span class="lesson-check">○</span> تنقية اللوغو وإعداده بـ Canva</li>
+<li><span class="lesson-check">○</span> بناء Brand Guidelines الكامل</li>
+<li><span class="lesson-check">○</span> إنشاء Brand Kit جاهز للاستخدام</li>
+</ul>
+<div class="module-meta">
+<span>⏱ 7 دروس</span>
+<span>🎯 4 مخرجات</span>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-2">
+<a class="btn btn-secondary" href="modules/module-1.html">استكشف كل الوحدات الـ 32</a>
+</div>
+</div>
+</section>
+<!-- Target Audience Section -->
+<section class="section section-dark">
+<div class="container">
+<div class="section-header">
+<span class="section-label" style="background:rgba(212,165,116,0.15); color:var(--sand);">للمين هذا الكورس؟</span>
+<h2 class="section-title text-white">صُمم خصيصاً ليك إذا كنت...</h2>
+</div>
+<div class="card-grid card-grid-4">
+<div class="card card-dark">
+<div class="card-icon">🎓</div>
+<h3 class="card-title">طالب أو خريج جديد</h3>
+<p class="card-text">عمرك 18-28، بدك مشروعك الخاص بس ما بتعرف من وين تبلش. هاد الكورس رح يعطيك الخارطة.</p>
+</div>
+<div class="card card-dark">
+<div class="card-icon">💼</div>
+<h3 class="card-title">شغال بوظيفة وبدك دخل إضافي</h3>
+<p class="card-text">عمرك 25-38، عندك وظيفة بس حابب تبني مشروع جانبي يمكن يصير مصدر دخل رئيسي.</p>
+</div>
+<div class="card card-dark">
+<div class="card-icon">🏪</div>
+<h3 class="card-title">صاحب مشروع ملابس قائم</h3>
+<p class="card-text">عندك براند صغير بس مبيعاتك راكدة. بدك تتعلم AI وتسويق عشان توسّع.</p>
+</div>
+<div class="card card-dark">
+<div class="card-icon">🎨</div>
+<h3 class="card-title">محب للستريتوير والموضة</h3>
+<p class="card-text">بتتابع براندات الملابس وبحلم يكون عندك براندك الخاص. ما عندك خبرة تصميم — وما بتحتاجها.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- What's Included Section -->
+<section class="section">
+<div class="container">
+<div class="section-header">
+<span class="section-label">المحتوى الكامل</span>
+<h2 class="section-title">شو بتحصل لما تنضم؟</h2>
+</div>
+<div class="card-grid card-grid-3">
+<div class="card">
+<div class="card-icon">📚</div>
+<h3 class="card-title">32 وحدة تدريبية</h3>
+<p class="card-text">150+ درس محتوى مرئي بجودة احترافية. شرح واضح، خطوات عملية، وتمارين بعد كل وحدة.</p>
+</div>
+<div class="card">
+<div class="card-icon">📋</div>
+<h3 class="card-title">7 قوالب جاهزة للتنزيل</h3>
+<p class="card-text">دفتر استراتيجية البراند، ورقة بناء القصة، إطار التسمية، مخطط المجموعة، حاسبة التكاليف، تقويم المحتوى، وقائمة الإطلاق.</p>
+</div>
+<div class="card">
+<div class="card-icon">🤖</div>
+<h3 class="card-title">مكتبة 50+ Prompt</h3>
+<p class="card-text">Prompts جاهزة للاستخدام على ChatGPT، Claude، Midjourney، Runway، وKling AI. نسخ ولصق واشتغل.</p>
+</div>
+<div class="card">
+<div class="card-icon">🎥</div>
+<h3 class="card-title">دليل إنتاج المحتوى المرئي</h3>
+<p class="card-text">من إعداد الاستوديو للمونتاج والترجمة. كل شيء تحتاجه لإنشاء محتوى بصري احترافي للبراند.</p>
+</div>
+<div class="card">
+<div class="card-icon">📖</div>
+<h3 class="card-title">سكريبتات كاملة للدروس</h3>
+<p class="card-text">كل درس مكتوب كامل. تقدر ترجع له وقت ما بدك، أو تطبق خطوة بخطوة.</p>
+</div>
+<div class="card">
+<div class="card-icon">🔄</div>
+<h3 class="card-title">تحديثات مستمرة</h3>
+<p class="card-text">أدوات AI بتتطور بسرعة. الكورس بتحدث باستمرار عشان تضل على اطلاع بأحدث الأدوات.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="section section-alt" id="pricing">
+<div class="container">
+<div class="section-header">
+<span class="section-label">عرض الإطلاق</span>
+<h2 class="section-title">اختر طريقة دخولك للأكاديمية</h2>
+<p class="section-desc">الدورة تُباع كمنتج رقمي كامل. بعد الشراء تحصل على وصول كامل لكل الوحدات والدروس والبرومبتات والموارد داخل المنصة.</p>
+</div>
+
+<div class="launch-timer-card" aria-live="polite">
+<div class="timer-copy">
+<span class="timer-badge">سعر الإطلاق لفترة محدودة</span>
+<h3>السعر الأساسي <del>$250</del> — الآن <strong>$50</strong> لمدة ساعة</h3>
+<p>العداد يبدأ من لحظة دخولك للصفحة. لا تضل تأجل فكرة البراند — ابدأ اليوم.</p>
+</div>
+<div class="countdown-grid" id="launchCountdown">
+<div class="countdown-box"><span id="countHours">01</span><small>ساعة</small></div>
+<div class="countdown-box"><span id="countMinutes">00</span><small>دقيقة</small></div>
+<div class="countdown-box"><span id="countSeconds">00</span><small>ثانية</small></div>
+</div>
+</div>
+
+<div class="pricing-grid pricing-grid-two">
+<div class="pricing-card featured">
+<div class="pricing-badge">Launch Offer</div>
+<div class="pricing-name">AI Fashion Academy — وصول كامل</div>
+<div class="price-meta"><span>السعر الأساسي</span><del>$250</del></div>
+<div class="pricing-price"><span class="currency">$</span><span class="amount">50</span><span class="period">/دفعة واحدة</span></div>
+<p class="pricing-note">سعر الإطلاق الحالي لمدة ساعة من دخول الصفحة.</p>
+<ul class="pricing-features">
+<li class="included">كل المحتوى الكامل داخل المنصة</li>
+<li class="included">32 وحدة تعليمية و177 درس مكتوب</li>
+<li class="included">مكتبة الـ Prompts</li>
+<li class="included">أوراق العمل والموارد</li>
+<li class="included">وصول كامل بعد تسجيل الدخول</li>
+<li class="included">دعم عبر البريد الإلكتروني فقط</li>
+</ul>
+<!-- CHECKOUT LINK GOES HERE -->
+<!-- REPLACE WITH LEMON SQUEEZY CHECKOUT URL -->
+<a class="btn btn-primary btn-full checkout-btn" href="payment.html">اشترِ الدورة الآن — $50</a>
+<div class="checkout-placeholder"></div>
+</div>
+
+<div class="pricing-card vip-card">
+<div class="pricing-badge vip-badge">VIP</div>
+<div class="pricing-name">باقة VIP — وصول كامل + ملفات إضافية</div>
+<div class="pricing-price"><span class="currency">$</span><span class="amount">90</span><span class="period">/دفعة واحدة</span></div>
+<p class="pricing-note">للي بده يدخل بقوة ومعه باقة أصول وقوالب جاهزة تساعده يطلق أسرع.</p>
+<ul class="pricing-features">
+<li class="included">كل ما في باقة الـ $50</li>
+<li class="included">VIP Prompt Pack متقدم</li>
+<li class="included">Launch Kit إضافي للإطلاق</li>
+<li class="included">Brand Templates إضافية</li>
+<li class="included">Content Calendar جاهز</li>
+<li class="included">أولوية في الدعم عبر الإيميل</li>
+<li class="included">ملف معلومات عن مصانع للغير للملابس في الاردن ومصر </li>
+
+</ul>
+<!-- VIP CHECKOUT LINK GOES HERE -->
+<!-- REPLACE WITH LEMON SQUEEZY VIP CHECKOUT URL -->
+<a class="btn btn-primary btn-full checkout-btn" href="payment.html"> VIP — $90 دولار</a><div class="checkout-placeholder"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Guarantee Section -->
+<section class="section section-sand">
+<div class="container">
+<div class="section-header">
+<span class="section-label">ضمان</span>
+<h2 class="section-title">ضمان 14 يوم — بدون أسئلة</h2>
+</div>
+<div style="max-width:700px; margin:0 auto; text-align:center;">
+<p style="font-size:1.15rem; color:var(--navy-light); margin-bottom:1.5rem;">
+        إذا انضميت للكورس، نفّذت الواجبات، وما شفت قيمة حقيقية خلال 14 يوم...
+      </p>
+<p style="font-size:1.5rem; font-weight:800; color:var(--cyan-dark); margin-bottom:1.5rem;">
+        بنعيد لك مالك كامل. بدون أسئلة. بدون تعقيد.
+      </p>
+<p style="color:var(--stone-dark);">
+        لأننا واثقين تماماً: اللي بيطبّق، بيحقق.
+      </p>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="section" id="faq">
+<div class="container">
+<div class="section-header">
+<span class="section-label">الأسئلة</span>
+<h2 class="section-title">الأسئلة الشائعة</h2>
+</div>
+<div class="faq-list">
+<div class="faq-item">
+<div class="faq-question">هل أحتاج خبرة في التصميم أو التقنية؟</div>
+<div class="faq-answer">
+<p>لا نهائياً. الكورس مصمم للمبتدئين بالكامل. نبدأ من الصفر مع كل أداة. إذا استطعت استخدام واتساب وإنستغرام، ستستطيع استخدام كل أدوات الكورس. الذكاء الاصطناعي هو اللي بيصمم ويكتب — أنت فقط بتصف شو بدك.</p>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">شو الميزانية الابتدائية المطلوبة؟</div>
+<div class="faq-answer">
+<p>تقدر تبدأ بأقل من 200 دولار بنموذج Print-on-Demand (ما في مخزون، ما في مخاطر). للخيارات بمخزون: 500-1500 دولار. اشتراكات الأدوات (Midjourney, ChatGPT, Shopify) بتتراوح بين 10-30 دولار شهرياً للأداة.</p>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">هل الكورس مناسب إذا أنا شغال بوظيفة؟</div>
+<div class="faq-answer">
+<p>نعم تماماً. الكورس مصمم لـ 4-6 ساعات أسبوعياً. كثير من طلابنا بيبنوا براندهم بجانب وظائفهم. المحتوى مسجّل — بتشوفه بوقت اللي بناسبك.</p>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">هل الأدوات المدفوعة مشمولة بالسعر؟</div>
+<div class="faq-answer">
+<p>الكورس بيشرحك الأدوات وكيف تستخدمها، بس اشتراكات الأدوات (Midjourney, Shopify, إلخ) عليك. المجموع الكلي للأدوات الأساسية ما بيتجاوز 100 دولار شهرياً. وأغلبها فيها نسخ مجانية للبدء.</p>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">هل يصلح للسوق الأردني والعربي؟</div>
+<div class="faq-answer">
+<p>نعم. المنهج مُكيَّف للسوق العربي الكامل مع أمثلة من الأردن، السعودية، مصر، والإمارات. بنشرح بوابات الدفع العربية (Tap Payments, HyperPay) وشركات الشحن المحلية.</p>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">شو بيصير لو ما نجحت؟</div>
+<div class="faq-answer">
+<p>عندك ضمان استرداد كامل لمدة 14 يوم. إذا أكملت الوحدات الأولى ونفّذت الواجبات وما لقيت القيمة — بنعيد لك كل ريال. بس صدقني: اللي بيطبّق ما بيفشل. الفشل الحقيقي هو ما تبدأ.</p>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">كيف بتوصل للمحتوى بعد الشراء؟</div>
+<div class="faq-answer">
+<p>مباشرة بعد الدفع، بتستلم إيميل فيه رابط الوصول. بتسجل دخولك للمنصة وبتشوف كل الوحدات والدروس. المحتوى كامل مش مقسّم — بتدخل وبتشوف اللي بدك إياه فوراً.</p>
+</div>
+</div>
+<div class="faq-item">
+<div class="faq-question">هل في دعم إذا واجهتني مشكلة؟</div>
+<div class="faq-answer">
+<p>باقة الاحترافي والVIP بتشمل وصول للمجتمع الخاص (تلغرام/واتساب) وجلسات أسئلة وأجوبة. حتى باقة المبتدئ فيها دعم عبر الإيميل للأسئلة التقنية.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="section section-dark">
+<div class="container">
+<div style="text-align:center; max-width:700px; margin:0 auto;">
+<h2 class="section-title text-white" style="font-size:2.2rem; margin-bottom:1.5rem;">
+        الاختيار أمامك
+      </h2>
+<p style="color:var(--stone); font-size:1.1rem; margin-bottom:2rem;">
+        الخيار الأول: بتسكر هاي الصفحة، بترجع لحياتك المعتادة، وبعد سنة بتتساءل "ماذا لو جربت؟"
+        <br/><br/>
+        الخيار الثاني: بتنضم الآن، بتبني براندك خلال 90 يوم، وبعد سنة أنت صاحب مشروع حقيقي.
+      </p>
+<p style="color:var(--sand); font-size:1.2rem; font-weight:700; margin-bottom:2rem;">
+        الاختيار لك.
+      </p>
+<div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+<!-- CHECKOUT LINK GOES HERE -->
+<a class="btn btn-primary btn-full checkout-btn" href="payment.html">احجز مقعدك الآن</a>
+<!-- AFTER PAYMENT REDIRECT TO thank-you.html OR MEMBERSTACK SIGNUP -->
+</div>
+<p style="color:var(--stone-dark); font-size:0.85rem; margin-top:1.5rem;">
+        P.S. كل طالب بيبدأ بنفس نقطة الصفر. الفرق الوحيد: من قرر إنه يبدأ.
+      </p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<div class="logo" style="margin-bottom:1rem;">
+<div class="logo-icon">AF</div>
+<div class="logo-text">أكاديمية AI Fashion</div>
+</div>
+<p>الكورس العربي الأول والوحيد المتكامل لبناء براند ملابس احترافي باستخدام الذكاء الاصطناعي. من الصفر للإطلاق في 90 يوم.</p>
+</div>
+<div>
+<h4 class="footer-title">الكورس</h4>
+<ul class="footer-links">
+<li><a href="roadmap.html">خريطة التعلم</a></li>
+<li><a href="modules/module-1.html">الوحدات</a></li>
+<li><a href="prompt-library.html">مكتبة الـ Prompts</a></li>
+<li><a href="worksheets.html">أوراق العمل</a></li>
+<li><a href="downloads.html">التحميلات</a></li>
+</ul>
+</div>
+<div>
+<h4 class="footer-title">الدعم</h4>
+<ul class="footer-links">
+<li><a href="#faq">الأسئلة الشائعة</a></li>
+<li><a href="login.html">تسجيل الدخول</a></li>
+<li><a href="mailto:support@aifashion.academy">support@aifashion.academy</a></li>
+</ul>
+</div>
+<div class="footer-links">
+  <h4>قانوني</h4>
+  <a href="refund-policy.html">سياسة الاسترداد</a>
+  <a href="privacy-policy.html">سياسة الخصوصية</a>
+  <a href="terms-of-use.html">شروط الاستخدام</a>
+</div>
+<div class="footer-bottom">
+<p>© 2024 أكاديمية AI Fashion. جميع الحقوق محفوظة.</p>
+<p>بنى بشغف للمبدعين الأردنيين والعرب 🚀</p>
+</div>
+</div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/progress.js"></script>
+
+<script>
+(function(){
+  var KEY = 'aifa_launch_deadline_v1';
+  var HOUR = 60 * 60 * 1000;
+  var now = Date.now();
+  var deadline = Number(localStorage.getItem(KEY));
+  if (!deadline || deadline < now) {
+    deadline = now + HOUR;
+    localStorage.setItem(KEY, String(deadline));
+  }
+  function pad(n){ return String(n).padStart(2,'0'); }
+  function tick(){
+    var remaining = Math.max(0, deadline - Date.now());
+    var totalSeconds = Math.floor(remaining / 1000);
+    var hours = Math.floor(totalSeconds / 3600);
+    var minutes = Math.floor((totalSeconds % 3600) / 60);
+    var seconds = totalSeconds % 60;
+    var h = document.getElementById('countHours');
+    var m = document.getElementById('countMinutes');
+    var s = document.getElementById('countSeconds');
+    if(h) h.textContent = pad(hours);
+    if(m) m.textContent = pad(minutes);
+    if(s) s.textContent = pad(seconds);
+  }
+  tick();
+  setInterval(tick, 1000);
+})();
+</script>
+
+</body>
+</html>

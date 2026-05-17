@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 620" width="1400" height="620">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080808"/>
+      <stop offset="100%" style="stop-color:#0d0d0d"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E4B832"/>
+      <stop offset="100%" style="stop-color:#C9A017"/>
+    </linearGradient>
+    <linearGradient id="pathLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C9A017;stop-opacity:0.1"/>
+      <stop offset="50%" style="stop-color:#C9A017;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#E4B832;stop-opacity:0.1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="620" fill="url(#bg)"/>
+  <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <circle cx="20" cy="20" r="0.5" fill="#C9A017" opacity="0.1"/>
+  </pattern>
+  <rect width="1400" height="620" fill="url(#dots)"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1400" height="56" fill="#060606"/>
+  <rect x="0" y="55" width="1400" height="1" fill="#1e1e1e"/>
+  <rect x="40" y="14" width="26" height="26" rx="5" fill="url(#gold)"/>
+  <text x="53" y="31" font-family="Arial,sans-serif" font-size="11" font-weight="900" fill="#000" text-anchor="middle">AI</text>
+  <text x="78" y="26" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#fff">AI FASHION ACADEMY</text>
+  <text x="78" y="41" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" letter-spacing="2">CUSTOMER JOURNEY MAP</text>
+
+  <!-- Title -->
+  <text x="700" y="90" font-family="Georgia,serif" font-size="20" font-weight="900" fill="#fff" text-anchor="middle">رحلة العميل الكاملة</text>
+  <text x="700" y="108" font-family="Arial,sans-serif" font-size="11" fill="#666" text-anchor="middle">من أول مشاهدة إعلان — حتى يصبح سفيراً للبراند</text>
+
+  <!-- Journey path (curved) -->
+  <path d="M 120,320 C 280,260 380,380 560,300 C 720,230 820,370 1000,290 C 1160,220 1240,340 1380,280"
+        fill="none" stroke="url(#pathLine)" stroke-width="3" stroke-dasharray="8,4"/>
+
+  <!-- STAGE NODES -->
+  <!-- Each node: circle + label above + details below -->
+
+  <!-- Stage 1: Discovers -->
+  <circle cx="120" cy="320" r="36" fill="#141414" stroke="#C9A017" stroke-width="2"/>
+  <text x="120" y="315" font-family="Arial,sans-serif" font-size="18" text-anchor="middle">👀</text>
+  <text x="120" y="333" font-family="Arial,sans-serif" font-size="8" fill="#C9A017" text-anchor="middle" font-weight="700">01</text>
+  <!-- Label above -->
+  <rect x="50" y="240" width="140" height="50" rx="6" fill="#0f0f0f" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="120" y="260" font-family="Arial,sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">يكتشف</text>
+  <text x="120" y="275" font-family="Arial,sans-serif" font-size="8.5" fill="#888" text-anchor="middle">DISCOVERS</text>
+  <text x="120" y="287" font-family="Arial,sans-serif" font-size="8" fill="#666" text-anchor="middle">Reel / TikTok</text>
+  <!-- Detail below -->
+  <rect x="50" y="368" width="140" height="80" rx="6" fill="#0d0d0d" stroke="#1e1e1e" stroke-width="1"/>
+  <text x="120" y="385" font-family="Arial,sans-serif" font-size="8" fill="#C9A017" text-anchor="middle" font-weight="700">الشعور</text>
+  <text x="120" y="399" font-family="Arial,sans-serif" font-size="8" fill="#777" text-anchor="middle">"مثير للاهتمام"</text>
+  <text x="120" y="414" font-family="Arial,sans-serif" font-size="8" fill="#555" text-anchor="middle">يشاهد 70%+ من</text>
+  <text x="120" y="426" font-family="Arial,sans-serif" font-size="8" fill="#555" text-anchor="middle">المحتوى المرئي</text>
+  <text x="120" y="440" font-family="Arial,sans-serif" font-size="8" fill="#444" text-anchor="middle">Retention &gt;70%</text>
+
+  <!-- Stage 2: Curious -->
+  <circle cx="340" cy="270" r="36" fill="#141414" stroke="#C9A017" stroke-width="2"/>
+  <text x="340" y="265" font-family="Arial,sans-serif" font-size="18" text-anchor="middle">🤔</text>
+  <text x="340" y="283" font-family="Arial,sans-serif" font-size="8" fill="#C9A017" text-anchor="middle" font-weight="700">02</text>
+  <rect x="270" y="190" width="140" height="50" rx="6" fill="#0f0f0f" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="340" y="210" font-family="Arial,sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">يتساءل</text>
+  <text x="340" y="225" font-family="Arial,sans-serif" font-size="8.5" fill="#888" text-anchor="middle">CURIOUS</text>
+  <text x="340" y="237" font-family="Arial,sans-serif" font-size="8" fill="#666" text-anchor="middle">يزور الحساب</text>
+  <rect x="270" y="318" width="140" height="80" rx="6" fill="#0d0d0d" stroke="#1e1e1e" stroke-width="1"/>
+  <text x="340" y="335" font-family="Arial,sans-serif" font-size="8" fill="#C9A017" text-anchor="middle" font-weight="700">الشعور</text>
+  <text x="340" y="349" font-family="Arial,sans-serif" font-size="8" fill="#777" text-anchor="middle">"هل هذا حقيقي؟"</text>
+  <text x="340" y="364" font-family="Arial,sans-serif" font-size="8" fill="#555" text-anchor="middle">يكتب "براند"</text>
+  <text x="340" y="378" font-family="Arial,sans-serif" font-size="8" fill="#555" text-anchor="middle">في التعليقات</text>
+  <text x="340" y="390" font-family="Arial,sans-serif" font-size="8" fill="#444" text-anchor="middle">DM Trigger</text>
+
+  <!-- Stage 3: Engaged -->
+  <circle cx="560" cy="300" r="36" fill="#141414" stroke="#C9A017" stroke-width="2"/>
+  <text x="560" y="295" font-family="Arial,sans-serif" font-size="18" text-anchor="middle">💬</text>
+  <text x="560" y="313" font-family="Arial,sans-serif" font-size="8" fill="#C9A017" text-anchor="middle" font-weight="700">03</text>
+  <rect x="490" y="220" width="140" height="50" rx="6" fill="#0f0f0f" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="560" y="240" font-family="Arial,sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">يتفاعل</text>
+  <text x="560" y="255" font-family="Arial,sans-serif" font-size="8.5" fill="#888" text-anchor="middle">ENGAGED</text>
+  <text x="560" y="267" font-family="Arial,sans-serif" font-size="8" fill="#666" text-anchor="middle">يستقبل Auto DM</text>
+  <rect x="490" y="348" width="140" height="80" rx="6" fill="#0d0d0d" stroke="#1e1e1e" stroke-width="1"/>
+  <text x="560" y="365" font-family="Arial,sans-serif" font-size="8" fill="#C9A017" text-anchor="middle" font-weight="700">الشعور</text>
+  <text x="560" y="379" font-family="Arial,sans-serif" font-size="8" fill="#777" text-anchor="middle">"رد سريع! ممتاز"</text>
+  <text x="560" y="394" font-family="Arial,sans-serif" font-size="8" fill="#555" text-anchor="middle">يزور Landing Page</text>
+  <text x="560" y="408" font-family="Arial,sans-serif" font-size="8" fill="#555" text-anchor="middle">يقرأ التفاصيل</text>
+  <text x="560" y="420" font-family="Arial,sans-serif" font-size="8" fill="#444" text-anchor="middle">Page Visit = 2+ min</text>
+
+  <!-- Stage 4: Considers -->
+  <circle cx="780" cy="250" r="36" fill="#161410" stroke="#E4B832" stroke-width="2.5"/>
+  <text x="780" y="245" font-family="Arial,sans-serif" font-size="18" text-anchor="middle">🧐</text>
+  <text x="780" y="263" font-family="Arial,sans-serif" font-size="8" fill="#E4B832" text-anchor="middle" font-weight="700">04</text>
+  <rect x="710" y="170" width="140" height="50" rx="6" fill="#0f0f0f" stroke="#C9A017" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="780" y="190" font-family="Arial,sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">يقيّم</text>
+  <text x="780" y="205" font-family="Arial,sans-serif" font-size="8.5" fill="#888" text-anchor="middle">CONSIDERS</text>
+  <text x="780" y="217" font-family="Arial,sans-serif" font-size="8" fill="#666" text-anchor="middle">يقرأ Landing Page</text>
+  <rect x="710" y="298" width="140" height="80" rx="6" fill="#111008" stroke="#C9A017" stroke-width="1" stroke-opacity="0.2"/>
+  <text x="780" y="315" font-family="Arial,sans-serif" font-size="8" fill="#C9A017" text-anchor="middle" font-weight="700">الشعور</text>
+  <text x="780" y="329" font-family="Arial,sans-serif" font-size="8" fill="#C9A017" text-anchor="middle">"يبدو جدياً..."</text>
+  <text x="780" y="344" font-family="Arial,sans-serif" font-size="8" fill="#888" text-anchor="middle">يطرح أسئلة</text>
+  <text x="780" y="358" font-family="Arial,sans-serif" font-size="8" fill="#888" text-anchor="middle">"كم السعر؟"</text>
+  <text x="780" y="370" font-family="Arial,sans-serif" font-size="8" fill="#666" text-anchor="middle">Objection Handling</text>
+
+  <!-- Stage 5: Buys -->
+  <circle cx="1000" cy="290" r="40" fill="rgba(201,160,23,0.12)" stroke="#C9A017" stroke-width="3"/>
+  <text x="1000" y="285" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">💳</text>
+  <text x="1000" y="307" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" text-anchor="middle" font-weight="700">05</text>
+  <rect x="930" y="210" width="140" height="50" rx="6" fill="rgba(201,160,23,0.08)" stroke="#C9A017" stroke-width="1"/>
+  <text x="1000" y="230" font-family="Arial,sans-serif" font-size="11" fill="#C9A017" text-anchor="middle" font-weight="700">يشتري!</text>
+  <text x="1000" y="245" font-family="Arial,sans-serif" font-size="8.5" fill="#888" text-anchor="middle">PURCHASES</text>
+  <text x="1000" y="257" font-family="Arial,sans-serif" font-size="8" fill="#666" text-anchor="middle">Checkout → $50</text>
+  <rect x="930" y="342" width="140" height="80" rx="6" fill="rgba(201,160,23,0.06)" stroke="#C9A017" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="1000" y="359" font-family="Arial,sans-serif" font-size="8" fill="#C9A017" text-anchor="middle" font-weight="700">الشعور</text>
+  <text x="1000" y="373" font-family="Arial,sans-serif" font-size="9" fill="#E4B832" text-anchor="middle">"ممتاز! استثمرت"</text>
+  <text x="1000" y="388" font-family="Arial,sans-serif" font-size="8" fill="#888" text-anchor="middle">Welcome Email</text>
+  <text x="1000" y="402" font-family="Arial,sans-serif" font-size="8" fill="#888" text-anchor="middle">Instant Access</text>
+  <text x="1000" y="414" font-family="Arial,sans-serif" font-size="8" fill="#666" text-anchor="middle">Conversion ✓</text>
+
+  <!-- Stage 6: Completes -->
+  <circle cx="1200" cy="250" r="36" fill="#0a130a" stroke="#22c55e" stroke-width="2"/>
+  <text x="1200" y="245" font-family="Arial,sans-serif" font-size="18" text-anchor="middle">🏆</text>
+  <text x="1200" y="263" font-family="Arial,sans-serif" font-size="8" fill="#22c55e" text-anchor="middle" font-weight="700">06</text>
+  <rect x="1130" y="170" width="140" height="50" rx="6" fill="#0a130a" stroke="#22c55e" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="1200" y="190" font-family="Arial,sans-serif" font-size="10" fill="#4ade80" text-anchor="middle" font-weight="700">يُكمل ويُطلق</text>
+  <text x="1200" y="205" font-family="Arial,sans-serif" font-size="8.5" fill="#888" text-anchor="middle">GRADUATES</text>
+  <text x="1200" y="217" font-family="Arial,sans-serif" font-size="8" fill="#666" text-anchor="middle">براند + أول مبيعة</text>
+  <rect x="1130" y="298" width="140" height="80" rx="6" fill="#0a130a" stroke="#22c55e" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="1200" y="315" font-family="Arial,sans-serif" font-size="8" fill="#4ade80" text-anchor="middle" font-weight="700">الشعور</text>
+  <text x="1200" y="329" font-family="Arial,sans-serif" font-size="9" fill="#4ade80" text-anchor="middle">"نجحت! 🎉"</text>
+  <text x="1200" y="344" font-family="Arial,sans-serif" font-size="8" fill="#888" text-anchor="middle">يوصي بالكورس</text>
+  <text x="1200" y="358" font-family="Arial,sans-serif" font-size="8" fill="#888" text-anchor="middle">يصبح Affiliate</text>
+  <text x="1200" y="370" font-family="Arial,sans-serif" font-size="8" fill="#555" text-anchor="middle">Testimonial + UGC</text>
+
+  <!-- TOUCHPOINTS ROW -->
+  <rect x="40" y="465" width="1320" height="110" rx="10" fill="#0d0d0d" stroke="#1e1e1e" stroke-width="1"/>
+  <rect x="40" y="465" width="1320" height="3" rx="2 2 0 0" fill="url(#gold)"/>
+  <text x="700" y="488" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" text-anchor="middle" font-weight="700" letter-spacing="2">TOUCHPOINTS — نقاط التواصل</text>
+
+  <!-- Touchpoints -->
+  <g font-family="Arial,sans-serif">
+    <rect x="60" y="498" width="100" height="60" rx="6" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="110" y="518" font-size="8" fill="#888" text-anchor="middle">يوم 0</text>
+    <text x="110" y="533" font-size="9" fill="#fff" text-anchor="middle">Instagram Reel</text>
+    <text x="110" y="547" font-size="8" fill="#666" text-anchor="middle">30 ث · Hook قوي</text>
+
+    <rect x="175" y="498" width="100" height="60" rx="6" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="225" y="518" font-size="8" fill="#888" text-anchor="middle">يوم 0</text>
+    <text x="225" y="533" font-size="9" fill="#fff" text-anchor="middle">Auto DM Reply</text>
+    <text x="225" y="547" font-size="8" fill="#666" text-anchor="middle">فوري · شخصي</text>
+
+    <rect x="290" y="498" width="100" height="60" rx="6" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="340" y="518" font-size="8" fill="#888" text-anchor="middle">يوم 0</text>
+    <text x="340" y="533" font-size="9" fill="#fff" text-anchor="middle">Landing Page</text>
+    <text x="340" y="547" font-size="8" fill="#666" text-anchor="middle">Countdown · Proof</text>
+
+    <rect x="405" y="498" width="100" height="60" rx="6" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="455" y="518" font-size="8" fill="#888" text-anchor="middle">يوم 0</text>
+    <text x="455" y="533" font-size="9" fill="#fff" text-anchor="middle">Checkout</text>
+    <text x="455" y="547" font-size="8" fill="#666" text-anchor="middle">Simple · Fast</text>
+
+    <rect x="520" y="498" width="100" height="60" rx="6" fill="rgba(201,160,23,0.06)" stroke="rgba(201,160,23,0.2)" stroke-width="1"/>
+    <text x="570" y="518" font-size="8" fill="#C9A017" text-anchor="middle">يوم 0</text>
+    <text x="570" y="533" font-size="9" fill="#C9A017" text-anchor="middle">Welcome Email</text>
+    <text x="570" y="547" font-size="8" fill="#888" text-anchor="middle">Instant + Warm</text>
+
+    <rect x="635" y="498" width="100" height="60" rx="6" fill="rgba(201,160,23,0.06)" stroke="rgba(201,160,23,0.2)" stroke-width="1"/>
+    <text x="685" y="518" font-size="8" fill="#C9A017" text-anchor="middle">يوم 2</text>
+    <text x="685" y="533" font-size="9" fill="#C9A017" text-anchor="middle">Email #2</text>
+    <text x="685" y="547" font-size="8" fill="#888" text-anchor="middle">Value + Story</text>
+
+    <rect x="750" y="498" width="100" height="60" rx="6" fill="rgba(201,160,23,0.06)" stroke="rgba(201,160,23,0.2)" stroke-width="1"/>
+    <text x="800" y="518" font-size="8" fill="#C9A017" text-anchor="middle">يوم 7</text>
+    <text x="800" y="533" font-size="9" fill="#C9A017" text-anchor="middle">Check-in Email</text>
+    <text x="800" y="547" font-size="8" fill="#888" text-anchor="middle">Progress + Tips</text>
+
+    <rect x="865" y="498" width="100" height="60" rx="6" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="915" y="518" font-size="8" fill="#888" text-anchor="middle">يوم 30</text>
+    <text x="915" y="533" font-size="9" fill="#fff" text-anchor="middle">Mid Survey</text>
+    <text x="915" y="547" font-size="8" fill="#666" text-anchor="middle">Feedback + Help</text>
+
+    <rect x="980" y="498" width="100" height="60" rx="6" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="1030" y="518" font-size="8" fill="#888" text-anchor="middle">يوم 90</text>
+    <text x="1030" y="533" font-size="9" fill="#fff" text-anchor="middle">Graduation</text>
+    <text x="1030" y="547" font-size="8" fill="#666" text-anchor="middle">Certificate + Badge</text>
+
+    <rect x="1095" y="498" width="100" height="60" rx="6" fill="#0a130a" stroke="#22c55e" stroke-width="1" stroke-opacity="0.5"/>
+    <text x="1145" y="518" font-size="8" fill="#4ade80" text-anchor="middle">بعد</text>
+    <text x="1145" y="533" font-size="9" fill="#4ade80" text-anchor="middle">Affiliate Invite</text>
+    <text x="1145" y="547" font-size="8" fill="#666" text-anchor="middle">30% Commission</text>
+
+    <rect x="1210" y="498" width="130" height="60" rx="6" fill="#0a130a" stroke="#22c55e" stroke-width="1" stroke-opacity="0.5"/>
+    <text x="1275" y="518" font-size="8" fill="#4ade80" text-anchor="middle">دائم</text>
+    <text x="1275" y="533" font-size="9" fill="#4ade80" text-anchor="middle">Testimonial + UGC</text>
+    <text x="1275" y="547" font-size="8" fill="#666" text-anchor="middle">Word of Mouth</text>
+  </g>
+
+  <!-- Footer -->
+  <rect x="0" y="592" width="1400" height="28" fill="#050505"/>
+  <text x="40" y="610" font-family="Arial,sans-serif" font-size="9" fill="#333">AI Fashion Academy — Customer Journey Map</text>
+  <text x="1360" y="610" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" text-anchor="end">© 2025</text>
+</svg>

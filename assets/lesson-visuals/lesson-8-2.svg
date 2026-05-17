@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-label="بناء Mood Board احترافي">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#050505"/><stop offset="1" stop-color="#1d1710"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1c66b"/><stop offset="1" stop-color="#b08d5f"/></linearGradient>
+  </defs>
+  <rect width="1000" height="560" rx="36" fill="url(#bg)"/>
+  <circle cx="140" cy="90" r="155" fill="#8f1d1f" opacity="0.14"/>
+  <circle cx="865" cy="450" r="210" fill="#d4a574" opacity="0.12"/>
+  <rect x="55" y="55" width="890" height="450" rx="28" fill="rgba(255,255,255,0.04)" stroke="#d4a574" stroke-opacity="0.32"/>
+  <text x="118" y="145" text-anchor="middle" font-size="58">🧩</text>
+  <text x="875" y="105" text-anchor="middle" font-family="Tahoma,Arial" font-size="18" fill="#f1c66b" font-weight="700">08.02</text>
+  <text x="500" y="250" text-anchor="middle" font-family="Tahoma,Arial" font-size="38" fill="#f5f1e8" font-weight="800" direction="rtl">بناء Mood Board احترافي</text>
+  <text x="500" y="315" text-anchor="middle" font-family="Tahoma,Arial" font-size="22" fill="#b8b1a7" direction="rtl">تطوير المجموعة</text>
+  <g transform="translate(300,382)">
+    <rect width="400" height="54" rx="27" fill="url(#gold)"/>
+    <text x="200" y="35" text-anchor="middle" font-family="Tahoma,Arial" font-size="19" fill="#050505" font-weight="800" direction="rtl">شرح + تطبيق + تمرين</text>
+  </g>
+</svg>

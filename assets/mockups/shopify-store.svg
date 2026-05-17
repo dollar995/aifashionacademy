@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" width="1200" height="860">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#070707"/><stop offset="100%" style="stop-color:#0d0d0d"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E4B832"/><stop offset="100%" style="stop-color:#C9A017"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f8f8"/><stop offset="100%" style="stop-color:#f0f0f0"/>
+    </linearGradient>
+    <linearGradient id="hero" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a"/><stop offset="100%" style="stop-color:#0d0d0d"/>
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C41010"/><stop offset="100%" style="stop-color:#a00d0d"/>
+    </linearGradient>
+    <linearGradient id="goldBtn" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C9A017"/><stop offset="100%" style="stop-color:#a07c10"/>
+    </linearGradient>
+    <clipPath id="screenClip">
+      <rect x="160" y="118" width="880" height="580" rx="4"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="860" fill="url(#bg)"/>
+  <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <circle cx="20" cy="20" r="0.5" fill="#C9A017" opacity="0.07"/>
+  </pattern>
+  <rect width="1200" height="860" fill="url(#dots)"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="56" fill="#060606"/>
+  <rect x="0" y="55" width="1200" height="1" fill="#1e1e1e"/>
+  <rect x="40" y="14" width="26" height="26" rx="5" fill="url(#gold)"/>
+  <text x="53" y="31" font-family="Arial,sans-serif" font-size="11" font-weight="900" fill="#000" text-anchor="middle">AI</text>
+  <text x="78" y="26" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#fff">AI FASHION ACADEMY</text>
+  <text x="78" y="41" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" letter-spacing="2">SHOPIFY STORE MOCKUP</text>
+
+  <!-- Title -->
+  <text x="600" y="90" font-family="Georgia,serif" font-size="20" font-weight="900" fill="#fff" text-anchor="middle">نموذج متجر Shopify الاحترافي</text>
+  <text x="600" y="108" font-family="Arial,sans-serif" font-size="11" fill="#666" text-anchor="middle">هذا ما سيبنيه الطالب بنهاية الوحدة 11</text>
+
+  <!-- ── BROWSER CHROME ── -->
+  <rect x="140" y="100" width="920" height="620" rx="12" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1.5"/>
+  <!-- Browser top bar -->
+  <rect x="140" y="100" width="920" height="38" rx="12 12 0 0" fill="#222"/>
+  <!-- Traffic lights -->
+  <circle cx="170" cy="119" r="6" fill="#ff5f57"/>
+  <circle cx="190" cy="119" r="6" fill="#febc2e"/>
+  <circle cx="210" cy="119" r="6" fill="#28c840"/>
+  <!-- URL bar -->
+  <rect x="240" y="109" width="600" height="20" rx="10" fill="#2a2a2a"/>
+  <text x="280" y="123" font-family="monospace" font-size="10" fill="#888">🔒 www.yourbrand.myshopify.com</text>
+  <!-- Bookmark icons -->
+  <text x="858" y="123" font-family="Arial,sans-serif" font-size="12" fill="#555">⋯</text>
+
+  <!-- ── STORE CONTENT (clipped) ── -->
+  <g clip-path="url(#screenClip)">
+    <rect x="160" y="118" width="880" height="580" fill="url(#screen)"/>
+
+    <!-- STORE NAV -->
+    <rect x="160" y="118" width="880" height="44" fill="#0d0d0d"/>
+    <!-- Logo -->
+    <rect x="180" y="126" width="20" height="20" rx="4" fill="url(#gold)"/>
+    <text x="190" y="140" font-family="Arial,sans-serif" font-size="8" font-weight="900" fill="#000" text-anchor="middle">AI</text>
+    <text x="208" y="136" font-family="Arial,sans-serif" font-size="11" font-weight="800" fill="#fff">BRAND NAME</text>
+    <!-- Nav links -->
+    <text x="400" y="136" font-family="Arial,sans-serif" font-size="9" fill="#888">المجموعات</text>
+    <text x="480" y="136" font-family="Arial,sans-serif" font-size="9" fill="#888">عن البراند</text>
+    <text x="560" y="136" font-family="Arial,sans-serif" font-size="9" fill="#888">تواصل</text>
+    <!-- Cart -->
+    <rect x="930" y="126" width="80" height="22" rx="5" fill="url(#btnGrad)"/>
+    <text x="970" y="141" font-family="Arial,sans-serif" font-size="9" fill="#fff" text-anchor="middle" font-weight="700">السلة 🛒</text>
+
+    <!-- HERO SECTION -->
+    <rect x="160" y="162" width="880" height="200" fill="url(#hero)"/>
+    <!-- Hero content -->
+    <rect x="190" y="182" width="3" height="60" rx="2" fill="url(#gold)"/>
+    <text x="204" y="202" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" letter-spacing="2" font-weight="700">NEW COLLECTION — 2025</text>
+    <text x="204" y="225" font-family="Georgia,serif" font-size="24" font-weight="900" fill="#fff">ارتدِ هويتك</text>
+    <text x="204" y="247" font-family="Georgia,serif" font-size="24" font-weight="900" fill="#C9A017">Wear Your Identity</text>
+    <text x="204" y="268" font-family="Arial,sans-serif" font-size="10" fill="#888">مجموعة حصرية مصممة بالذكاء الاصطناعي</text>
+    <!-- Hero CTA -->
+    <rect x="204" y="278" width="120" height="32" rx="6" fill="url(#btnGrad)"/>
+    <text x="264" y="298" font-family="Arial,sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">تسوّق الآن</text>
+    <rect x="336" y="278" width="100" height="32" rx="6" fill="none" stroke="#C9A017" stroke-width="1"/>
+    <text x="386" y="298" font-family="Arial,sans-serif" font-size="10" fill="#C9A017" text-anchor="middle">اكتشف المجموعة</text>
+    <!-- Hero image placeholder -->
+    <rect x="800" y="162" width="240" height="200" fill="#141414"/>
+    <!-- Abstract hoodie shape -->
+    <ellipse cx="920" cy="220" rx="40" ry="48" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+    <rect x="890" y="268" width="60" height="70" rx="4" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="920" y="296" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" text-anchor="middle" opacity="0.5">براند</text>
+    <!-- Gradient overlay on hero -->
+    <rect x="160" y="162" width="880" height="200" fill="url(#hero)" opacity="0.1"/>
+
+    <!-- ANNOUNCEMENT BAR -->
+    <rect x="160" y="362" width="880" height="24" fill="#C9A017" opacity="0.9"/>
+    <text x="600" y="378" font-family="Arial,sans-serif" font-size="9" fill="#000" text-anchor="middle" font-weight="700">🔥 شحن مجاني للطلبات فوق $60 — العرض ينتهي قريباً</text>
+
+    <!-- PRODUCTS GRID -->
+    <rect x="160" y="386" width="880" height="20" fill="#f8f8f8"/>
+    <text x="600" y="401" font-family="Arial,sans-serif" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="800">المجموعة الأولى</text>
+
+    <!-- Product card 1 -->
+    <rect x="172" y="412" width="192" height="240" rx="8" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
+    <rect x="172" y="412" width="192" height="160" rx="8 8 0 0" fill="#1a1a1a"/>
+    <ellipse cx="268" cy="480" rx="38" ry="45" fill="#222" stroke="#2a2a2a" stroke-width="1"/>
+    <rect x="244" y="524" width="48" height="36" rx="3" fill="#1e1e1e"/>
+    <text x="268" y="548" font-family="Arial,sans-serif" font-size="8" fill="#C9A017" text-anchor="middle" opacity="0.5">A</text>
+    <rect x="182" y="578" width="172" height="14" rx="3" fill="#f5f5f5"/>
+    <text x="268" y="589" font-family="Arial,sans-serif" font-size="9" fill="#333" text-anchor="middle" font-weight="700">هودي أوفرسايز</text>
+    <rect x="182" y="596" width="80" height="10" rx="2" fill="#f5f5f5"/>
+    <text x="268" y="618" font-family="Arial,sans-serif" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="900">$65</text>
+    <rect x="182" y="625" width="172" height="22" rx="5" fill="#1a1a1a"/>
+    <text x="268" y="640" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" text-anchor="middle" font-weight="700">أضف للسلة</text>
+
+    <!-- Product card 2 -->
+    <rect x="376" y="412" width="192" height="240" rx="8" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
+    <rect x="376" y="412" width="192" height="160" rx="8 8 0 0" fill="#141414"/>
+    <rect x="406" y="432" width="132" height="120" rx="4" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="472" y="500" font-family="Arial,sans-serif" font-size="9" fill="#888" text-anchor="middle">تيشرت</text>
+    <!-- Sale badge -->
+    <rect x="540" y="416" width="28" height="16" rx="3" fill="#C41010"/>
+    <text x="554" y="427" font-family="Arial,sans-serif" font-size="7" fill="#fff" text-anchor="middle" font-weight="700">-20%</text>
+    <text x="472" y="589" font-family="Arial,sans-serif" font-size="9" fill="#333" text-anchor="middle" font-weight="700">تيشرت كاليغرافي</text>
+    <text x="472" y="610" font-family="Arial,sans-serif" font-size="9" fill="#999" text-anchor="middle"><tspan text-decoration="line-through">$50</tspan></text>
+    <text x="500" y="610" font-family="Arial,sans-serif" font-size="11" fill="#C41010" font-weight="900"> $40</text>
+    <rect x="386" y="625" width="172" height="22" rx="5" fill="#1a1a1a"/>
+    <text x="472" y="640" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" text-anchor="middle" font-weight="700">أضف للسلة</text>
+
+    <!-- Product card 3 -->
+    <rect x="580" y="412" width="192" height="240" rx="8" fill="#fff" stroke="#C9A017" stroke-width="1.5"/>
+    <!-- Bestseller badge -->
+    <rect x="580" y="412" width="192" height="20" rx="8 8 0 0" fill="#C9A017"/>
+    <text x="676" y="425" font-family="Arial,sans-serif" font-size="8" fill="#000" text-anchor="middle" font-weight="700">⭐ الأكثر مبيعاً</text>
+    <rect x="580" y="432" width="192" height="140" fill="#161616"/>
+    <rect x="610" y="448" width="132" height="108" rx="4" fill="#1e1e1e" stroke="#C9A017" stroke-width="0.5" stroke-opacity="0.3"/>
+    <text x="676" y="508" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" text-anchor="middle" opacity="0.4">🔥</text>
+    <text x="676" y="589" font-family="Arial,sans-serif" font-size="9" fill="#333" text-anchor="middle" font-weight="700">كارغو ستريت</text>
+    <text x="676" y="610" font-family="Arial,sans-serif" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="900">$85</text>
+    <rect x="590" y="625" width="172" height="22" rx="5" fill="url(#btnGrad)"/>
+    <text x="676" y="640" font-family="Arial,sans-serif" font-size="9" fill="#fff" text-anchor="middle" font-weight="700">اشترِ الآن</text>
+
+    <!-- Product card 4 -->
+    <rect x="784" y="412" width="192" height="240" rx="8" fill="#fff" stroke="#e0e0e0" stroke-width="1"/>
+    <rect x="784" y="412" width="192" height="160" rx="8 8 0 0" fill="#1a1a1a"/>
+    <rect x="820" y="432" width="120" height="120" rx="4" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="880" y="498" font-family="Arial,sans-serif" font-size="9" fill="#888" text-anchor="middle">كاب</text>
+    <text x="880" y="589" font-family="Arial,sans-serif" font-size="9" fill="#333" text-anchor="middle" font-weight="700">كاب براند</text>
+    <text x="880" y="610" font-family="Arial,sans-serif" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="900">$35</text>
+    <rect x="794" y="625" width="172" height="22" rx="5" fill="#1a1a1a"/>
+    <text x="880" y="640" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" text-anchor="middle" font-weight="700">أضف للسلة</text>
+
+    <!-- Trust bar bottom -->
+    <rect x="160" y="652" width="880" height="46" fill="#f0f0f0"/>
+    <text x="268" y="672" font-family="Arial,sans-serif" font-size="9" fill="#666" text-anchor="middle">🚚 شحن سريع</text>
+    <text x="268" y="686" font-family="Arial,sans-serif" font-size="8" fill="#999" text-anchor="middle">3-5 أيام عمل</text>
+    <text x="472" y="672" font-family="Arial,sans-serif" font-size="9" fill="#666" text-anchor="middle">🔒 دفع آمن</text>
+    <text x="472" y="686" font-family="Arial,sans-serif" font-size="8" fill="#999" text-anchor="middle">SSL مشفر</text>
+    <text x="676" y="672" font-family="Arial,sans-serif" font-size="9" fill="#666" text-anchor="middle">🔄 إرجاع مجاني</text>
+    <text x="676" y="686" font-family="Arial,sans-serif" font-size="8" fill="#999" text-anchor="middle">خلال 14 يوم</text>
+    <text x="880" y="672" font-family="Arial,sans-serif" font-size="9" fill="#666" text-anchor="middle">⭐ جودة مضمونة</text>
+    <text x="880" y="686" font-family="Arial,sans-serif" font-size="8" fill="#999" text-anchor="middle">100% قطن فاخر</text>
+  </g>
+
+  <!-- ── ANNOTATIONS ── -->
+  <!-- Left annotations -->
+  <line x1="140" y1="180" x2="80" y2="180" stroke="#C9A017" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <rect x="20" y="166" width="56" height="28" rx="4" fill="#C9A017" opacity="0.1" stroke="#C9A017" stroke-width="0.5"/>
+  <text x="48" y="180" font-family="Arial,sans-serif" font-size="7.5" fill="#C9A017" text-anchor="middle">Store Nav</text>
+  <text x="48" y="190" font-family="Arial,sans-serif" font-size="7" fill="#888" text-anchor="middle">+ Logo</text>
+
+  <line x1="140" y1="260" x2="80" y2="260" stroke="#C9A017" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <rect x="20" y="246" width="56" height="28" rx="4" fill="#C9A017" opacity="0.1" stroke="#C9A017" stroke-width="0.5"/>
+  <text x="48" y="260" font-family="Arial,sans-serif" font-size="7.5" fill="#C9A017" text-anchor="middle">Hero Section</text>
+  <text x="48" y="270" font-family="Arial,sans-serif" font-size="7" fill="#888" text-anchor="middle">+ CTA</text>
+
+  <line x1="140" y1="374" x2="80" y2="374" stroke="#C9A017" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <rect x="20" y="360" width="56" height="28" rx="4" fill="#C9A017" opacity="0.1" stroke="#C9A017" stroke-width="0.5"/>
+  <text x="48" y="374" font-family="Arial,sans-serif" font-size="7.5" fill="#C9A017" text-anchor="middle">Announce</text>
+  <text x="48" y="384" font-family="Arial,sans-serif" font-size="7" fill="#888" text-anchor="middle">Bar</text>
+
+  <!-- Right annotations -->
+  <line x1="1040" y1="530" x2="1100" y2="530" stroke="#C9A017" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <rect x="1104" y="516" width="72" height="28" rx="4" fill="#C9A017" opacity="0.1" stroke="#C9A017" stroke-width="0.5"/>
+  <text x="1140" y="530" font-family="Arial,sans-serif" font-size="7.5" fill="#C9A017" text-anchor="middle">Product Grid</text>
+  <text x="1140" y="540" font-family="Arial,sans-serif" font-size="7" fill="#888" text-anchor="middle">Printful POD</text>
+
+  <line x1="1040" y1="675" x2="1100" y2="675" stroke="#C9A017" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <rect x="1104" y="661" width="72" height="28" rx="4" fill="#C9A017" opacity="0.1" stroke="#C9A017" stroke-width="0.5"/>
+  <text x="1140" y="675" font-family="Arial,sans-serif" font-size="7.5" fill="#C9A017" text-anchor="middle">Trust Badges</text>
+  <text x="1140" y="685" font-family="Arial,sans-serif" font-size="7" fill="#888" text-anchor="middle">Conversion CRO</text>
+
+  <!-- ── BOTTOM INFO BAR ── -->
+  <rect x="140" y="730" width="920" height="80" rx="10" fill="#0d0d0d" stroke="#1e1e1e" stroke-width="1"/>
+  <rect x="140" y="730" width="920" height="3" rx="2 2 0 0" fill="url(#gold)"/>
+  <text x="600" y="752" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" text-anchor="middle" font-weight="700" letter-spacing="2">ما ستبنيه في الوحدة 11</text>
+
+  <g font-family="Arial,sans-serif" font-size="10">
+    <text x="185" y="774" fill="#C9A017">✓</text>
+    <text x="200" y="774" fill="#888">Theme مخصص بألوان البراند</text>
+    <text x="185" y="792" fill="#C9A017">✓</text>
+    <text x="200" y="792" fill="#888">3+ منتجات مع أوصاف محوّلة</text>
+
+    <text x="425" y="774" fill="#C9A017">✓</text>
+    <text x="440" y="774" fill="#888">Printful مربوط تلقائياً</text>
+    <text x="425" y="792" fill="#C9A017">✓</text>
+    <text x="440" y="792" fill="#888">بوابة دفع تعمل</text>
+
+    <text x="665" y="774" fill="#C9A017">✓</text>
+    <text x="680" y="774" fill="#888">Trust Badges + Reviews</text>
+    <text x="665" y="792" fill="#C9A017">✓</text>
+    <text x="680" y="792" fill="#888">Mobile-Optimized</text>
+
+    <text x="885" y="774" fill="#C9A017">✓</text>
+    <text x="900" y="774" fill="#888">Google Analytics</text>
+    <text x="885" y="792" fill="#C9A017">✓</text>
+    <text x="900" y="792" fill="#888">Meta Pixel جاهز</text>
+  </g>
+
+  <!-- Footer -->
+  <rect x="0" y="842" width="1200" height="18" fill="#050505"/>
+  <text x="40" y="855" font-family="Arial,sans-serif" font-size="8" fill="#333">AI Fashion Academy — Shopify Store Mockup · Module 11</text>
+  <text x="1160" y="855" font-family="Arial,sans-serif" font-size="8" fill="#C9A017" text-anchor="end">© 2025</text>
+</svg>

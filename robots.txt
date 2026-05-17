@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /dashboard.html
+Disallow: /modules/
+Disallow: /lessons/
+Disallow: /prompt-library/
+Disallow: /worksheets/
+Disallow: /downloads/

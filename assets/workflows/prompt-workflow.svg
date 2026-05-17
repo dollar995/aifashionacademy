@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#070707"/>
+      <stop offset="100%" style="stop-color:#0d0d0d"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E4B832"/>
+      <stop offset="100%" style="stop-color:#C9A017"/>
+    </linearGradient>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#C9A017" opacity="0.7"/>
+    </marker>
+    <marker id="arrW" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#444"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <pattern id="dots" x="0" y="0" width="36" height="36" patternUnits="userSpaceOnUse">
+    <circle cx="18" cy="18" r="0.5" fill="#C9A017" opacity="0.08"/>
+  </pattern>
+  <rect width="1200" height="800" fill="url(#dots)"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="56" fill="#060606"/>
+  <rect x="0" y="55" width="1200" height="1" fill="#1e1e1e"/>
+  <rect x="40" y="14" width="26" height="26" rx="5" fill="url(#gold)"/>
+  <text x="53" y="31" font-family="Arial,sans-serif" font-size="11" font-weight="900" fill="#000" text-anchor="middle">AI</text>
+  <text x="78" y="26" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#fff">AI FASHION ACADEMY</text>
+  <text x="78" y="41" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" letter-spacing="2">PROMPT ENGINEERING WORKFLOW</text>
+
+  <!-- Title -->
+  <text x="600" y="90" font-family="Georgia,serif" font-size="22" font-weight="900" fill="#fff" text-anchor="middle">كيف تكتب Prompt يعطيك نتائج استثنائية</text>
+  <text x="600" y="112" font-family="Arial,sans-serif" font-size="11" fill="#666" text-anchor="middle">The SCOPE Framework for Fashion AI Prompts</text>
+  <rect x="560" y="120" width="80" height="2" rx="1" fill="url(#gold)"/>
+
+  <!-- ── SCOPE FRAMEWORK ── -->
+  <!-- S -->
+  <rect x="40" y="140" width="210" height="140" rx="12" fill="#111" stroke="#C9A017" stroke-width="1.5"/>
+  <rect x="40" y="140" width="210" height="4" rx="2 2 0 0" fill="url(#gold)"/>
+  <text x="60" y="167" font-family="Georgia,serif" font-size="36" font-weight="900" fill="#C9A017" opacity="0.2">S</text>
+  <text x="60" y="167" font-family="Arial,sans-serif" font-size="13" fill="#C9A017" font-weight="700">S — Subject</text>
+  <text x="60" y="185" font-family="Arial,sans-serif" font-size="10" fill="#888">الموضوع الرئيسي</text>
+  <text x="60" y="205" font-family="Arial,sans-serif" font-size="10" fill="#666">ما الذي تريد تصميمه؟</text>
+  <text x="60" y="222" font-family="Arial,sans-serif" font-size="10" fill="#555" font-style="italic">"Oversized Hoodie"</text>
+  <text x="60" y="239" font-family="Arial,sans-serif" font-size="10" fill="#555" font-style="italic">"Arabic calligraphy tee"</text>
+  <text x="60" y="256" font-family="Arial,sans-serif" font-size="10" fill="#555" font-style="italic">"Streetwear cargo pants"</text>
+
+  <line x1="252" y1="210" x2="276" y2="210" stroke="#C9A017" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arr)" opacity="0.6"/>
+
+  <!-- C -->
+  <rect x="280" y="140" width="210" height="140" rx="12" fill="#111" stroke="#C9A017" stroke-width="1.5"/>
+  <rect x="280" y="140" width="210" height="4" rx="2 2 0 0" fill="url(#gold)"/>
+  <text x="300" y="167" font-family="Arial,sans-serif" font-size="13" fill="#C9A017" font-weight="700">C — Context</text>
+  <text x="300" y="185" font-family="Arial,sans-serif" font-size="10" fill="#888">السياق والبيئة</text>
+  <text x="300" y="205" font-family="Arial,sans-serif" font-size="10" fill="#666">أين سيُستخدم هذا التصميم؟</text>
+  <text x="300" y="222" font-family="Arial,sans-serif" font-size="10" fill="#555" font-style="italic">"Product photography"</text>
+  <text x="300" y="239" font-family="Arial,sans-serif" font-size="10" fill="#555" font-style="italic">"Fashion editorial"</text>
+  <text x="300" y="256" font-family="Arial,sans-serif" font-size="10" fill="#555" font-style="italic">"Instagram ad creative"</text>
+
+  <line x1="492" y1="210" x2="516" y2="210" stroke="#C9A017" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arr)" opacity="0.6"/>
+
+  <!-- O -->
+  <rect x="520" y="140" width="210" height="140" rx="12" fill="#111" stroke="#C9A017" stroke-width="1.5"/>
+  <rect x="520" y="140" width="210" height="4" rx="2 2 0 0" fill="url(#gold)"/>
+  <text x="540" y="167" font-family="Arial,sans-serif" font-size="13" fill="#C9A017" font-weight="700">O — Output</text>
+  <text x="540" y="185" font-family="Arial,sans-serif" font-size="10" fill="#888">نوع النتيجة المطلوبة</text>
+  <text x="540" y="205" font-family="Arial,sans-serif" font-size="10" fill="#666">ما صيغة الناتج؟</text>
+  <text x="540" y="222" font-family="Arial,sans-serif" font-size="10" fill="#555" font-style="italic">"Flat lay --ar 1:1"</text>
+  <text x="540" y="239" font-family="Arial,sans-serif" font-size="10" fill="#555" font-style="italic">"Portrait --ar 2:3"</text>
+  <text x="540" y="256" font-family="Arial,sans-serif" font-size="10" fill="#555" font-style="italic">"Wide banner --ar 16:9"</text>
+
+  <line x1="732" y1="210" x2="756" y2="210" stroke="#C9A017" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arr)" opacity="0.6"/>
+
+  <!-- P -->
+  <rect x="760" y="140" width="210" height="140" rx="12" fill="#111" stroke="#C9A017" stroke-width="1.5"/>
+  <rect x="760" y="140" width="210" height="4" rx="2 2 0 0" fill="url(#gold)"/>
+  <text x="780" y="167" font-family="Arial,sans-serif" font-size="13" fill="#C9A017" font-weight="700">P — Parameters</text>
+  <text x="780" y="185" font-family="Arial,sans-serif" font-size="10" fill="#888">الإعدادات التقنية</text>
+  <text x="780" y="205" font-family="Arial,sans-serif" font-size="10" fill="#666">الأوامر الفنية للأداة</text>
+  <text x="780" y="222" font-family="Arial,sans-serif" font-size="10" fill="#555" font-style="italic">"--style raw --v 6"</text>
+  <text x="780" y="239" font-family="Arial,sans-serif" font-size="10" fill="#555" font-style="italic">"--q 2 --no text"</text>
+  <text x="780" y="256" font-family="Arial,sans-serif" font-size="10" fill="#555" font-style="italic">"--tile (for patterns)"</text>
+
+  <line x1="972" y1="210" x2="996" y2="210" stroke="#C9A017" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arr)" opacity="0.6"/>
+
+  <!-- E -->
+  <rect x="1000" y="140" width="160" height="140" rx="12" fill="#111" stroke="#C9A017" stroke-width="1.5"/>
+  <rect x="1000" y="140" width="160" height="4" rx="2 2 0 0" fill="url(#gold)"/>
+  <text x="1020" y="167" font-family="Arial,sans-serif" font-size="13" fill="#C9A017" font-weight="700">E — Emotion</text>
+  <text x="1020" y="185" font-family="Arial,sans-serif" font-size="10" fill="#888">الجو والمشاعر</text>
+  <text x="1020" y="205" font-family="Arial,sans-serif" font-size="10" fill="#666">الإضاءة والنبرة</text>
+  <text x="1020" y="222" font-family="Arial,sans-serif" font-size="10" fill="#555" font-style="italic">"Cinematic gold"</text>
+  <text x="1020" y="239" font-family="Arial,sans-serif" font-size="10" fill="#555" font-style="italic">"Dark moody"</text>
+  <text x="1020" y="256" font-family="Arial,sans-serif" font-size="10" fill="#555" font-style="italic">"Editorial clean"</text>
+
+  <!-- ── EXAMPLE PROMPTS ── -->
+  <!-- Section title -->
+  <text x="600" y="318" font-family="Arial,sans-serif" font-size="10" fill="#C9A017" text-anchor="middle" font-weight="700" letter-spacing="2">PROMPT EXAMPLES — أمثلة حقيقية</text>
+
+  <!-- Example 1: Product Shot -->
+  <rect x="40" y="330" width="360" height="160" rx="10" fill="#0d0d0d" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="40" y="330" width="360" height="3" rx="2 2 0 0" fill="#333"/>
+  <text x="55" y="350" font-family="Arial,sans-serif" font-size="9" fill="#888" font-weight="700" letter-spacing="1">MIDJOURNEY — PRODUCT SHOT</text>
+  <rect x="55" y="358" width="330" height="110" rx="6" fill="#0a0a0a" stroke="#1e1e1e" stroke-width="1"/>
+  <text x="65" y="376" font-family="monospace" font-size="9" fill="#C9A017">/imagine</text>
+  <text x="65" y="392" font-family="monospace" font-size="9" fill="#aaa">Oversized premium hoodie,</text>
+  <text x="65" y="406" font-family="monospace" font-size="9" fill="#aaa">washed black colorway,</text>
+  <text x="65" y="420" font-family="monospace" font-size="9" fill="#aaa">Arabic calligraphy chest print,</text>
+  <text x="65" y="434" font-family="monospace" font-size="9" fill="#aaa">flat lay product photography,</text>
+  <text x="65" y="448" font-family="monospace" font-size="9" fill="#aaa">dark concrete surface,</text>
+  <text x="65" y="462" font-family="monospace" font-size="9" fill="#888">--ar 1:1 --style raw --v 6 --q 2</text>
+
+  <!-- Example 2: Lifestyle -->
+  <rect x="420" y="330" width="360" height="160" rx="10" fill="#0d0d0d" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="420" y="330" width="360" height="3" rx="2 2 0 0" fill="#333"/>
+  <text x="435" y="350" font-family="Arial,sans-serif" font-size="9" fill="#888" font-weight="700" letter-spacing="1">KLING AI — FASHION FILM</text>
+  <rect x="435" y="358" width="330" height="110" rx="6" fill="#0a0a0a" stroke="#1e1e1e" stroke-width="1"/>
+  <text x="445" y="376" font-family="monospace" font-size="9" fill="#C9A017">Text to Visual:</text>
+  <text x="445" y="392" font-family="monospace" font-size="9" fill="#aaa">Young Arab male, 25,</text>
+  <text x="445" y="406" font-family="monospace" font-size="9" fill="#aaa">wearing oversized black hoodie,</text>
+  <text x="445" y="420" font-family="monospace" font-size="9" fill="#aaa">walking through old city alley,</text>
+  <text x="445" y="434" font-family="monospace" font-size="9" fill="#aaa">golden hour cinematic lighting,</text>
+  <text x="445" y="448" font-family="monospace" font-size="9" fill="#aaa">smooth tracking camera shot,</text>
+  <text x="445" y="462" font-family="monospace" font-size="9" fill="#888">luxury fashion campaign, 24fps</text>
+
+  <!-- Example 3: Claude Strategy -->
+  <rect x="800" y="330" width="360" height="160" rx="10" fill="#0d0d0d" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="800" y="330" width="360" height="3" rx="2 2 0 0" fill="#8b5cf6" opacity="0.8"/>
+  <text x="815" y="350" font-family="Arial,sans-serif" font-size="9" fill="#888" font-weight="700" letter-spacing="1">CLAUDE — BRAND STRATEGY</text>
+  <rect x="815" y="358" width="330" height="110" rx="6" fill="#0a0a0a" stroke="#1e1e1e" stroke-width="1"/>
+  <text x="825" y="376" font-family="monospace" font-size="9" fill="#a78bfa">System: Brand Strategist</text>
+  <text x="825" y="392" font-family="monospace" font-size="9" fill="#aaa">أريد بناء براند Streetwear</text>
+  <text x="825" y="406" font-family="monospace" font-size="9" fill="#aaa">مستوحى من الثقافة العربية.</text>
+  <text x="825" y="420" font-family="monospace" font-size="9" fill="#aaa">الجمهور: شباب 20-30 في المدن.</text>
+  <text x="825" y="434" font-family="monospace" font-size="9" fill="#aaa">أعطني:</text>
+  <text x="825" y="448" font-family="monospace" font-size="9" fill="#888">• بيان تموضع قوي</text>
+  <text x="825" y="462" font-family="monospace" font-size="9" fill="#888">• أركيتايب + قيم + رسالة</text>
+
+  <!-- ── ITERATION LOOP ── -->
+  <text x="600" y="520" font-family="Arial,sans-serif" font-size="10" fill="#C9A017" text-anchor="middle" font-weight="700" letter-spacing="2">ITERATION LOOP — دورة التحسين</text>
+
+  <!-- Loop diagram -->
+  <rect x="100" y="535" width="150" height="70" rx="8" fill="#0f0f0f" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="175" y="562" font-family="Arial,sans-serif" font-size="11" fill="#fff" text-anchor="middle" font-weight="700">أول نتيجة</text>
+  <text x="175" y="578" font-family="Arial,sans-serif" font-size="9" fill="#888" text-anchor="middle">Initial Output</text>
+  <text x="175" y="592" font-family="Arial,sans-serif" font-size="9" fill="#666" text-anchor="middle">4 variations</text>
+
+  <line x1="252" y1="570" x2="296" y2="570" stroke="#C9A017" stroke-width="1.5" marker-end="url(#arr)" opacity="0.6"/>
+
+  <rect x="300" y="535" width="150" height="70" rx="8" fill="#0f0f0f" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="375" y="562" font-family="Arial,sans-serif" font-size="11" fill="#fff" text-anchor="middle" font-weight="700">تقييم</text>
+  <text x="375" y="578" font-family="Arial,sans-serif" font-size="9" fill="#888" text-anchor="middle">Evaluate</text>
+  <text x="375" y="592" font-family="Arial,sans-serif" font-size="9" fill="#666" text-anchor="middle">أي الـ 4 أفضل؟</text>
+
+  <line x1="452" y1="570" x2="496" y2="570" stroke="#C9A017" stroke-width="1.5" marker-end="url(#arr)" opacity="0.6"/>
+
+  <rect x="500" y="535" width="150" height="70" rx="8" fill="#0f0f0f" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="575" y="562" font-family="Arial,sans-serif" font-size="11" fill="#fff" text-anchor="middle" font-weight="700">تحسين</text>
+  <text x="575" y="578" font-family="Arial,sans-serif" font-size="9" fill="#888" text-anchor="middle">Refine Prompt</text>
+  <text x="575" y="592" font-family="Arial,sans-serif" font-size="9" fill="#666" text-anchor="middle">عدّل + أضف تفاصيل</text>
+
+  <line x1="652" y1="570" x2="696" y2="570" stroke="#C9A017" stroke-width="1.5" marker-end="url(#arr)" opacity="0.6"/>
+
+  <rect x="700" y="535" width="150" height="70" rx="8" fill="#0f0f0f" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="775" y="562" font-family="Arial,sans-serif" font-size="11" fill="#fff" text-anchor="middle" font-weight="700">Upscale</text>
+  <text x="775" y="578" font-family="Arial,sans-serif" font-size="9" fill="#888" text-anchor="middle">Best Result</text>
+  <text x="775" y="592" font-family="Arial,sans-serif" font-size="9" fill="#666" text-anchor="middle">U1-U4 + variations</text>
+
+  <line x1="852" y1="570" x2="896" y2="570" stroke="#C9A017" stroke-width="1.5" marker-end="url(#arr)" opacity="0.6"/>
+
+  <rect x="900" y="535" width="160" height="70" rx="8" fill="rgba(201,160,23,0.08)" stroke="#C9A017" stroke-width="1.5"/>
+  <text x="980" y="562" font-family="Arial,sans-serif" font-size="11" fill="#C9A017" text-anchor="middle" font-weight="700">النتيجة النهائية</text>
+  <text x="980" y="578" font-family="Arial,sans-serif" font-size="9" fill="#888" text-anchor="middle">Final Output</text>
+  <text x="980" y="592" font-family="Arial,sans-serif" font-size="9" fill="#888" text-anchor="middle">جاهز للاستخدام ✓</text>
+
+  <!-- Back loop arrow -->
+  <path d="M 980,607 Q 980,640 575,640 Q 170,640 175,607" fill="none" stroke="#333" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arrW)"/>
+  <text x="575" y="656" font-family="Arial,sans-serif" font-size="8.5" fill="#555" text-anchor="middle">إذا لم تعجبك النتيجة — كرر الدورة مع prompt مُعدَّل</text>
+
+  <!-- PRO TIPS -->
+  <rect x="40" y="670" width="1120" height="100" rx="10" fill="#0d0d0d" stroke="#1e1e1e" stroke-width="1"/>
+  <rect x="40" y="670" width="1120" height="3" rx="2 2 0 0" fill="url(#gold)"/>
+  <text x="600" y="692" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" text-anchor="middle" font-weight="700" letter-spacing="2">PRO TIPS — نصائح الاحتراف</text>
+
+  <g font-family="Arial,sans-serif" font-size="10">
+    <text x="75" y="714" fill="#C9A017">01</text>
+    <text x="95" y="714" fill="#888">أضف "--style raw" دائماً للحصول على صور أقل "AI-ish"</text>
+    <text x="75" y="732" fill="#C9A017">02</text>
+    <text x="95" y="732" fill="#888">استخدم "--no text, logo, watermark" لتجنب النصوص غير المرغوبة</text>
+    <text x="75" y="750" fill="#C9A017">03</text>
+    <text x="95" y="750" fill="#888">للـ Pattern: أضف "--tile" وستحصل على نقش يتكرر بسلاسة</text>
+
+    <text x="635" y="714" fill="#C9A017">04</text>
+    <text x="655" y="714" fill="#888">كن محدداً: "dark navy blue" أفضل من "blue"</text>
+    <text x="635" y="732" fill="#C9A017">05</text>
+    <text x="655" y="732" fill="#888">أضف مرجع كاميرا: "85mm lens, f/1.8" للحصول على بوكيه جميل</text>
+    <text x="635" y="750" fill="#C9A017">06</text>
+    <text x="655" y="750" fill="#888">"/describe" على صورة أعجبتك يولّد Prompt جاهز تلقائياً</text>
+  </g>
+
+  <!-- Footer -->
+  <rect x="0" y="780" width="1200" height="20" fill="#050505"/>
+  <text x="40" y="795" font-family="Arial,sans-serif" font-size="8" fill="#333">AI Fashion Academy — Prompt Engineering Workflow</text>
+  <text x="1160" y="795" font-family="Arial,sans-serif" font-size="8" fill="#C9A017" text-anchor="end">© 2025</text>
+</svg>

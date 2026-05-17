@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="صفحات المنتجات وتحسين التحويل">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#050505"/><stop offset="0.55" stop-color="#111111"/><stop offset="1" stop-color="#24140f"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1c66b"/><stop offset="1" stop-color="#b08d5f"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="18" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="675" rx="42" fill="url(#bg)"/>
+  <circle cx="1020" cy="105" r="210" fill="#d4a574" opacity="0.12"/>
+  <circle cx="120" cy="585" r="220" fill="#8f1d1f" opacity="0.16"/>
+  <g opacity="0.13"><path d="M120 180H1080M120 270H1080M120 360H1080M120 450H1080M240 90V585M420 90V585M600 90V585M780 90V585M960 90V585" stroke="#f4efe7" stroke-width="1"/></g>
+  <rect x="72" y="72" width="1056" height="531" rx="34" fill="rgba(255,255,255,0.035)" stroke="#d4a574" stroke-opacity="0.35"/>
+  <text x="980" y="145" text-anchor="middle" font-size="92" filter="url(#glow)">⚡</text>
+  <text x="960" y="215" text-anchor="middle" font-family="Tahoma,Arial" font-size="28" fill="#f1c66b" font-weight="700">MODULE 17</text>
+  <text x="600" y="335" text-anchor="middle" font-family="Tahoma,Arial" font-size="48" fill="#f5f1e8" font-weight="800" direction="rtl">صفحات المنتجات وتحسين التحويل</text>
+  <text x="600" y="395" text-anchor="middle" font-family="Tahoma,Arial" font-size="24" fill="#b8b1a7" direction="rtl">علم نفس الشراء، أوصاف تبيع، Upsell، Social Proof، وسرعة المتجر.</text>
+  <rect x="448" y="478" width="304" height="62" rx="31" fill="url(#gold)"/>
+  <text x="600" y="518" text-anchor="middle" font-family="Tahoma,Arial" font-size="22" fill="#050505" font-weight="800" direction="rtl">ابدأ التطبيق العملي</text>
+</svg>

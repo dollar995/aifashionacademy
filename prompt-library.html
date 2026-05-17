@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
+<head>
+  
+  
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>مكتبة الـ Prompts | أكاديمية AI Fashion</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<style>
+    .prompt-hero { background: var(--gradient-hero); padding: 120px 1.5rem 3rem; text-align: center; color: var(--white); }
+    .prompt-hero h1 { font-size: 2.2rem; margin-bottom: 1rem; }
+    .prompt-hero p { color: var(--stone); max-width: 600px; margin: 0 auto; }
+    .prompt-search { max-width: 600px; margin: 2rem auto 0; position: relative; }
+    .prompt-search input { width: 100%; padding: 1rem 1.25rem; border-radius: var(--radius-xl); border: 2px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: var(--white); font-family: var(--font-arabic); font-size: 1rem; }
+    .prompt-search input::placeholder { color: var(--stone); }
+    .prompt-search input:focus { outline: none; border-color: var(--cyan); }
+    .prompt-library { max-width: 900px; margin: 0 auto; padding: 3rem 1.5rem; }
+    .prompt-category { margin-bottom: 3rem; }
+    .prompt-category-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 2px solid var(--cyan); }
+    .prompt-category-header h2 { font-size: 1.3rem; margin: 0; color: var(--navy); }
+    .prompt-category-header .icon { font-size: 1.5rem; }
+    .prompt-item { background: var(--white); border-radius: var(--radius-lg); padding: 1.5rem; margin-bottom: 1rem; box-shadow: var(--shadow-sm); border: 1px solid rgba(0,0,0,0.04); }
+    .prompt-item h3 { font-size: 1rem; margin-bottom: 1rem; color: var(--navy); }
+    .prompt-item .prompt-content { background: #0f172a; border-radius: var(--radius-md); padding: 1rem; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.85rem; color: var(--stone-light); line-height: 1.8; white-space: pre-wrap; word-break: break-word; direction: ltr; text-align: left; overflow-x: auto; }
+    .prompt-item .prompt-meta { display: flex; gap: 1rem; margin-top: 1rem; font-size: 0.8rem; color: var(--stone); }
+    .prompt-item .prompt-meta span { display: inline-flex; align-items: center; gap: 0.25rem; }
+    .tag { display: inline-block; padding: 0.25rem 0.75rem; background: rgba(6,182,212,0.1); color: var(--cyan-dark); border-radius: 100px; font-size: 0.75rem; font-weight: 600; }
+  </style>
+<script src="js/auth-gate.js" defer></script>
+</head>
+<body>
+
+<!-- PROTECTED MEMBER-ONLY CONTENT -->
+<header class="site-header">
+<div class="header-inner">
+<a class="logo" href="index.html"><img alt="AI Fashion Academy" class="logo-img" src="assets/logo/logo.png"/><div class="logo-text">أكاديمية AI Fashion</div></a>
+<nav class="nav-desktop">
+<a href="dashboard.html">الداشبورد</a>
+<a href="roadmap.html">الخريطة</a>
+<a href="modules/module-1.html">الوحدات</a>
+<a class="active" href="prompt-library.html">الـ Prompts</a>
+</nav>
+<div class="header-actions">
+
+</div>
+</div>
+</header>
+<section class="prompt-hero">
+<h1>🤖 مكتبة الـ Prompts</h1>
+<p>50+ Prompt احترافي جاهز للاستخدام. انسخ والصق واشتغل — مصممين خصيصاً لبناء براند الملابس.</p>
+</section>
+<section style="background: var(--off-white); padding: 2rem 0 4rem;">
+<div class="prompt-library">
+<!-- Category 1: Brand Strategy -->
+<div class="prompt-category">
+<div class="prompt-category-header">
+<span class="icon">🎯</span>
+<h2>استراتيجية البراند والتسمية</h2>
+</div>
+<div class="prompt-item">
+<h3>Prompt 1.1 — توليد أسماء البراندات</h3>
+<div class="prompt-content">أنا أبني براند ملابس بالمواصفات التالية:
+- النيش: [مثلاً: Streetwear مستوحى من الثقافة العربية الحضرية]
+- الجمهور: [مثلاً: شباب عربي 20-30 سنة في المدن الكبرى]
+- الشخصية المطلوبة: [مثلاً: جريء، أصيل، معاصر]
+- الشعور المطلوب: [مثلاً: أنتمي لشيء يعبر عني]
+
+أنشئ لي 30 اسم براند متنوعاً:
+- 10 أسماء عربية (أو مستوحاة من العربية)
+- 10 أسماء إنجليزية
+- 10 أسماء مختلطة (عربي + إنجليزي)
+
+لكل اسم اذكر:
+1. معناه ودلالته
+2. سبب ملاءمته للبراند
+3. درجة سهولة النطق (1-10)
+4. درجة الأصالة (1-10)</div>
+<div class="prompt-meta">
+<span>🤖 ChatGPT / Claude</span>
+<span class="tag">تسمية</span>
+<span class="tag">استراتيجية</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+<div class="prompt-item">
+<h3>Prompt 1.2 — تعمق في أفضل 5 أسماء</h3>
+<div class="prompt-content">من القائمة السابقة، أعجبتني هذه الأسماء:
+[ضع أفضل 5 أسماء]
+
+لكل اسم، أعطني:
+1. 3 خيارات لـ Tagline تناسبه
+2. كيف يبدو على قميص (وصف بسيط)
+3. ما العاطفة الأولى التي يثيرها
+4. هل يصلح للسوق العربي والغربي معاً؟
+5. ما الخطر الوحيد في استخدام هذا الاسم؟</div>
+<div class="prompt-meta">
+<span>🤖 ChatGPT / Claude</span>
+<span class="tag">تسمية</span>
+<span class="tag">تحليل</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+<div class="prompt-item">
+<h3>Prompt 1.3 — التحقق من الاسم</h3>
+<div class="prompt-content">اسم براندي المقترح هو: [اسمك]
+
+ساعدني في:
+1. هل تعرف براندات موجودة بهذا الاسم أو قريبة منه؟
+2. ما المصطلحات الدلالية المرتبطة بهذا الاسم؟
+3. هل له أي دلالات سلبية في ثقافات معينة؟
+4. 5 دومينات مقترحة (.com، .co، .store) باستخدام هذا الاسم
+5. 5 مقترحات لـ username على Instagram وTikTok</div>
+<div class="prompt-meta">
+<span>🤖 ChatGPT / Claude</span>
+<span class="tag">تحقق</span>
+<span class="tag">تسمية</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+<div class="prompt-item">
+<h3>Prompt 3.1 — بناء الاستراتيجية الكاملة</h3>
+<div class="prompt-content">أنا أبني براند ملابس جديداً وأحتاج استراتيجية كاملة.
+
+المعلومات:
+- الاسم: [اسم البراند]
+- النيش: [نيشك]
+- الجمهور: [الجمهور المستهدف]
+- الميزانية الابتدائية: [$...]
+- نموذج العمل: [POD / مخزون / هجين]
+- أنا شخصياً: [3 جمل عنك]
+
+ابنِ لي:
+1. استراتيجية تموضع (Positioning Strategy) تفصيلية
+2. عروض القيمة الثلاثة الرئيسية
+3. الرسائل الأساسية لكل شريحة من الجمهور
+4. استراتيجية المحتوى لأول 90 يوم
+5. أهداف قابلة للقياس لكل شهر (3 أشهر)</div>
+<div class="prompt-meta">
+<span>🤖 ChatGPT / Claude</span>
+<span class="tag">استراتيجية</span>
+<span class="tag">تخطيط</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+<div class="prompt-item">
+<h3>Prompt 3.2 — تحليل المنافسين</h3>
+<div class="prompt-content">حللّ منافسي في نيش [نيشك]:
+
+المنافسون:
+1. [اسم أو وصف المنافس الأول]
+2. [اسم أو وصف المنافس الثاني]
+3. [اسم أو وصف المنافس الثالث]
+
+لكل منافس، حلّل:
+- نموذج أعماله
+- جمهوره المستهدف
+- سعر منتجاته
+- استراتيجيته التسويقية
+- نقاط قوته
+- نقاط ضعفه
+- الفجوات في عرضه
+
+ثم:
+- ما الفرصة المتاحة التي لا يستغلها أحدهم؟
+- كيف يمكن لبراندي التمييز؟
+- ما الموضع المثالي لبراندي في هذا السوق؟</div>
+<div class="prompt-meta">
+<span>🤖 ChatGPT / Claude</span>
+<span class="tag">تحليل</span>
+<span class="tag">منافسة</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+</div>
+<!-- Category 2: Storytelling -->
+<div class="prompt-category">
+<div class="prompt-category-header">
+<span class="icon">📖</span>
+<h2>القصة والسردية</h2>
+</div>
+<div class="prompt-item">
+<h3>Prompt 2.1 — قصة الأصل</h3>
+<div class="prompt-content">ساعدني في كتابة قصة أصل براندي.
+
+معلومات عني:
+- [اكتب 5-7 نقاط عن نفسك وخلفيتك]
+
+البراند:
+- الاسم: [اسم البراند]
+- النيش: [نيشك]
+- القيم: [3-5 قيم]
+- الجمهور المستهدف: [وصف الجمهور]
+
+أريد قصة أصل:
+- أصيلة وحقيقية (ليست مختلقة)
+- تخلق اتصالاً عاطفياً مع الجمهور المستهدف
+- تجعل العميل يرى نفسه في القصة
+- طولها: 200-250 كلمة
+- الأسلوب: دافئ، شخصي، مباشر</div>
+<div class="prompt-meta">
+<span>🤖 ChatGPT / Claude</span>
+<span class="tag">قصة</span>
+<span class="tag">هوية</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+<div class="prompt-item">
+<h3>Prompt 2.2 — قصة المجموعة</h3>
+<div class="prompt-content">أريد كتابة قصة المجموعة الأولى من براندي.
+
+البراند: [اسم البراند]
+اسم المجموعة: [اسم المجموعة]
+الإلهام: [ما الذي ألهمك لهذه المجموعة؟]
+الألوان: [لوحة ألوان المجموعة]
+الشعور المطلوب: [ما الذي تريد الشخص أن يشعر به عند الارتداء؟]
+
+اكتب:
+1. قصة المجموعة (150 كلمة) للموقع
+2. Bio المجموعة على Instagram (60 كلمة)
+3. وصف الـ Launch Post (100 كلمة)
+4. 5 عناوين مقترحة للنيوزلتر عن المجموعة</div>
+<div class="prompt-meta">
+<span>🤖 ChatGPT / Claude</span>
+<span class="tag">قصة</span>
+<span class="tag">مجموعة</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+<div class="prompt-item">
+<h3>Prompt 2.3 — قصص المنتجات</h3>
+<div class="prompt-content">أريد وصفاً لمنتج يحكي قصة ويبيع في نفس الوقت.
+
+المنتج: [نوع المنتج — مثلاً: هودي]
+الاسم: [اسم القطعة]
+الخامة: [وصف الخامة]
+التصميم: [وصف التصميم]
+الألوان المتاحة: [الألوان]
+السعر: [السعر]
+الجمهور: [من سيرتديه]
+
+اكتب:
+1. وصف المنتج الكامل لصفحة Shopify (200 كلمة)
+2. نسخة قصيرة للإعلانات (50 كلمة)
+3. 3 bullet points لأبرز الميزات
+4. وصف "تجربة الارتداء" — ماذا يشعر الشخص؟
+5. دعوة للإجراء (CTA) مناسبة</div>
+<div class="prompt-meta">
+<span>🤖 ChatGPT / Claude</span>
+<span class="tag">وصف منتج</span>
+<span class="tag">كتابة تسويقية</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+</div>
+<!-- Category 3: Email Marketing -->
+<div class="prompt-category">
+<div class="prompt-category-header">
+<span class="icon">📧</span>
+<h2>التسويق عبر البريد الإلكتروني</h2>
+</div>
+<div class="prompt-item">
+<h3>Prompt 4.1 — سلسلة الترحيب (5 رسائل)</h3>
+<div class="prompt-content">اكتب لي سلسلة 5 رسائل بريد إلكتروني ترحيبية لبراند الملابس [اسم البراند].
+
+معلومات البراند:
+- الشخصية: [وصف شخصية البراند]
+- الجمهور: [وصف الجمهور]
+- القيم: [3-5 قيم]
+- المنتجات الرئيسية: [ما تبيع]
+
+الرسائل الخمس:
+1. الترحيب (فوراً عند التسجيل) — مدخلها قصة البراند
+2. اليوم الثاني — قيم البراند + أبرز المنتجات
+3. اليوم الرابع — قصة نجاح عميل + الدليل الاجتماعي
+4. اليوم السابع — خلف الكواليس + البراند كمجتمع
+5. اليوم العاشر — عرض خاص للمشتركين الجدد
+
+لكل رسالة:
+- عنوان جذاب (Subject Line)
+- Preview Text (الجملة تحت العنوان)
+- نص الرسالة كاملاً (150-250 كلمة)
+- CTA واضح</div>
+<div class="prompt-meta">
+<span>🤖 ChatGPT / Claude</span>
+<span class="tag">Email</span>
+<span class="tag">Automation</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+<div class="prompt-item">
+<h3>Prompt 4.2 — Email الإطلاق</h3>
+<div class="prompt-content">اكتب email إطلاق مجموعة جديدة لبراند [اسم البراند].
+
+المجموعة: [اسم المجموعة]
+تاريخ الإطلاق: [التاريخ]
+عدد القطع: [العدد]
+أبرز قطعة: [وصف]
+السعر من: [السعر الابتدائي]
+عرض خاص (إن وجد): [العرض]
+رابط: [رابط المتجر]
+
+أريد Email يخلق:
+- شعوراً بالإثارة والتوقع
+- حس الندرة والحصرية
+- رغبة فورية في الشراء
+- انعكاساً واضحاً لشخصية البراند
+
+طوله: 200-280 كلمة</div>
+<div class="prompt-meta">
+<span>🤖 ChatGPT / Claude</span>
+<span class="tag">Email</span>
+<span class="tag">إطلاق</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+<div class="prompt-item">
+<h3>Prompt 4.3 — Email السلة المهجورة</h3>
+<div class="prompt-content">اكتب 3 نسخ مختلفة من Email السلة المهجورة (Abandoned Cart) لبراند [اسم البراند].
+
+النبرة:
+- النسخة الأولى: تذكير لطيف (بدون ضغط)
+- النسخة الثانية: خلق قيمة (لماذا يستحق الشراء)
+- النسخة الثالثة: حافز الإلحاح (عرض محدود الوقت)
+
+لكل نسخة: Subject Line + Preview Text + النص الكامل (100-150 كلمة) + CTA</div>
+<div class="prompt-meta">
+<span>🤖 ChatGPT / Claude</span>
+<span class="tag">Email</span>
+<span class="tag">Conversion</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+</div>
+<!-- Category 4: Social Media -->
+<div class="prompt-category">
+<div class="prompt-category-header">
+<span class="icon">📱</span>
+<h2>وسائل التواصل الاجتماعي</h2>
+</div>
+<div class="prompt-item">
+<h3>Prompt 5.1 — تقويم محتوى شهر كامل</h3>
+<div class="prompt-content">أنشئ لي تقويم محتوى لمدة 30 يوماً لبراند ملابس [اسم البراند].
+
+المنصات: Instagram + TikTok
+الجمهور: [وصف الجمهور]
+أعمدة المحتوى:
+- خلف الكواليس (25%)
+- تعليمي/قيمة (25%)
+- مجتمعي (20%)
+- ترويجي (15%)
+- ترفيهي (15%)
+
+لكل يوم:
+- المنصة
+- نوع المحتوى
+- الفكرة
+- الهاشتاقات المقترحة
+- الـ Caption (50-100 كلمة)
+- CTA
+
+اجعل المحتوى متنوعاً وغير متكرر.</div>
+<div class="prompt-meta">
+<span>🤖 ChatGPT / Claude</span>
+<span class="tag">Social Media</span>
+<span class="tag">Content Calendar</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+<div class="prompt-item">
+<h3>Prompt 5.2 — Captions للمنتجات</h3>
+<div class="prompt-content">اكتب لي 5 Captions مختلفة لنشر منتج [وصف المنتج] على إنستغرام.
+
+بيانات المنتج:
+- الاسم: [اسم القطعة]
+- الوصف: [وصف مختصر]
+- السعر: [السعر]
+- الألوان: [الألوان]
+- المتوفر: [الكميات/المقاسات]
+
+النسخ الخمس:
+1. نسخة عاطفية (تركز على الشعور)
+2. نسخة وصفية (تركز على الجودة)
+3. نسخة قصة (تحكي قصة الارتداء)
+4. نسخة مجتمعية (تتحدث للجمهور كمجتمع)
+5. نسخة مباشرة للبيع (urgency + offer)
+
+لكل نسخة: Caption كامل + Hashtags + CTA</div>
+<div class="prompt-meta">
+<span>🤖 ChatGPT / Claude</span>
+<span class="tag">Instagram</span>
+<span class="tag">Copywriting</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+<div class="prompt-item">
+<h3>Prompt 5.3 — سكريبت Reels وTikTok</h3>
+<div class="prompt-content">اكتب سكريبتات لـ 5 قطع محتوى مرئية Reels/TikTok لبراند [اسم البراند].
+
+القطع محتوى مرئية:
+1. "يوم في حياة مؤسس براند ملابس" (60 ثانية)
+2. "كيف صممت مجموعتي الأولى بالذكاء الاصطناعي" (45 ثانية)
+3. "من وراء الكواليس: كيف نصنع [منتج محدد]" (30 ثانية)
+4. "3 أسرار في الجودة لا تعرفها عن ملابسنا" (45 ثانية)
+5. "رحلة أول طلبية" (30 ثانية)
+
+لكل محتوى مرئي:
+- Hook (أول 3 ثوانٍ — الجملة التي تمنع التمرير)
+- خطة المشاهد (كل 5-10 ثوانٍ)
+- النص المنطوق
+- نص الـ On-Screen Text
+- الموسيقى المقترحة
+- Hashtags</div>
+<div class="prompt-meta">
+<span>🤖 ChatGPT / Claude</span>
+<span class="tag">Reels</span>
+<span class="tag">TikTok</span>
+<span class="tag">Visual Script</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+</div>
+<!-- Category 5: Midjourney -->
+<div class="prompt-category">
+<div class="prompt-category-header">
+<span class="icon">🎨</span>
+<h2>تصاميم الملابس (Midjourney)</h2>
+</div>
+<div class="prompt-item">
+<h3>Prompt 6.1 — هودي Streetwear</h3>
+<div class="prompt-content">Oversized streetwear hoodie design, [لون] colorway, Arabic calligraphy graphic on chest reading "[نص عربي]", urban minimalist aesthetic, flat lay product photography, clean white background, professional apparel mockup, ultra realistic fabric texture, 8k --ar 3:4 --style raw --v 6</div>
+<div class="prompt-meta">
+<span>🎨 Midjourney</span>
+<span class="tag">هودي</span>
+<span class="tag">Streetwear</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+<div class="prompt-item">
+<h3>Prompt 6.2 — تيشرت Graphic</h3>
+<div class="prompt-content">T-shirt graphic design concept, [وصف التصميم], [نمط فني: e.g. bold geometric / vintage distressed / minimalist], suitable for screen printing, vector style, high contrast, [الألوان المطلوبة] color palette, isolated on white --ar 1:1 --style raw --v 6</div>
+<div class="prompt-meta">
+<span>🎨 Midjourney</span>
+<span class="tag">تيشرت</span>
+<span class="tag">Graphic</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+<div class="prompt-item">
+<h3>Prompt 6.3 — عارض افتراضي (Virtual Model)</h3>
+<div class="prompt-content">Young Arab male model, 25 years old, wearing [وصف الملبس بالتفصيل], standing confidently in [المكان: e.g. urban rooftop / modern city street / minimal studio], cinematic lighting, fashion editorial photography style, 85mm lens, shallow depth of field, authentic expression --ar 2:3 --style raw --v 6</div>
+<div class="prompt-meta">
+<span>🎨 Midjourney</span>
+<span class="tag">عارض</span>
+<span class="tag">Fashion</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+<div class="prompt-item">
+<h3>Prompt 6.4 — عرض أزياء افتراضي</h3>
+<div class="prompt-content">Fashion runway show, male model wearing [وصف كامل للملبس], contemporary Arabic streetwear collection, dramatic runway lighting, editorial fashion photography, high fashion magazine aesthetic, crisp focus on outfit details --ar 2:3 --v 6 --style raw</div>
+<div class="prompt-meta">
+<span>🎨 Midjourney</span>
+<span class="tag">Runway</span>
+<span class="tag">Fashion Show</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+<div class="prompt-item">
+<h3>Prompt 6.5 — Flat Lay احترافي</h3>
+<div class="prompt-content">Professional flat lay product photography, [اسم المنتج], arranged aesthetically on [خلفية: concrete / wood / marble / white fabric], styled with [إكسسوارات: e.g. vintage polaroid, coffee cup, plant], overhead shot, soft natural lighting, fashion brand marketing visual --ar 1:1 --style raw --v 6</div>
+<div class="prompt-meta">
+<span>🎨 Midjourney</span>
+<span class="tag">Flat Lay</span>
+<span class="tag">Product</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+<div class="prompt-item">
+<h3>Prompt 6.6 — مفاهيم اللوغو</h3>
+<div class="prompt-content">Minimalist logo design for clothing brand named "[اسم البراند]", [وصف الأسلوب البصري: e.g. bold geometric lettermark / abstract symbol / wordmark], monochrome, vector style, clean lines, suitable for embroidery and screen printing, professional brand identity, white background --ar 1:1 --style raw --v 6</div>
+<div class="prompt-meta">
+<span>🎨 Midjourney</span>
+<span class="tag">Logo</span>
+<span class="tag">Brand Identity</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+<div class="prompt-item">
+<h3>Prompt 6.7 — لوحة المزاج (Moodboard)</h3>
+<div class="prompt-content">Moodboard collage for [اسم البراند] clothing brand, aesthetic mood: [وصف المزاج: e.g. dark urban luxury / minimal clean earth tones / vibrant street culture], featuring color palette [الألوان], texture references, urban lifestyle imagery, fashion editorial mix, clean grid layout --ar 16:9 --v 6</div>
+<div class="prompt-meta">
+<span>🎨 Midjourney</span>
+<span class="tag">Moodboard</span>
+<span class="tag">Brand</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+<div class="prompt-item">
+<h3>Prompt 6.8 — نقوشات وأنماط</h3>
+<div class="prompt-content">Seamless textile pattern design, [وصف النقش: e.g. Arabic geometric motifs / Arabesque inspired / Kufic script elements], [الألوان] color scheme, suitable for fabric printing, repeat pattern, high detail, vector quality --ar 1:1 --tile --v 6</div>
+<div class="prompt-meta">
+<span>🎨 Midjourney</span>
+<span class="tag">Pattern</span>
+<span class="tag">Textile</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+</div>
+<!-- Category 6: Visual -->
+<div class="prompt-category">
+<div class="prompt-category-header">
+<span class="icon">🎬</span>
+<h2>المحتوى المرئي السينمائي (Runway + Kling AI)</h2>
+</div>
+<div class="prompt-item">
+<h3>Prompt 8.1 — Runway Gen-3 (Image to Visual)</h3>
+<div class="prompt-content">Gentle breeze moves through the fabric of the hoodie, model turns slowly to face camera with confident expression, golden hour sunlight catches the material texture, cinematic slow motion, fashion editorial movement, ultra realistic</div>
+<div class="prompt-meta">
+<span>🎬 Runway Gen-3</span>
+<span class="tag">Image to Visual</span>
+<span class="tag">Fashion</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+<div class="prompt-item">
+<h3>Prompt 8.2 — Kling AI (Fashion Campaign)</h3>
+<div class="prompt-content">Fashion film sequence: Young man walks confidently through [مكان: vibrant Arab street market / modern city bridge / rooftop terrace at night], wearing [وصف الملبس], camera follows in smooth tracking shot, cinematic grade, warm film-like color treatment, authentically Arabic urban aesthetic, 24fps cinematic motion</div>
+<div class="prompt-meta">
+<span>🎬 Kling AI</span>
+<span class="tag">Fashion Film</span>
+<span class="tag">Campaign</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+<div class="prompt-item">
+<h3>Prompt 8.3 — عرض منتج (Product Reveal)</h3>
+<div class="prompt-content">Elegant product reveal animation: [اسم المنتج] emerges from a white void, slowly rotating to show all angles, soft studio lighting creates beautiful shadow play on fabric texture, premium product showcase aesthetic, minimal and clean</div>
+<div class="prompt-meta">
+<span>🎬 Runway / Kling</span>
+<span class="tag">Product Reveal</span>
+<span class="tag">3D</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+<div class="prompt-item">
+<h3>Prompt 8.4 — إعلان Reel (15 ثانية)</h3>
+<div class="prompt-content">15-second fashion advertisement: Opening shot — hands carefully unboxing a premium clothing package, cut to model putting on [المنتج], close-up of fabric detail, wide shot of model walking confidently, ending on product flat lay with brand logo, cinematic color grade, upbeat modern music implied</div>
+<div class="prompt-meta">
+<span>🎬 Kling AI</span>
+<span class="tag">Reel</span>
+<span class="tag">Advertisement</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+</div>
+<!-- Category 7: Customer Service -->
+<div class="prompt-category">
+<div class="prompt-category-header">
+<span class="icon">🎧</span>
+<h2>خدمة العملاء والعمليات</h2>
+</div>
+<div class="prompt-item">
+<h3>Prompt 9.1 — بناء قاعدة ردود شاملة</h3>
+<div class="prompt-content">أنا أمتلك براند ملابس اسمه [اسم البراند] في نيش [نيشك].
+
+أنشئ لي 20 نموذج رد على الاستفسارات الشائعة:
+1. السؤال عن المقاسات
+2. السؤال عن جدول الشحن
+3. الشكوى من تأخر الشحن
+4. طلب الإرجاع
+5. السؤال عن الجودة
+6. مقارنة منتجنا بالمنافس
+7. السؤال عن العروض والخصومات
+8. الشكوى من منتج تالف
+9. السؤال عن الشحن الدولي
+10. طلب تتبع الطلب
+
+[استمر من 11-20 حسب احتياجك]
+
+لكل رد:
+- نبرة: احترافية ودافئة تعكس شخصية البراند
+- الطول: 3-4 جمل
+- CTA واضح (ما الخطوة التالية)</div>
+<div class="prompt-meta">
+<span>🤖 ChatGPT / Claude</span>
+<span class="tag">Customer Service</span>
+<span class="tag">Operations</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+<div class="prompt-item">
+<h3>Prompt 9.2 — تحويل الشكوى لفرصة</h3>
+<div class="prompt-content">عميل كتب لي هذه الشكوى: "[نص الشكوى]"
+
+أريد رداً:
+1. يعترف بالمشكلة دون تبرير
+2. يُظهر التعاطف الحقيقي
+3. يقدم حلاً واضحاً ومحدداً
+4. يتحول الموقف من شكوى إلى تجربة إيجابية
+5. يجعل هذا العميل يشعر بأنه الأهم
+
+النبرة: دافئة، بشرية، غير رسمية جداً
+الطول: 4-5 جمل</div>
+<div class="prompt-meta">
+<span>🤖 ChatGPT / Claude</span>
+<span class="tag">Customer Service</span>
+<span class="tag">Crisis Management</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+</div>
+<!-- Category 8: Ads -->
+<div class="prompt-category">
+<div class="prompt-category-header">
+<span class="icon">📢</span>
+<h2>الإعلانات المدفوعة</h2>
+</div>
+<div class="prompt-item">
+<h3>Prompt 10.1 — إعلان Meta للتوعية (Awareness)</h3>
+<div class="prompt-content">اكتب 5 نصوص إعلانية لـ Meta Ads في مرحلة التوعية (Awareness) لبراند [اسم البراند].
+
+المنتج: [المنتج]
+الجمهور: [الجمهور]
+الرسالة: [الرسالة الرئيسية]
+
+لكل إعلان:
+- Primary Text (النص الرئيسي — 125 حرف)
+- Headline (العنوان — 40 حرف)
+- Description (الوصف — 30 حرف)
+- CTA المقترح (Shop Now / Learn More / etc)
+
+الأساليب الخمسة:
+1. مبني على الشعور/العاطفة
+2. مبني على الجودة والمواصفات
+3. مبني على القصة
+4. مبني على الهوية (أنت من يرتدي هذا)
+5. مبني على الندرة والحصرية</div>
+<div class="prompt-meta">
+<span>🤖 ChatGPT / Claude</span>
+<span class="tag">Meta Ads</span>
+<span class="tag">Awareness</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+<div class="prompt-item">
+<h3>Prompt 10.2 — إعلان Retargeting</h3>
+<div class="prompt-content">اكتب 3 نصوص إعلانية لـ Retargeting لأشخاص زاروا موقعي لكن لم يشتروا.
+
+براندي: [اسم البراند]
+المنتج: [المنتج]
+سبب عدم الشراء المحتمل: [السعر؟ الثقة؟ التردد؟]
+
+النسخ الثلاث:
+1. "تذكير + قيمة" (ذكّرهم لماذا شاهدوا المنتج)
+2. "سوشيال بروف" (شهادات + أرقام مبيعات)
+3. "إلحاح + حافز" (خصم محدود الوقت)</div>
+<div class="prompt-meta">
+<span>🤖 ChatGPT / Claude</span>
+<span class="tag">Meta Ads</span>
+<span class="tag">Retargeting</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+</div>
+<!-- Category 9: Creative -->
+<div class="prompt-category">
+<div class="prompt-category-header">
+<span class="icon">💡</span>
+<h2>الإبداع والابتكار</h2>
+</div>
+<div class="prompt-item">
+<h3>Prompt 11.1 — عصف ذهني للمجموعة</h3>
+<div class="prompt-content">أنا أبني مجموعة ملابس جديدة. 
+
+معلومات المجموعة:
+- البراند: [اسم البراند]
+- الإلهام العام: [مصدر الإلهام]
+- الجمهور: [من سيرتديها]
+- الميزانية: [$...]
+
+جلسة عصف ذهني:
+1. اقترح 10 مفاهيم إبداعية للمجموعة
+2. لكل مفهوم: اسم + 3 قطع رئيسية + لوحة ألوان + الإلهام
+3. رتّبها من الأكثر قابلية للبيع إلى الأكثر إبداعاً
+4. أي المفاهيم يناسب البداية وأيها للتوسع لاحقاً؟</div>
+<div class="prompt-meta">
+<span>🤖 ChatGPT / Claude</span>
+<span class="tag">Brainstorming</span>
+<span class="tag">Collection</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+<div class="prompt-item">
+<h3>Prompt 11.2 — تحليل منافس كامل</h3>
+<div class="prompt-content">حلّل بعمق براند الملابس [اسم المنافس]:
+
+استناداً لما تعرفه:
+1. نموذج أعمالهم (كيف يجنون المال؟)
+2. استراتيجية التسويق (ماذا يعتمدون؟)
+3. تحليل محتواهم الرقمي
+4. موضعهم السعري وسبب نجاحه
+5. أبرز نقاط قوتهم (5 نقاط)
+6. أبرز نقاط ضعفهم (5 نقاط)
+7. الفجوات الكبيرة في عرضهم
+8. كيف يمكن لبراند ناشئ أن يأخذ حصة من جمهورهم؟</div>
+<div class="prompt-meta">
+<span>🤖 ChatGPT / Claude</span>
+<span class="tag">Analysis</span>
+<span class="tag">Competitor</span>
+</div>
+<button class="prompt-copy">📋 نسخ الـ Prompt</button>
+</div>
+</div>
+<div class="note-box" style="margin-top:2rem;">
+<strong>💡 نصيحة مهمة:</strong> استبدل كل الأجزاء بين [أقواس] بمعلومات براندك الحقيقية. كلما كانت المعلومات أكثر تفصيلاً، كانت النتائج أفضل. كرر وحسّن — لا تتوقع الإجابة المثالية من المحاولة الأولى.
+    </div>
+</div>
+</section>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-bottom" style="border:none; padding-top:1rem;">
+<p>© 2024 أكاديمية AI Fashion</p>
+<p><a href="dashboard.html" style="color:var(--cyan);">← رجوع للداشبورد</a></p>
+</div>
+</div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/progress.js"></script>
+</body>
+</html>

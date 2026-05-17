@@ -1,0 +1,287 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#070707"/><stop offset="100%" style="stop-color:#0d0d0d"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E4B832"/><stop offset="100%" style="stop-color:#C9A017"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="780" fill="url(#bg)"/>
+  <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <circle cx="20" cy="20" r="0.5" fill="#C9A017" opacity="0.07"/>
+  </pattern>
+  <rect width="1200" height="780" fill="url(#dots)"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="56" fill="#060606"/>
+  <rect x="0" y="55" width="1200" height="1" fill="#1e1e1e"/>
+  <rect x="40" y="14" width="26" height="26" rx="5" fill="url(#gold)"/>
+  <text x="53" y="31" font-family="Arial,sans-serif" font-size="11" font-weight="900" fill="#000" text-anchor="middle">AI</text>
+  <text x="78" y="26" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#fff">AI FASHION ACADEMY</text>
+  <text x="78" y="41" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" letter-spacing="2">CONTENT STRATEGY — MODULE 13</text>
+
+  <!-- Title -->
+  <text x="600" y="88" font-family="Georgia,serif" font-size="20" font-weight="900" fill="#fff" text-anchor="middle">استراتيجية المحتوى الكاملة</text>
+  <text x="600" y="108" font-family="Arial,sans-serif" font-size="11" fill="#666" text-anchor="middle">Content Pillars + Weekly Calendar + Platform Strategy</text>
+  <rect x="565" y="116" width="70" height="2" rx="1" fill="url(#gold)"/>
+
+  <!-- ── CONTENT PILLARS (PIE-LIKE) ── -->
+  <text x="250" y="148" font-family="Arial,sans-serif" font-size="10" fill="#C9A017" text-anchor="middle" font-weight="700" letter-spacing="1">CONTENT PILLARS — أعمدة المحتوى</text>
+
+  <!-- Pillar 1 - BTS 25% -->
+  <rect x="40" y="162" width="200" height="120" rx="10" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="40" y="162" width="200" height="4" rx="2 2 0 0" fill="#10b981"/>
+  <text x="50" y="183" font-family="Arial,sans-serif" font-size="9" fill="#10b981" font-weight="700">خلف الكواليس</text>
+  <text x="50" y="197" font-family="Arial,sans-serif" font-size="8" fill="#666">Behind the Scenes</text>
+  <text x="220" y="188" font-family="Arial,sans-serif" font-size="22" fill="#10b981" text-anchor="end" font-weight="900" opacity="0.4">25%</text>
+  <text x="50" y="218" font-family="Arial,sans-serif" font-size="9" fill="#888">• كيف تصمم المجموعة</text>
+  <text x="50" y="232" font-family="Arial,sans-serif" font-size="9" fill="#888">• يوم في حياة المؤسس</text>
+  <text x="50" y="246" font-family="Arial,sans-serif" font-size="9" fill="#888">• عملية التعبئة والشحن</text>
+  <text x="50" y="262" font-family="Arial,sans-serif" font-size="8" fill="#555">أعلى engagement — يبني الثقة</text>
+
+  <!-- Pillar 2 - Educational 25% -->
+  <rect x="250" y="162" width="200" height="120" rx="10" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="250" y="162" width="200" height="4" rx="2 2 0 0" fill="#f59e0b"/>
+  <text x="260" y="183" font-family="Arial,sans-serif" font-size="9" fill="#f59e0b" font-weight="700">تعليمي / قيمة</text>
+  <text x="260" y="197" font-family="Arial,sans-serif" font-size="8" fill="#666">Educational / Value</text>
+  <text x="430" y="188" font-family="Arial,sans-serif" font-size="22" fill="#f59e0b" text-anchor="end" font-weight="900" opacity="0.4">25%</text>
+  <text x="260" y="218" font-family="Arial,sans-serif" font-size="9" fill="#888">• كيف تنسّق الـ Streetwear</text>
+  <text x="260" y="232" font-family="Arial,sans-serif" font-size="9" fill="#888">• الفرق بين الخامات</text>
+  <text x="260" y="246" font-family="Arial,sans-serif" font-size="9" fill="#888">• اختبار جودة الملابس</text>
+  <text x="260" y="262" font-family="Arial,sans-serif" font-size="8" fill="#555">أعلى reach عضوي</text>
+
+  <!-- Pillar 3 - Product 20% -->
+  <rect x="40" y="294" width="200" height="120" rx="10" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="40" y="294" width="200" height="4" rx="2 2 0 0" fill="#C9A017"/>
+  <text x="50" y="315" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" font-weight="700">المنتجات</text>
+  <text x="50" y="329" font-family="Arial,sans-serif" font-size="8" fill="#666">Product Showcase</text>
+  <text x="220" y="320" font-family="Arial,sans-serif" font-size="22" fill="#C9A017" text-anchor="end" font-weight="900" opacity="0.4">20%</text>
+  <text x="50" y="350" font-family="Arial,sans-serif" font-size="9" fill="#888">• صور المنتجات الاحترافية</text>
+  <text x="50" y="364" font-family="Arial,sans-serif" font-size="9" fill="#888">• New Arrivals Reveal</text>
+  <text x="50" y="378" font-family="Arial,sans-serif" font-size="9" fill="#888">• Flat Lay + Styling</text>
+  <text x="50" y="394" font-family="Arial,sans-serif" font-size="8" fill="#555">تحويل مبيعات مباشر</text>
+
+  <!-- Pillar 4 - Community 15% -->
+  <rect x="250" y="294" width="200" height="120" rx="10" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="250" y="294" width="200" height="4" rx="2 2 0 0" fill="#8b5cf6"/>
+  <text x="260" y="315" font-family="Arial,sans-serif" font-size="9" fill="#8b5cf6" font-weight="700">المجتمع</text>
+  <text x="260" y="329" font-family="Arial,sans-serif" font-size="8" fill="#666">Community</text>
+  <text x="430" y="320" font-family="Arial,sans-serif" font-size="22" fill="#8b5cf6" text-anchor="end" font-weight="900" opacity="0.4">15%</text>
+  <text x="260" y="350" font-family="Arial,sans-serif" font-size="9" fill="#888">• صور العملاء (UGC)</text>
+  <text x="260" y="364" font-family="Arial,sans-serif" font-size="9" fill="#888">• Reposts + شهادات</text>
+  <text x="260" y="378" font-family="Arial,sans-serif" font-size="9" fill="#888">• Q&amp;A + Polls</text>
+  <text x="260" y="394" font-family="Arial,sans-serif" font-size="8" fill="#555">يبني مجتمع وولاء</text>
+
+  <!-- Pillar 5 - Promo 15% -->
+  <rect x="40" y="426" width="410" height="70" rx="10" fill="#141414" stroke="#C41010" stroke-width="1" stroke-opacity="0.4"/>
+  <rect x="40" y="426" width="410" height="4" rx="2 2 0 0" fill="#C41010" opacity="0.7"/>
+  <text x="55" y="447" font-family="Arial,sans-serif" font-size="9" fill="#ff6b6b" font-weight="700">ترويجي (15%)</text>
+  <text x="200" y="447" font-family="Arial,sans-serif" font-size="8" fill="#666">Promotional</text>
+  <text x="55" y="465" font-family="Arial,sans-serif" font-size="9" fill="#888">عروض · إطلاق مجموعات · أكواد خصم · Countdown</text>
+  <text x="55" y="482" font-family="Arial,sans-serif" font-size="8" fill="#C41010">⚠️ لا تبالغ في الترويج — يُقلل الثقة</text>
+
+  <!-- ── WEEKLY CALENDAR ── -->
+  <text x="860" y="148" font-family="Arial,sans-serif" font-size="10" fill="#C9A017" text-anchor="middle" font-weight="700" letter-spacing="1">WEEKLY CONTENT CALENDAR — تقويم أسبوعي</text>
+
+  <!-- Calendar grid -->
+  <g font-family="Arial,sans-serif">
+    <!-- Days header -->
+    <rect x="480" y="162" width="680" height="30" rx="5 5 0 0" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="515" y="181" font-size="9" fill="#C9A017" text-anchor="middle">الأحد</text>
+    <text x="612" y="181" font-size="9" fill="#C9A017" text-anchor="middle">الاثنين</text>
+    <text x="709" y="181" font-size="9" fill="#C9A017" text-anchor="middle">الثلاثاء</text>
+    <text x="806" y="181" font-size="9" fill="#C9A017" text-anchor="middle">الأربعاء</text>
+    <text x="903" y="181" font-size="9" fill="#C9A017" text-anchor="middle">الخميس</text>
+    <text x="1000" y="181" font-size="9" fill="#C9A017" text-anchor="middle">الجمعة</text>
+    <text x="1097" y="181" font-size="9" fill="#C9A017" text-anchor="middle">السبت</text>
+
+    <!-- Instagram Row -->
+    <rect x="480" y="192" width="680" height="66" rx="0" fill="#0d0d0d" stroke="#1e1e1e" stroke-width="0.5"/>
+    <text x="485" y="226" font-size="8" fill="#e1306c" font-weight="700">IG</text>
+
+    <!-- Sunday -->
+    <rect x="491" y="197" width="82" height="56" rx="4" fill="#141414" stroke="#1e1e1e" stroke-width="1"/>
+    <text x="532" y="213" font-size="7" fill="#10b981" text-anchor="middle">خلف الكواليس</text>
+    <text x="532" y="225" font-size="7" fill="#888" text-anchor="middle">🎬 Reel</text>
+    <text x="532" y="237" font-size="7" fill="#666" text-anchor="middle">60 ثانية</text>
+    <text x="532" y="248" font-size="6" fill="#555" text-anchor="middle">AI + Process</text>
+
+    <!-- Monday -->
+    <rect x="588" y="197" width="82" height="56" rx="4" fill="#141414" stroke="#1e1e1e" stroke-width="1"/>
+    <text x="629" y="213" font-size="7" fill="#C9A017" text-anchor="middle">المنتج</text>
+    <text x="629" y="225" font-size="7" fill="#888" text-anchor="middle">📸 Post</text>
+    <text x="629" y="237" font-size="7" fill="#666" text-anchor="middle">Flat Lay</text>
+    <text x="629" y="248" font-size="6" fill="#555" text-anchor="middle">Product Shot</text>
+
+    <!-- Tuesday -->
+    <rect x="685" y="197" width="82" height="56" rx="4" fill="#141414" stroke="#1e1e1e" stroke-width="1"/>
+    <text x="726" y="213" font-size="7" fill="#f59e0b" text-anchor="middle">تعليمي</text>
+    <text x="726" y="225" font-size="7" fill="#888" text-anchor="middle">📊 Carousel</text>
+    <text x="726" y="237" font-size="7" fill="#666" text-anchor="middle">5-7 slides</text>
+    <text x="726" y="248" font-size="6" fill="#555" text-anchor="middle">Tips + Value</text>
+
+    <!-- Wednesday -->
+    <rect x="782" y="197" width="82" height="56" rx="4" fill="#141414" stroke="#1e1e1e" stroke-width="1"/>
+    <text x="823" y="213" font-size="7" fill="#8b5cf6" text-anchor="middle">Story</text>
+    <text x="823" y="225" font-size="7" fill="#888" text-anchor="middle">📱 Story</text>
+    <text x="823" y="237" font-size="7" fill="#666" text-anchor="middle">Poll / Q&amp;A</text>
+    <text x="823" y="248" font-size="6" fill="#555" text-anchor="middle">Engagement</text>
+
+    <!-- Thursday -->
+    <rect x="879" y="197" width="82" height="56" rx="4" fill="rgba(201,160,23,0.06)" stroke="#C9A017" stroke-width="0.5" stroke-opacity="0.5"/>
+    <text x="920" y="213" font-size="7" fill="#C9A017" text-anchor="middle">ترويجي</text>
+    <text x="920" y="225" font-size="7" fill="#888" text-anchor="middle">🔥 Reel</text>
+    <text x="920" y="237" font-size="7" fill="#666" text-anchor="middle">30 ثانية</text>
+    <text x="920" y="248" font-size="6" fill="#C9A017" text-anchor="middle">Shop Now CTA</text>
+
+    <!-- Friday -->
+    <rect x="976" y="197" width="82" height="56" rx="4" fill="#141414" stroke="#1e1e1e" stroke-width="1"/>
+    <text x="1017" y="213" font-size="7" fill="#10b981" text-anchor="middle">مجتمع</text>
+    <text x="1017" y="225" font-size="7" fill="#888" text-anchor="middle">👥 UGC</text>
+    <text x="1017" y="237" font-size="7" fill="#666" text-anchor="middle">Repost</text>
+    <text x="1017" y="248" font-size="6" fill="#555" text-anchor="middle">Customer Photo</text>
+
+    <!-- Saturday -->
+    <rect x="1073" y="197" width="82" height="56" rx="4" fill="#141414" stroke="#1e1e1e" stroke-width="1"/>
+    <text x="1114" y="213" font-size="7" fill="#f59e0b" text-anchor="middle">الأسبوع القادم</text>
+    <text x="1114" y="225" font-size="7" fill="#888" text-anchor="middle">📖 Story</text>
+    <text x="1114" y="237" font-size="7" fill="#666" text-anchor="middle">Preview</text>
+    <text x="1114" y="248" font-size="6" fill="#555" text-anchor="middle">Coming Next</text>
+
+    <!-- TikTok Row -->
+    <rect x="480" y="258" width="680" height="66" rx="0" fill="#080808" stroke="#1e1e1e" stroke-width="0.5"/>
+    <text x="485" y="292" font-size="8" fill="#ff0050" font-weight="700">TK</text>
+
+    <rect x="491" y="263" width="82" height="56" rx="4" fill="#141414" stroke="#1e1e1e" stroke-width="1"/>
+    <text x="532" y="279" font-size="7" fill="#10b981" text-anchor="middle">Process</text>
+    <text x="532" y="291" font-size="7" fill="#888" text-anchor="middle">🖼️ Visual</text>
+    <text x="532" y="303" font-size="7" fill="#666" text-anchor="middle">AI Design</text>
+    <text x="532" y="314" font-size="6" fill="#555" text-anchor="middle">Hook Strong</text>
+
+    <rect x="685" y="263" width="82" height="56" rx="4" fill="#141414" stroke="#1e1e1e" stroke-width="1"/>
+    <text x="726" y="279" font-size="7" fill="#f59e0b" text-anchor="middle">Trending</text>
+    <text x="726" y="291" font-size="7" fill="#888" text-anchor="middle">🖼️ Visual</text>
+    <text x="726" y="303" font-size="7" fill="#666" text-anchor="middle">Sound + Brand</text>
+
+    <rect x="879" y="263" width="82" height="56" rx="4" fill="rgba(201,160,23,0.06)" stroke="#C9A017" stroke-width="0.5" stroke-opacity="0.5"/>
+    <text x="920" y="279" font-size="7" fill="#C9A017" text-anchor="middle">Product</text>
+    <text x="920" y="291" font-size="7" fill="#888" text-anchor="middle">🛒 Visual</text>
+    <text x="920" y="303" font-size="7" fill="#666" text-anchor="middle">Before/After</text>
+    <text x="920" y="314" font-size="6" fill="#C9A017" text-anchor="middle">Link in Bio</text>
+
+    <rect x="1073" y="263" width="82" height="56" rx="4" fill="#141414" stroke="#1e1e1e" stroke-width="1"/>
+    <text x="1114" y="279" font-size="7" fill="#10b981" text-anchor="middle">BTS Week</text>
+    <text x="1114" y="291" font-size="7" fill="#888" text-anchor="middle">🔄 Recap</text>
+    <text x="1114" y="303" font-size="7" fill="#666" text-anchor="middle">Week Summary</text>
+  </g>
+
+  <!-- ── PLATFORM COMPARISON ── -->
+  <text x="600" y="355" font-family="Arial,sans-serif" font-size="10" fill="#C9A017" text-anchor="middle" font-weight="700" letter-spacing="1">PLATFORM STRATEGY — استراتيجية كل منصة</text>
+
+  <!-- Instagram -->
+  <rect x="480" y="368" width="220" height="140" rx="10" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="480" y="368" width="220" height="3" rx="2 2 0 0" fill="#e1306c"/>
+  <text x="580" y="388" font-family="Arial,sans-serif" font-size="10" fill="#e1306c" text-anchor="middle" font-weight="700">📸 Instagram</text>
+  <g font-family="Arial,sans-serif" font-size="9">
+    <text x="495" y="408" fill="#888">الهدف: Aesthetic + Trust</text>
+    <text x="495" y="424" fill="#666">• 1 Reel يومياً</text>
+    <text x="495" y="438" fill="#666">• 3-5 Stories</text>
+    <text x="495" y="452" fill="#666">• 2 Carousels أسبوعياً</text>
+    <text x="495" y="468" fill="#666">• Hashtags: 8-12 per post</text>
+    <text x="495" y="484" fill="#C9A017">Best Time: 7-9م</text>
+    <text x="495" y="498" fill="#555">Conversion Rate: أعلى</text>
+  </g>
+
+  <!-- TikTok -->
+  <rect x="715" y="368" width="220" height="140" rx="10" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="715" y="368" width="220" height="3" rx="2 2 0 0" fill="#ff0050"/>
+  <text x="820" y="388" font-family="Arial,sans-serif" font-size="10" fill="#ff0050" text-anchor="middle" font-weight="700">🎵 TikTok</text>
+  <g font-family="Arial,sans-serif" font-size="9">
+    <text x="730" y="408" fill="#888">الهدف: Reach + Viral</text>
+    <text x="730" y="424" fill="#666">• 1-2 منشور مرئي يومياً</text>
+    <text x="730" y="438" fill="#666">• Trending Sounds</text>
+    <text x="730" y="452" fill="#666">• Hook أول 2 ثانية</text>
+    <text x="730" y="468" fill="#666">• Raw/Authentic أفضل</text>
+    <text x="730" y="484" fill="#ff0050">Best Time: 9-11م</text>
+    <text x="730" y="498" fill="#555">Reach: أعلى (Algorithm)</text>
+  </g>
+
+  <!-- YouTube -->
+  <rect x="950" y="368" width="210" height="140" rx="10" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="950" y="368" width="210" height="3" rx="2 2 0 0" fill="#ff0000"/>
+  <text x="1055" y="388" font-family="Arial,sans-serif" font-size="10" fill="#ff4444" text-anchor="middle" font-weight="700">▶ YouTube</text>
+  <g font-family="Arial,sans-serif" font-size="9">
+    <text x="965" y="408" fill="#888">الهدف: Authority + SEO</text>
+    <text x="965" y="424" fill="#666">• 1 محتوى مرئي أسبوعياً</text>
+    <text x="965" y="438" fill="#666">• 10-20 دقيقة</text>
+    <text x="965" y="452" fill="#666">• Evergreen Content</text>
+    <text x="965" y="468" fill="#666">• Tutorials + Vlogs</text>
+    <text x="965" y="484" fill="#ff4444">Best: Thursdays</text>
+    <text x="965" y="498" fill="#555">Trust: أعلى منصة</text>
+  </g>
+
+  <!-- ── AI CONTENT TOOLS ── -->
+  <rect x="40" y="524" width="1120" height="100" rx="10" fill="#0d0d0d" stroke="#1e1e1e" stroke-width="1"/>
+  <rect x="40" y="524" width="1120" height="3" rx="2 2 0 0" fill="url(#gold)"/>
+  <text x="600" y="546" font-family="Arial,sans-serif" font-size="9" fill="#C9A017" text-anchor="middle" font-weight="700" letter-spacing="2">سلسلة إنتاج المحتوى بـ AI — 4 ساعات أسبوعياً تكفي</text>
+
+  <g font-family="Arial,sans-serif" font-size="9">
+    <!-- Step 1 -->
+    <rect x="60" y="556" width="170" height="56" rx="7" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="145" y="574" fill="#C9A017" text-anchor="middle" font-weight="700">01 · التخطيط</text>
+    <text x="145" y="589" fill="#888" text-anchor="middle">ChatGPT يولد</text>
+    <text x="145" y="602" fill="#666" text-anchor="middle">20 فكرة محتوى</text>
+
+    <text x="238" y="587" fill="#C9A017" font-size="16">→</text>
+
+    <!-- Step 2 -->
+    <rect x="248" y="556" width="170" height="56" rx="7" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="333" y="574" fill="#C9A017" text-anchor="middle" font-weight="700">02 · الصور</text>
+    <text x="333" y="589" fill="#888" text-anchor="middle">Midjourney يولد</text>
+    <text x="333" y="602" fill="#666" text-anchor="middle">20 صورة احترافية</text>
+
+    <text x="426" y="587" fill="#C9A017" font-size="16">→</text>
+
+    <!-- Step 3 -->
+    <rect x="436" y="556" width="170" height="56" rx="7" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="521" y="574" fill="#C9A017" text-anchor="middle" font-weight="700">03 · المحتوى المرئي</text>
+    <text x="521" y="589" fill="#888" text-anchor="middle">Runway / Kling</text>
+    <text x="521" y="602" fill="#666" text-anchor="middle">5 كليبات سينمائية</text>
+
+    <text x="614" y="587" fill="#C9A017" font-size="16">→</text>
+
+    <!-- Step 4 -->
+    <rect x="624" y="556" width="170" height="56" rx="7" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="709" y="574" fill="#C9A017" text-anchor="middle" font-weight="700">04 · المونتاج</text>
+    <text x="709" y="589" fill="#888" text-anchor="middle">CapCut يجمع</text>
+    <text x="709" y="602" fill="#666" text-anchor="middle">3 Reels جاهزة</text>
+
+    <text x="802" y="587" fill="#C9A017" font-size="16">→</text>
+
+    <!-- Step 5 -->
+    <rect x="812" y="556" width="170" height="56" rx="7" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="897" y="574" fill="#C9A017" text-anchor="middle" font-weight="700">05 · Captions</text>
+    <text x="897" y="589" fill="#888" text-anchor="middle">Claude يكتب</text>
+    <text x="897" y="602" fill="#666" text-anchor="middle">7 Captions مخصصة</text>
+
+    <text x="990" y="587" fill="#C9A017" font-size="16">→</text>
+
+    <!-- Step 6 -->
+    <rect x="1000" y="556" width="148" height="56" rx="7" fill="rgba(201,160,23,0.08)" stroke="#C9A017" stroke-width="1"/>
+    <text x="1074" y="574" fill="#C9A017" text-anchor="middle" font-weight="700">06 · الجدولة</text>
+    <text x="1074" y="589" fill="#888" text-anchor="middle">Buffer / Later</text>
+    <text x="1074" y="602" fill="#C9A017" text-anchor="middle">أسبوع كامل ✓</text>
+  </g>
+
+  <!-- Time badge -->
+  <rect x="40" y="638" width="1120" height="50" rx="8" fill="#0a0a0a" stroke="#1e1e1e" stroke-width="1"/>
+  <text x="600" y="660" font-family="Arial,sans-serif" font-size="10" fill="#888" text-anchor="middle">النتيجة الأسبوعية:</text>
+  <text x="600" y="678" font-family="Arial,sans-serif" font-size="11" fill="#C9A017" text-anchor="middle" font-weight="700">✓ 3 Reels + 2 Carousels + 14 Stories + 5 Posts = 24 قطعة محتوى/أسبوع — في 4 ساعات فقط</text>
+
+  <!-- Footer -->
+  <rect x="0" y="762" width="1200" height="18" fill="#050505"/>
+  <text x="40" y="775" font-family="Arial,sans-serif" font-size="8" fill="#333">AI Fashion Academy — Content Strategy · Module 13</text>
+  <text x="1160" y="775" font-family="Arial,sans-serif" font-size="8" fill="#C9A017" text-anchor="end">© 2025</text>
+</svg>

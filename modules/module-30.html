@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="ar">
+<head>
+  
+  
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>تحقيق الدخل من القوالب والـ Prompts | أكاديمية AI Fashion</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="../css/style.css" rel="stylesheet"/>
+<style>
+    .module-page { padding-top: 72px; min-height: 100vh; background: var(--off-white); }
+    .module-hero { background: var(--gradient-hero); padding: 3rem 1.5rem; color: var(--white); }
+    .module-hero-inner { max-width: 1200px; margin: 0 auto; }
+    .module-hero h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    .module-hero .en-title { color: var(--stone); font-size: 0.9rem; }
+    .module-hero p { color: var(--stone); margin-top: 0.75rem; max-width: 600px; }
+    .module-layout { display: grid; grid-template-columns: 280px 1fr; gap: 2rem; max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+    @media (max-width: 1024px) { .module-layout { grid-template-columns: 1fr; } }
+    .module-sidebar { background: var(--white); border-radius: var(--radius-lg); padding: 1.5rem; box-shadow: var(--shadow-sm); border: 1px solid rgba(0,0,0,0.04); height: fit-content; position: sticky; top: 88px; }
+    .module-sidebar-title { font-size: 0.9rem; font-weight: 700; color: var(--navy); margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px solid rgba(0,0,0,0.04); }
+    .module-nav { list-style: none; padding: 0; }
+    .module-nav li { margin-bottom: 0.15rem; }
+    .module-nav a { display: block; padding: 0.5rem 0.75rem; border-radius: var(--radius-sm); color: var(--stone-dark); text-decoration: none; font-size: 0.85rem; transition: all 0.2s; border-right: 2px solid transparent; }
+    .module-nav a:hover { background: rgba(6, 182, 212, 0.05); color: var(--cyan-dark); }
+    .module-nav a.active { background: rgba(6, 182, 212, 0.1); color: var(--cyan-dark); border-right-color: var(--cyan); font-weight: 600; }
+    .module-nav .lesson-num { display: inline-block; width: 28px; font-weight: 700; color: var(--stone-light); }
+    .module-nav a.active .lesson-num { color: var(--cyan); }
+    .module-content { background: var(--white); border-radius: var(--radius-lg); padding: 2.5rem; box-shadow: var(--shadow-sm); border: 1px solid rgba(0,0,0,0.04); }
+    .module-content h2 { font-size: 1.4rem; margin-bottom: 1rem; color: var(--navy); padding-bottom: 0.5rem; border-bottom: 2px solid var(--cyan); display: inline-block; }
+    .module-content h3 { font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.75rem; color: var(--navy-light); }
+    .module-content p { margin-bottom: 1rem; line-height: 1.9; color: var(--navy-light); }
+    .module-content ul { margin-bottom: 1.5rem; padding-right: 1.5rem; }
+    .module-content li { margin-bottom: 0.5rem; color: var(--navy-light); }
+    .lesson-card { background: var(--off-white); border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 0.75rem; border: 1px solid rgba(0,0,0,0.04); display: flex; align-items: center; gap: 1rem; text-decoration: none; color: inherit; transition: all 0.3s; }
+    .lesson-card:hover { border-color: var(--cyan); box-shadow: var(--shadow-sm); transform: translateX(-4px); }
+    .lesson-card-num { width: 36px; height: 36px; border-radius: 50%; background: var(--cyan); color: var(--white); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; flex-shrink: 0; }
+    .lesson-card-info { flex: 1; }
+    .lesson-card-info h4 { font-size: 1rem; margin-bottom: 0.25rem; color: var(--navy); }
+    .lesson-card-info p { font-size: 0.85rem; color: var(--stone); margin: 0; }
+    .lesson-card-duration { font-size: 0.8rem; color: var(--stone); font-weight: 500; }
+    .module-meta-bar { display: flex; gap: 2rem; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(0,0,0,0.06); font-size: 0.9rem; color: var(--stone); }
+    .module-meta-bar span { display: flex; align-items: center; gap: 0.5rem; }
+    .deliverables { background: linear-gradient(135deg, rgba(212,165,116,0.08) 0%, rgba(212,165,116,0.03) 100%); border: 1px solid var(--sand-light); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 2rem; }
+    .deliverables h3 { color: var(--sand-dark); font-size: 1rem; margin-bottom: 1rem; }
+    .deliverables ul { list-style: none; padding: 0; margin: 0; }
+    .deliverables li { display: flex; align-items: center; gap: 0.75rem; padding: 0.5rem 0; font-size: 0.95rem; color: var(--navy-light); }
+    .deliverables li::before { content: '☐'; color: var(--sand); font-weight: 700; }
+  </style>
+<script src="../js/auth-gate.js" defer></script>
+</head>
+<body>
+
+<!-- PROTECTED MEMBER-ONLY CONTENT -->
+<header class="site-header">
+<div class="header-inner">
+<a class="logo" href="../index.html"><img alt="AI Fashion Academy" class="logo-img" src="../assets/logo/logo.png"/><div class="logo-text">أكاديمية AI Fashion</div></a>
+<nav class="nav-desktop">
+<a href="../dashboard.html">الداشبورد</a>
+<a href="../roadmap.html">الخريطة</a>
+<a href="module-1.html">الوحدات</a>
+<a href="../prompt-library.html">الـ Prompts</a>
+</nav>
+<div class="header-actions">
+
+</div>
+</div>
+</header>
+<div class="module-page">
+<div class="module-hero">
+<div class="module-hero-inner">
+<span style="display:inline-block; padding:0.25rem 0.75rem; background:rgba(6,182,212,0.2); color:var(--cyan); border-radius:100px; font-size:0.75rem; font-weight:700; margin-bottom:0.75rem;">وحدة 30</span>
+<h1>تحقيق الدخل من القوالب والـ Prompts</h1>
+<div class="en-title">Monetizing Templates &amp; Prompts</div>
+<p>بيع على Gumroad وEtsy، Mini-Courses، وتحويل المعرفة لدخل.</p>
+<div class="module-meta-bar">
+<span>📚 4 درس</span>
+<span>⏱ 100 دقيقة</span>
+<span>🎯 3 مخرج</span>
+</div>
+</div>
+</div>
+<div class="module-layout">
+<aside class="module-sidebar">
+<div class="module-sidebar-title">دروس الوحدة</div>
+<ul class="module-nav">
+<li><a href="../lessons/lesson-30-1.html"><span class="lesson-num">30.1</span> بيع القوالب على Gumroad وEtsy</a></li>
+<li><a href="../lessons/lesson-30-2.html"><span class="lesson-num">30.2</span> بناء Mini-Courses</a></li>
+<li><a href="../lessons/lesson-30-3.html"><span class="lesson-num">30.3</span> بيع Prompts والأدوات</a></li>
+<li><a href="../lessons/lesson-30-4.html"><span class="lesson-num">30.4</span> ورشة: خطة دخل إضافي 6 أشهر</a></li>
+</ul>
+</aside>
+<main class="module-content">
+<h2>نظرة عامة على الوحدة</h2><figure class="module-cover-card"><img alt="تحقيق الدخل من القوالب والـ Prompts visual cover" src="../assets/module-covers/module-30.svg"/><figcaption class="visual-caption">خريطة بصرية للوحدة ومخرجاتها العملية.</figcaption></figure>
+<p>هاي الوحدة رح تعلمك كيف تحوّل المعرفة اللي اكتسبتها لدخل إضافي. رح نبيع القوالب والـ Prompts على Gumroad وEtsy. رح نبني Mini-Courses. ونكتشف طرق تانية لتحقيق الدخل.</p>
+<h3>الدروس</h3>
+<a class="lesson-card" href="../lessons/lesson-30-1.html">
+<div class="lesson-card-num">30.1</div>
+<div class="lesson-card-info">
+<h4>بيع القوالب على Gumroad وEtsy</h4>
+<p>25 دقيقة</p>
+</div>
+<div class="lesson-card-duration">▶️</div>
+</a>
+<a class="lesson-card" href="../lessons/lesson-30-2.html">
+<div class="lesson-card-num">30.2</div>
+<div class="lesson-card-info">
+<h4>بناء Mini-Courses</h4>
+<p>25 دقيقة</p>
+</div>
+<div class="lesson-card-duration">▶️</div>
+</a>
+<a class="lesson-card" href="../lessons/lesson-30-3.html">
+<div class="lesson-card-num">30.3</div>
+<div class="lesson-card-info">
+<h4>بيع Prompts والأدوات</h4>
+<p>20 دقيقة</p>
+</div>
+<div class="lesson-card-duration">▶️</div>
+</a>
+<a class="lesson-card" href="../lessons/lesson-30-4.html">
+<div class="lesson-card-num">30.4</div>
+<div class="lesson-card-info">
+<h4>ورشة: خطة دخل إضافي 6 أشهر</h4>
+<p>30 دقيقة</p>
+</div>
+<div class="lesson-card-duration">▶️</div>
+</a>
+<div class="deliverables">
+<h3>📋 مخرجات الوحدة (Deliverables)</h3>
+<ul>
+<li>منتج رقمي جاهز للبيع</li>
+<li>حساب Gumroad/Etsy</li>
+<li>خطة دخل إضافي</li>
+</ul>
+</div>
+<div style="margin-top:2rem; display:flex; gap:1rem; justify-content:space-between;">
+<a class="btn btn-secondary" href="module-29.html">← الوحدة 29</a>
+<a class="btn btn-secondary" href="module-31.html">الوحدة 31 →</a>
+</div>
+</main>
+</div>
+</div>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-bottom" style="border:none; padding-top:1rem;">
+<p>© 2024 أكاديمية AI Fashion</p>
+<p><a href="../dashboard.html" style="color:var(--cyan);">← رجوع للداشبورد</a></p>
+</div>
+</div>
+</footer>
+<script src="../js/main.js"></script>
+<script src="../js/progress.js"></script>
+</body>
+</html>
