@@ -911,12 +911,12 @@ p { margin-bottom: 1rem; font-size: 1.05rem; }
 
 .pricing-features li.not-included::before {
   content: '—';
-  color: var(--stone-light);
+  color: var(--black);
   flex-shrink: 0;
 }
 
 .pricing-features li.not-included {
-  color: var(--stone-light);
+  color: var(black);
   text-decoration: line-through;
 }
 
