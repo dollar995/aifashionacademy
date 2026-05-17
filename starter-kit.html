@@ -178,6 +178,32 @@ h1 span{color:#d4a574;}
 .success-box .icon{font-size:3.5rem;margin-bottom:1rem;}
 .success-box h2{color:#d4a574;font-size:1.5rem;margin-bottom:.75rem;}
 .success-box p{color:#94a3b8;line-height:1.7;}
+.form-select{
+  width:100%;
+  padding:1rem 1.1rem;
+  border:2px solid rgba(212,165,116,.2);
+  border-radius:14px;
+  font-family:Tajawal,sans-serif;
+  font-size:1rem;
+  color:#faf9f6;
+  background:rgba(255,255,255,.05);
+  transition:border-color .3s;
+  margin-bottom:1rem;
+  appearance:none;
+  -webkit-appearance:none;
+  cursor:pointer;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23d4a574' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:left 1rem center;
+}
+.form-select:focus{
+  outline:none;
+  border-color:#d4a574;
+}
+.form-select option{
+  background:#0f0f0f;
+  color:#faf9f6;
+}
 .privacy-note{
   text-align:center;
   margin-top:1rem;
@@ -258,6 +284,59 @@ h1 span{color:#d4a574;}
       <label class="form-label" for="emailInput">بريدك الإلكتروني</label>
       <input class="form-input" id="emailInput" placeholder="your@email.com" type="email"/>
 
+      <label class="form-label" for="countryInput">دولتك</label>
+      <select class="form-select" id="countryInput">
+        <option value="" disabled selected>اختر دولتك</option>
+        <optgroup label="🌍 الشرق الأوسط">
+          <option value="Jordan">الأردن</option>
+          <option value="Saudi Arabia">السعودية</option>
+          <option value="UAE">الإمارات</option>
+          <option value="Kuwait">الكويت</option>
+          <option value="Qatar">قطر</option>
+          <option value="Bahrain">البحرين</option>
+          <option value="Oman">عُمان</option>
+          <option value="Yemen">اليمن</option>
+          <option value="Iraq">العراق</option>
+          <option value="Syria">سوريا</option>
+          <option value="Lebanon">لبنان</option>
+          <option value="Palestine">فلسطين</option>
+          <option value="Egypt">مصر</option>
+          <option value="Libya">ليبيا</option>
+          <option value="Tunisia">تونس</option>
+          <option value="Algeria">الجزائر</option>
+          <option value="Morocco">المغرب</option>
+          <option value="Sudan">السودان</option>
+        </optgroup>
+        <optgroup label="🌍 أفريقيا">
+          <option value="Nigeria">نيجيريا</option>
+          <option value="Ethiopia">إثيوبيا</option>
+          <option value="Kenya">كينيا</option>
+          <option value="Ghana">غانا</option>
+          <option value="South Africa">جنوب أفريقيا</option>
+        </optgroup>
+        <optgroup label="🌍 أوروبا">
+          <option value="Turkey">تركيا</option>
+          <option value="Germany">ألمانيا</option>
+          <option value="France">فرنسا</option>
+          <option value="UK">المملكة المتحدة</option>
+          <option value="Netherlands">هولندا</option>
+          <option value="Sweden">السويد</option>
+          <option value="Spain">إسبانيا</option>
+        </optgroup>
+        <optgroup label="🌍 أمريكا">
+          <option value="USA">الولايات المتحدة</option>
+          <option value="Canada">كندا</option>
+          <option value="Brazil">البرازيل</option>
+        </optgroup>
+        <optgroup label="🌍 آسيا">
+          <option value="Malaysia">ماليزيا</option>
+          <option value="Indonesia">إندونيسيا</option>
+          <option value="Pakistan">باكستان</option>
+          <option value="India">الهند</option>
+        </optgroup>
+        <option value="Other">دولة أخرى</option>
+      </select>
+
       <button class="btn-submit" id="submitBtn" onclick="sendKit()">
         <span>📩</span> أرسل لي الـ Starter Kit
       </button>
@@ -284,13 +363,15 @@ h1 span{color:#d4a574;}
 var EDGE_FUNCTION_URL = 'https://frlsurwwumzcqckwkmnv.supabase.co/functions/v1/subscribe-mailerlite';
 
 function sendKit() {
-  var name  = document.getElementById('nameInput').value.trim();
-  var email = document.getElementById('emailInput').value.trim();
-  var btn   = document.getElementById('submitBtn');
-  var errDiv = document.getElementById('errorMsg');
+  var name    = document.getElementById('nameInput').value.trim();
+  var email   = document.getElementById('emailInput').value.trim();
+  var country = document.getElementById('countryInput').value;
+  var btn     = document.getElementById('submitBtn');
+  var errDiv  = document.getElementById('errorMsg');
 
-  if (!name)  { showError('يرجى إدخال اسمك'); return; }
+  if (!name)    { showError('يرجى إدخال اسمك'); return; }
   if (!email || !email.includes('@')) { showError('يرجى إدخال بريد إلكتروني صحيح'); return; }
+  if (!country) { showError('يرجى اختيار دولتك'); return; }
 
   btn.disabled = true;
   btn.innerHTML = '<span>⏳</span> جاري الإرسال...';
@@ -298,8 +379,12 @@ function sendKit() {
 
   fetch(EDGE_FUNCTION_URL, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ name: name, email: email })
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer sb_publishable_0QuIqlJJ-Aw2XAGIzSByVQ_ADpieSTH',
+      'apikey': 'sb_publishable_0QuIqlJJ-Aw2XAGIzSByVQ_ADpieSTH'
+    },
+    body: JSON.stringify({ name: name, email: email, country: country })
   })
   .then(function(res) {
     return res.json().then(function(data) {
