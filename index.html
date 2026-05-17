@@ -86,38 +86,56 @@
   .countdown-box span{ font-size:1.55rem; }
   .launch-timer-card{ padding:1.1rem; border-radius:18px; }
 }
-/* ── Hero Image ── */
+/* ── Hero Full Background Image ── */
+.hero {
+  position: relative !important;
+  background-image: url('assets/images/hero-bg.png') !important;
+  background-size: cover !important;
+  background-position: left center !important;
+  background-repeat: no-repeat !important;
+}
+.hero-grid {
+  position: relative;
+  z-index: 1;
+}
 .hero-visual--img {
   display: flex;
-  align-items: stretch;
-  justify-content: center;
-  padding: 0;
-  min-height: 500px;
+  min-height: 560px;
 }
 .hero-main-img {
-  width: 100%;
-  height: auto;
-  max-height: 640px;
-  object-fit: contain;
-  object-position: center;
-  border-radius: 20px;
-  display: block;
+  display: none !important;
+}
+.btn-starter-kit{
+  display:inline-block;
+  background:linear-gradient(135deg,#dc2626,#991b1b);
+  color:#fff;
+  padding:.85rem 1.75rem;
+  border-radius:12px;
+  font-family:Tajawal,sans-serif;
+  font-size:1rem;
+  font-weight:700;
+  text-decoration:none;
+  border:2px solid rgba(255,100,100,.3);
+  transition:all .3s;
+  text-align:center;
+}
+.btn-starter-kit:hover{
+  background:linear-gradient(135deg,#ef4444,#b91c1c);
+  transform:translateY(-2px);
+  box-shadow:0 8px 25px rgba(220,38,38,.4);
 }
 @media(max-width:900px){
+  .hero {
+    background-position: 25% center !important;
+  }
   .hero-grid {
     grid-template-columns: 1fr !important;
   }
   .hero-visual--img {
-    order: 2;
-    margin-top: 1.5rem;
-    min-height: unset;
+    display: none;
   }
   .hero-content {
     order: 1;
-  }
-  .hero-main-img {
-    max-height: 280px;
-    border-radius: 16px;
   }
 }
 </style>
@@ -170,6 +188,7 @@
 <div class="hero-cta">
 <a class="btn btn-primary btn-full checkout-btn" href="payment.html">ابدأ رحلتك الآن</a>
 <a class="btn btn-outline-white" href="#roadmap">شوف خريطة الكورس</a>
+<a class="btn-starter-kit" href="starter-kit.html">🎁 احصل على Starter Kit مجاناً</a>
 </div>
 <div class="hero-stats">
 <div class="hero-stat">

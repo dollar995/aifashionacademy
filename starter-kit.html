@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Starter Kit المجاني | أكاديمية AI Fashion</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:Tajawal,sans-serif;
+  background-image: url('assets/images/hero-bg.png');
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height:100vh;
+  color:#faf9f6;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:2rem 1rem;
+  position: relative;
+}
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(4,8,18,0.80);
+  z-index: 0;
+}
+.page-wrapper{
+  position: relative;
+  z-index: 1;
+  width:100%;
+  max-width:560px;
+}
+
+/* Logo */
+.logo-bar{
+  text-align:center;
+  margin-bottom:2rem;
+}
+.logo-bar a{
+  color:#d4a574;
+  text-decoration:none;
+  font-weight:800;
+  font-size:1.1rem;
+  display:inline-flex;
+  align-items:center;
+  gap:.5rem;
+}
+.logo-icon{
+  width:36px;height:36px;
+  background:linear-gradient(135deg,#d4a574,#b08d5f);
+  border-radius:8px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:900;
+  font-size:.85rem;
+  color:#070707;
+}
+
+/* Card */
+.kit-card{
+  background:rgba(15,15,15,.95);
+  border:1px solid rgba(212,165,116,.25);
+  border-radius:28px;
+  padding:3rem 2.5rem;
+  box-shadow:0 30px 80px rgba(0,0,0,.6);
+}
+
+/* Badge */
+.kit-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:.4rem;
+  background:rgba(220,38,38,.15);
+  border:1px solid rgba(220,38,38,.3);
+  color:#fca5a5;
+  padding:.4rem 1rem;
+  border-radius:999px;
+  font-size:.85rem;
+  font-weight:700;
+  margin-bottom:1.5rem;
+}
+
+h1{
+  font-size:2rem;
+  font-weight:900;
+  color:#faf9f6;
+  margin-bottom:.75rem;
+  line-height:1.3;
+}
+h1 span{color:#d4a574;}
+
+.subtitle{
+  color:#94a3b8;
+  font-size:1rem;
+  line-height:1.7;
+  margin-bottom:2rem;
+}
+
+/* What's inside */
+.kit-items{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:.75rem;
+  margin-bottom:2rem;
+}
+.kit-item{
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(212,165,116,.15);
+  border-radius:14px;
+  padding:.9rem 1rem;
+  display:flex;
+  align-items:flex-start;
+  gap:.6rem;
+}
+.kit-item-icon{font-size:1.2rem;flex-shrink:0;margin-top:.1rem;}
+.kit-item-text{font-size:.85rem;color:#cbd5e1;line-height:1.5;}
+.kit-item-text strong{color:#faf9f6;display:block;margin-bottom:.15rem;font-size:.9rem;}
+
+/* Form */
+.form-label{
+  display:block;
+  font-size:.9rem;
+  font-weight:700;
+  color:#d4a574;
+  margin-bottom:.6rem;
+}
+.form-input{
+  width:100%;
+  padding:1rem 1.1rem;
+  border:2px solid rgba(212,165,116,.2);
+  border-radius:14px;
+  font-family:Tajawal,sans-serif;
+  font-size:1rem;
+  color:#faf9f6;
+  background:rgba(255,255,255,.05);
+  transition:border-color .3s;
+  margin-bottom:1rem;
+}
+.form-input:focus{
+  outline:none;
+  border-color:#d4a574;
+}
+.form-input::placeholder{color:#475569;}
+
+.btn-submit{
+  width:100%;
+  padding:1.1rem;
+  background:linear-gradient(135deg,#dc2626,#991b1b);
+  color:#fff;
+  border:none;
+  border-radius:14px;
+  font-family:Tajawal,sans-serif;
+  font-size:1.1rem;
+  font-weight:800;
+  cursor:pointer;
+  transition:all .3s;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:.5rem;
+}
+.btn-submit:hover{
+  background:linear-gradient(135deg,#ef4444,#b91c1c);
+  transform:translateY(-2px);
+  box-shadow:0 8px 30px rgba(220,38,38,.4);
+}
+.btn-submit:disabled{opacity:.6;cursor:not-allowed;transform:none;}
+
+/* Messages */
+.error-msg{
+  background:rgba(239,68,68,.1);
+  border:1px solid rgba(239,68,68,.3);
+  color:#fca5a5;
+  padding:.75rem 1rem;
+  border-radius:10px;
+  margin-bottom:1rem;
+  font-size:.9rem;
+  display:none;
+}
+.success-box{
+  display:none;
+  text-align:center;
+  padding:2rem;
+}
+.success-box .icon{font-size:3.5rem;margin-bottom:1rem;}
+.success-box h2{color:#d4a574;font-size:1.5rem;margin-bottom:.75rem;}
+.success-box p{color:#94a3b8;line-height:1.7;}
+
+.privacy-note{
+  text-align:center;
+  margin-top:1rem;
+  font-size:.8rem;
+  color:#475569;
+}
+
+/* Back link */
+.back-link{
+  text-align:center;
+  margin-top:1.5rem;
+}
+.back-link a{
+  color:#64748b;
+  text-decoration:none;
+  font-size:.9rem;
+  transition:color .3s;
+}
+.back-link a:hover{color:#d4a574;}
+
+@media(max-width:520px){
+  .kit-card{padding:2rem 1.25rem;}
+  .kit-items{grid-template-columns:1fr;}
+  h1{font-size:1.6rem;}
+}
+</style>
+</head>
+<body>
+<div class="page-wrapper">
+
+  <!-- Logo -->
+  <div class="logo-bar">
+    <a href="index.html">
+      <span class="logo-icon">AF</span>
+      أكاديمية AI Fashion
+    </a>
+  </div>
+
+  <!-- Card -->
+  <div class="kit-card">
+    <div class="kit-badge">🎁 مجاني 100%</div>
+
+    <h1>احصل على <span>Starter Kit</span> الخاص بك</h1>
+    <p class="subtitle">حزمة عملية تساعدك تبدأ رحلة بناء براند ملابسك فوراً — بدون خبرة تصميم ولا رأس مال كبير.</p>
+
+    <!-- What's inside -->
+    <div class="kit-items">
+      <div class="kit-item">
+        <span class="kit-item-icon">🗺️</span>
+        <div class="kit-item-text">
+          <strong>خريطة الطريق</strong>
+          من الفكرة إلى صفحة البيع
+        </div>
+      </div>
+      <div class="kit-item">
+        <span class="kit-item-icon">🤖</span>
+        <div class="kit-item-text">
+          <strong>Prompt Pack جاهز</strong>
+          5 Prompts للبراند والتصاميم
+        </div>
+      </div>
+      <div class="kit-item">
+        <span class="kit-item-icon">✅</span>
+        <div class="kit-item-text">
+          <strong>Mockup Checklist</strong>
+          قائمة فحص قبل النشر
+        </div>
+      </div>
+      <div class="kit-item">
+        <span class="kit-item-icon">📅</span>
+        <div class="kit-item-text">
+          <strong>خطة إطلاق 7 أيام</strong>
+          جدول محتوى يومي جاهز
+        </div>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div id="formSection">
+      <div class="error-msg" id="errorMsg"></div>
+
+      <label class="form-label" for="nameInput">اسمك</label>
+      <input class="form-input" id="nameInput" placeholder="اسمك الكامل" type="text"/>
+
+      <label class="form-label" for="emailInput">بريدك الإلكتروني</label>
+      <input class="form-input" id="emailInput" placeholder="your@email.com" type="email"/>
+
+      <button class="btn-submit" id="submitBtn" onclick="sendKit()">
+        <span>📩</span> أرسل لي الـ Starter Kit
+      </button>
+
+      <p class="privacy-note">🔒 بياناتك محمية — ما بنشارك إيميلك مع أي جهة</p>
+    </div>
+
+    <!-- Success -->
+    <div class="success-box" id="successBox">
+      <div class="icon">🎉</div>
+      <h2>تم الإرسال بنجاح!</h2>
+      <p>راجع بريدك الإلكتروني — ملف الـ Starter Kit في طريقه إليك الآن.<br/><br/>تحقق من مجلد Spam إذا ما وصلك خلال دقيقتين.</p>
+    </div>
+
+  </div>
+
+  <div class="back-link">
+    <a href="index.html">← العودة للصفحة الرئيسية</a>
+  </div>
+
+</div>
+
+<script>
+function sendKit() {
+  var name = document.getElementById('nameInput').value.trim();
+  var email = document.getElementById('emailInput').value.trim();
+  var btn = document.getElementById('submitBtn');
+  var errDiv = document.getElementById('errorMsg');
+
+  if (!name) { showError('يرجى إدخال اسمك'); return; }
+  if (!email || !email.includes('@')) { showError('يرجى إدخال بريد إلكتروني صحيح'); return; }
+
+  btn.disabled = true;
+  btn.innerHTML = '<span>⏳</span> جاري الإرسال...';
+  errDiv.style.display = 'none';
+
+  // Send to support email via FormSubmit
+  var formData = new FormData();
+  formData.append('name', name);
+  formData.append('email', email);
+  formData.append('_subject', 'طلب Starter Kit جديد - ' + name);
+  formData.append('_template', 'box');
+  formData.append('_captcha', 'false');
+
+  fetch('https://formsubmit.co/support@aifashion.academy', {
+    method: 'POST',
+    body: formData
+  })
+  .then(function(res) {
+    document.getElementById('formSection').style.display = 'none';
+    document.getElementById('successBox').style.display = 'block';
+  })
+  .catch(function() {
+    showError('حدث خطأ، جرب مرة ثانية');
+    btn.disabled = false;
+    btn.innerHTML = '<span>📩</span> أرسل لي الـ Starter Kit';
+  });
+}
+
+function showError(msg) {
+  var e = document.getElementById('errorMsg');
+  e.textContent = msg;
+  e.style.display = 'block';
+}
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') sendKit();
+});
+</script>
+</body>
+</html>
