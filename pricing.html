@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>الأسعار | AI Fashion Academy</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --blue: #00b4ff;
+  --blue-dark: #0066ff;
+  --blue-glow: rgba(0,180,255,0.3);
+  --gold: #f0c060;
+  --gold-glow: rgba(240,192,96,0.3);
+  --bg: #020810;
+  --card-bg: rgba(3,12,35,0.92);
+  --text: #faf9f6;
+  --muted: #64748b;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body {
+  font-family: Tajawal, sans-serif;
+  background: var(--bg);
+  background-image:
+    radial-gradient(ellipse 80% 50% at 20% 20%, rgba(0,100,255,0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 80%, rgba(0,180,255,0.08) 0%, transparent 50%);
+  min-height: 100vh;
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 3rem;
+  border-bottom: 1px solid rgba(0,180,255,0.1);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(2,8,16,0.8);
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  text-decoration: none;
+  color: var(--blue);
+  font-weight: 800;
+  font-size: 1rem;
+}
+.logo-icon {
+  width: 34px; height: 34px;
+  background: linear-gradient(135deg, var(--blue-dark), var(--blue));
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 900; font-size: .8rem; color: #fff;
+  box-shadow: 0 0 12px var(--blue-glow);
+}
+.nav-back {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: .9rem;
+  transition: color .3s;
+}
+.nav-back:hover { color: var(--blue); }
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem 3rem;
+  position: relative;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  background: rgba(0,180,255,0.08);
+  border: 1px solid rgba(0,180,255,0.2);
+  color: var(--blue);
+  padding: .4rem 1.2rem;
+  border-radius: 999px;
+  font-size: .85rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  animation: fadeUp .6s ease both;
+}
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  animation: fadeUp .6s .1s ease both;
+}
+.hero h1 span { color: var(--blue); }
+.hero p {
+  color: #94a3b8;
+  font-size: 1.1rem;
+  max-width: 540px;
+  margin: 0 auto 1rem;
+  line-height: 1.8;
+  animation: fadeUp .6s .2s ease both;
+}
+.launch-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  background: rgba(240,192,96,0.08);
+  border: 1px solid rgba(240,192,96,0.25);
+  color: var(--gold);
+  padding: .5rem 1.2rem;
+  border-radius: 999px;
+  font-size: .85rem;
+  font-weight: 700;
+  animation: fadeUp .6s .3s ease both;
+}
+
+/* CARDS GRID */
+.cards-section {
+  padding: 3rem 2rem 6rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* CARD BASE */
+.card {
+  background: var(--card-bg);
+  border-radius: 28px;
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+  animation: fadeUp .7s .4s ease both;
+  transition: transform .3s, box-shadow .3s;
+}
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* STANDARD CARD */
+.card-standard {
+  border: 1px solid rgba(0,180,255,0.2);
+  box-shadow: 0 20px 60px rgba(0,0,0,.5);
+}
+.card-standard:hover {
+  box-shadow: 0 30px 80px rgba(0,0,0,.6), 0 0 30px rgba(0,180,255,0.1);
+}
+.card-standard::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--blue-dark), var(--blue));
+}
+
+/* VIP CARD */
+.card-vip {
+  border: 1px solid rgba(240,192,96,0.35);
+  box-shadow: 0 20px 60px rgba(0,0,0,.5), 0 0 40px rgba(240,192,96,0.08);
+  animation-delay: .5s;
+}
+.card-vip:hover {
+  box-shadow: 0 30px 80px rgba(0,0,0,.6), 0 0 50px rgba(240,192,96,0.15);
+}
+.card-vip::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #c8860a, var(--gold), #c8860a);
+}
+
+/* POPULAR BADGE */
+.popular-badge {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  background: linear-gradient(135deg, #c8860a, var(--gold));
+  color: #020810;
+  font-size: .75rem;
+  font-weight: 900;
+  padding: .3rem .9rem;
+  border-radius: 999px;
+  letter-spacing: .5px;
+}
+
+/* CARD HEADER */
+.card-type {
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: .75rem;
+}
+.card-standard .card-type { color: var(--blue); }
+.card-vip .card-type { color: var(--gold); }
+
+.card-name {
+  font-size: 1.6rem;
+  font-weight: 900;
+  margin-bottom: .5rem;
+}
+
+.card-desc {
+  color: #94a3b8;
+  font-size: .9rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+/* PRICING */
+.price-box {
+  margin-bottom: 2rem;
+}
+.price-original {
+  font-size: .9rem;
+  color: var(--muted);
+  text-decoration: line-through;
+  margin-bottom: .3rem;
+}
+.price-current {
+  display: flex;
+  align-items: baseline;
+  gap: .3rem;
+  margin-bottom: .4rem;
+}
+.price-currency {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.price-amount {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1;
+}
+.card-standard .price-currency,
+.card-standard .price-amount { color: var(--blue); }
+.card-vip .price-currency,
+.card-vip .price-amount { color: var(--gold); }
+
+.price-note {
+  font-size: .8rem;
+  color: var(--muted);
+}
+.card-vip .price-note { color: rgba(240,192,96,0.6); }
+
+/* FEATURES */
+.features {
+  list-style: none;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+.features li {
+  display: flex;
+  align-items: flex-start;
+  gap: .7rem;
+  font-size: .9rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+.feat-icon {
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: .65rem;
+  flex-shrink: 0;
+  margin-top: .1rem;
+}
+.card-standard .feat-icon {
+  background: rgba(0,180,255,0.15);
+  color: var(--blue);
+}
+.card-vip .feat-icon {
+  background: rgba(240,192,96,0.15);
+  color: var(--gold);
+}
+
+/* DIVIDER */
+.feat-divider {
+  height: 1px;
+  background: rgba(255,255,255,0.06);
+  margin: .5rem 0;
+}
+
+/* BUTTON */
+.btn-buy {
+  display: block;
+  width: 100%;
+  padding: 1.1rem;
+  border: none;
+  border-radius: 14px;
+  font-family: Tajawal, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 800;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+}
+.card-standard .btn-buy {
+  background: linear-gradient(135deg, var(--blue-dark), var(--blue));
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(0,100,255,0.35);
+}
+.card-standard .btn-buy:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0,150,255,0.5);
+}
+.card-vip .btn-buy {
+  background: linear-gradient(135deg, #c8860a, var(--gold));
+  color: #020810;
+  box-shadow: 0 4px 20px var(--gold-glow);
+}
+.card-vip .btn-buy:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(240,192,96,0.4);
+}
+
+/* VIP EXTRAS */
+.vip-extras {
+  margin-top: 1rem;
+  background: rgba(240,192,96,0.05);
+  border: 1px solid rgba(240,192,96,0.15);
+  border-radius: 12px;
+  padding: .9rem 1rem;
+  font-size: .82rem;
+  color: rgba(240,192,96,0.8);
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* GUARANTEE */
+.guarantee {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  background: rgba(0,180,255,0.04);
+  border: 1px solid rgba(0,180,255,0.1);
+  border-radius: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeUp .7s .7s ease both;
+}
+.guarantee-icon { font-size: 2.5rem; margin-bottom: .75rem; }
+.guarantee h3 { color: var(--blue); margin-bottom: .5rem; font-size: 1.1rem; }
+.guarantee p { color: #94a3b8; font-size: .9rem; line-height: 1.7; }
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media(max-width: 700px) {
+  nav { padding: 1rem 1.25rem; }
+  .cards-grid { grid-template-columns: 1fr; }
+  .hero { padding: 3rem 1.25rem 2rem; }
+  .cards-section { padding: 2rem 1.25rem 4rem; }
+  .card { padding: 2rem 1.5rem; }
+  .price-amount { font-size: 2.8rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="index.html">
+    <span class="logo-icon">AF</span>
+    AI Fashion Academy
+  </a>
+  <a class="nav-back" href="index.html">← العودة للرئيسية</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">💳 الباقات والأسعار</div>
+  <h1>استثمر في <span>مستقبلك</span><br/>ابدأ براند ملابسك اليوم</h1>
+  <p>اختر الباقة اللي تناسبك وابدأ رحلتك في عالم الموضة بالذكاء الاصطناعي</p>
+  <div class="launch-badge">🔥 عرض الإطلاق — لفترة محدودة</div>
+</div>
+
+<!-- CARDS -->
+<div class="cards-section">
+  <div class="cards-grid">
+
+    <!-- STANDARD CARD -->
+    <div class="card card-standard">
+      <div class="card-type">الباقة الأساسية</div>
+      <div class="card-name">Standard</div>
+      <p class="card-desc">كل ما تحتاجه لبناء براند ملابس احترافي من الصفر — بدون خبرة تصميم ولا رأس مال كبير.</p>
+
+      <div class="price-box">
+        <div class="price-original">السعر الأصلي: $250</div>
+        <div class="price-current">
+          <span class="price-currency">$</span>
+          <span class="price-amount">50</span>
+        </div>
+        <div class="price-note">دفعة واحدة — وصول مدى الحياة</div>
+      </div>
+
+      <ul class="features">
+        <li><span class="feat-icon">✓</span> وصول كامل لجميع وحدات الدورة</li>
+        <li><span class="feat-icon">✓</span> خريطة طريق من الفكرة إلى المنتج</li>
+        <li><span class="feat-icon">✓</span> Prompt Pack جاهز — 50+ Prompt</li>
+        <li><span class="feat-icon">✓</span> نظام تصميم Mockup احترافي</li>
+        <li><span class="feat-icon">✓</span> خطة إطلاق 7 أيام</li>
+        <div class="feat-divider"></div>
+        <li><span class="feat-icon">✓</span> تحديثات مجانية للأبد</li>
+        <li><span class="feat-icon">✓</span> دعم عبر الإيميل</li>
+      </ul>
+
+      <a class="btn-buy" href="payment.html">ابدأ الآن بـ $50 ←</a>
+    </div>
+
+    <!-- VIP CARD -->
+    <div class="card card-vip">
+      <div class="popular-badge">⭐ الأكثر قيمة</div>
+      <div class="card-type">الباقة المميزة</div>
+      <div class="card-name">VIP</div>
+      <p class="card-desc">لمن يريد نتائج أسرع — دعم شخصي مباشر ومتابعة حتى تطلق أول منتج فعلياً على الإنترنت.</p>
+
+      <div class="price-box">
+        <div class="price-original">السعر الأصلي: $400</div>
+        <div class="price-current">
+          <span class="price-currency">$</span>
+          <span class="price-amount">120</span>
+        </div>
+        <div class="price-note">دفعة واحدة — وصول مدى الحياة + دعم VIP</div>
+      </div>
+
+      <ul class="features">
+        <li><span class="feat-icon">✓</span> كل ما في الباقة الأساسية</li>
+        <div class="feat-divider"></div>
+        <li><span class="feat-icon">★</span> جلسة 1-on-1 مع المدرب (60 دقيقة)</li>
+        <li><span class="feat-icon">★</span> مراجعة براندك الشخصية + تغذية راجعة</li>
+        <li><span class="feat-icon">★</span> مجموعة VIP خاصة على واتساب</li>
+        <li><span class="feat-icon">★</span> قوالب Canva جاهزة للإعلانات</li>
+        <li><span class="feat-icon">★</span> متابعة شخصية حتى الإطلاق الأول</li>
+        <div class="feat-divider"></div>
+        <li><span class="feat-icon">✓</span> أولوية في الدعم الفني</li>
+      </ul>
+
+      <a class="btn-buy" href="payment.html">احجز مقعدك VIP ←</a>
+
+      <div class="vip-extras">
+        🎯 المقاعد محدودة — 10 مقاعد فقط لكل دفعة
+      </div>
+    </div>
+
+  </div>
+
+  <!-- GUARANTEE -->
+  <div class="guarantee">
+    <div class="guarantee-icon">🛡️</div>
+    <h3>ضمان استرداد 7 أيام</h3>
+    <p>إذا لم تكن راضياً خلال 7 أيام من الشراء، نرد لك المبلغ كاملاً بدون أي أسئلة. نثق بجودة المحتوى الذي بنيناه.</p>
+  </div>
+</div>
+
+</body>
+</html>
