@@ -367,6 +367,115 @@ nav {
   to   { opacity: 1; transform: translateY(0); }
 }
 
+/* LAUNCH TITLE */
+.launch-title-section {
+  text-align: center;
+  padding: 0 2rem 1.5rem;
+  animation: fadeUp .6s .25s ease both;
+}
+.launch-title-label {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  background: rgba(240,192,96,0.08);
+  border: 1px solid rgba(240,192,96,0.25);
+  color: var(--gold);
+  padding: .35rem 1.1rem;
+  border-radius: 999px;
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+.launch-main-title {
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  font-weight: 900;
+  line-height: 1.15;
+  background: linear-gradient(135deg, #ffffff 10%, var(--gold) 55%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: .8rem;
+}
+.launch-title-bar {
+  width: 90px;
+  height: 4px;
+  background: linear-gradient(90deg, #c8860a, var(--gold), #c8860a);
+  border-radius: 999px;
+  margin: 0 auto .8rem;
+  box-shadow: 0 0 14px rgba(240,192,96,0.4);
+}
+.launch-title-sub {
+  color: #94a3b8;
+  font-size: .95rem;
+}
+
+/* COUNTDOWN TIMER */
+.launch-timer-card {
+  max-width: 860px;
+  margin: 0 auto 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.6rem 2rem;
+  border: 1px solid rgba(240,192,96,.32);
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(240,192,96,.09), rgba(200,134,10,.06)), rgba(2,8,16,.75);
+  box-shadow: 0 22px 60px rgba(0,0,0,.35), 0 0 40px rgba(240,192,96,0.05);
+  backdrop-filter: blur(10px);
+  animation: fadeUp .7s .5s ease both;
+}
+.timer-copy { text-align: right; }
+.timer-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  margin-bottom: .5rem;
+  padding: .3rem .85rem;
+  border-radius: 999px;
+  background: rgba(240,192,96,.12);
+  border: 1px solid rgba(240,192,96,.2);
+  color: var(--gold);
+  font-weight: 800;
+  font-size: .82rem;
+}
+.timer-copy h3 {
+  margin: 0 0 .3rem;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 800;
+}
+.timer-copy h3 strong { color: var(--gold); font-size: 1.4rem; }
+.timer-copy p { margin: 0; color: #94a3b8; font-size: .88rem; line-height: 1.6; }
+.countdown-grid {
+  display: flex;
+  gap: .65rem;
+  direction: ltr;
+  flex-shrink: 0;
+}
+.countdown-box {
+  min-width: 80px;
+  padding: .85rem .65rem;
+  border-radius: 16px;
+  background: rgba(0,0,0,.42);
+  border: 1px solid rgba(240,192,96,.18);
+  text-align: center;
+}
+.countdown-box span {
+  display: block;
+  color: var(--gold);
+  font-size: 2.1rem;
+  line-height: 1;
+  font-weight: 900;
+}
+.countdown-box small {
+  display: block;
+  margin-top: .35rem;
+  color: #94a3b8;
+  font-size: .75rem;
+}
+
 /* RESPONSIVE */
 @media(max-width: 700px) {
   nav { padding: 1rem 1.25rem; }
@@ -375,6 +484,11 @@ nav {
   .cards-section { padding: 2rem 1.25rem 4rem; }
   .card { padding: 2rem 1.5rem; }
   .price-amount { font-size: 2.8rem; }
+  .launch-timer-card { flex-direction: column; text-align: center; padding: 1.25rem; }
+  .timer-copy { text-align: center; }
+  .countdown-grid { justify-content: center; width: 100%; }
+  .countdown-box { min-width: 0; flex: 1; }
+  .countdown-box span { font-size: 1.65rem; }
 }
 </style>
 </head>
@@ -397,8 +511,40 @@ nav {
   <div class="launch-badge">🔥 عرض الإطلاق — لفترة محدودة</div>
 </div>
 
+<!-- LAUNCH TITLE -->
+<div class="launch-title-section">
+  <div class="launch-title-label">🔥 عرض حصري — لفترة محدودة</div>
+  <div class="launch-main-title">عرض الإطلاق</div>
+  <div class="launch-title-bar"></div>
+  <p class="launch-title-sub">أسعار الإطلاق لن تبقى طويلاً — اغتنم الفرصة قبل انتهاء العرض</p>
+</div>
+
 <!-- CARDS -->
 <div class="cards-section">
+
+  <!-- COUNTDOWN TIMER -->
+  <div class="launch-timer-card">
+    <div class="timer-copy">
+      <div class="timer-badge">⏳ ينتهي العرض خلال</div>
+      <h3>السعر الحالي <strong>لفترة محدودة فقط</strong></h3>
+      <p>بعد انتهاء العداد، الأسعار ترجع للسعر الأصلي.<br/>لا تفوّت هذه الفرصة.</p>
+    </div>
+    <div class="countdown-grid">
+      <div class="countdown-box">
+        <span id="countHours">00</span>
+        <small>ساعة</small>
+      </div>
+      <div class="countdown-box">
+        <span id="countMinutes">00</span>
+        <small>دقيقة</small>
+      </div>
+      <div class="countdown-box">
+        <span id="countSeconds">00</span>
+        <small>ثانية</small>
+      </div>
+    </div>
+  </div>
+
   <div class="cards-grid">
 
     <!-- STANDARD CARD -->
@@ -474,6 +620,35 @@ nav {
     <p>إذا لم تكن راضياً خلال 7 أيام من الشراء، نرد لك المبلغ كاملاً بدون أي أسئلة. نثق بجودة المحتوى الذي بنيناه.</p>
   </div>
 </div>
+
+<script>
+(function(){
+  var KEY = 'aifa_launch_deadline_v1';
+  var HOUR = 60 * 60 * 1000;
+  var now = Date.now();
+  var deadline = Number(localStorage.getItem(KEY));
+  if (!deadline || deadline < now) {
+    deadline = now + HOUR;
+    localStorage.setItem(KEY, String(deadline));
+  }
+  function pad(n){ return String(n).padStart(2,'0'); }
+  function tick(){
+    var remaining = Math.max(0, deadline - Date.now());
+    var totalSeconds = Math.floor(remaining / 1000);
+    var hours = Math.floor(totalSeconds / 3600);
+    var minutes = Math.floor((totalSeconds % 3600) / 60);
+    var seconds = totalSeconds % 60;
+    var h = document.getElementById('countHours');
+    var m = document.getElementById('countMinutes');
+    var s = document.getElementById('countSeconds');
+    if(h) h.textContent = pad(hours);
+    if(m) m.textContent = pad(minutes);
+    if(s) s.textContent = pad(seconds);
+  }
+  tick();
+  setInterval(tick, 1000);
+})();
+</script>
 
 </body>
 </html>
