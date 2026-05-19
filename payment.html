@@ -23,9 +23,7 @@
       --text: #faf9f6;
       --muted: #64748b;
     }
-
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
     body {
       font-family: Tajawal, sans-serif;
       background: var(--bg);
@@ -36,8 +34,6 @@
       color: var(--text);
       overflow-x: hidden;
     }
-
-    /* NAV */
     nav {
       display: flex;
       align-items: center;
@@ -67,403 +63,159 @@
       font-weight: 900; font-size: .8rem; color: #fff;
       box-shadow: 0 0 12px var(--blue-glow);
     }
-    .nav-back {
-      color: var(--muted);
-      text-decoration: none;
-      font-size: .9rem;
-      transition: color .3s;
-    }
+    .nav-back { color: var(--muted); text-decoration: none; font-size: .9rem; transition: color .3s; }
     .nav-back:hover { color: var(--blue); }
 
-    /* PAGE */
-    .payment-page {
-      padding: 4rem 2rem 6rem;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
+    .payment-page { padding: 4rem 2rem 6rem; max-width: 1000px; margin: 0 auto; }
 
-    /* HERO */
-    .payment-header {
-      text-align: center;
-      margin-bottom: 3rem;
-      animation: fadeUp .6s ease both;
-    }
+    .payment-header { text-align: center; margin-bottom: 3rem; animation: fadeUp .6s ease both; }
     .payment-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: .4rem;
-      background: rgba(0,180,255,0.08);
-      border: 1px solid rgba(0,180,255,0.2);
-      color: var(--blue);
-      padding: .4rem 1.2rem;
-      border-radius: 999px;
-      font-size: .85rem;
-      font-weight: 700;
-      margin-bottom: 1.2rem;
+      display: inline-flex; align-items: center; gap: .4rem;
+      background: rgba(0,180,255,0.08); border: 1px solid rgba(0,180,255,0.2);
+      color: var(--blue); padding: .4rem 1.2rem; border-radius: 999px;
+      font-size: .85rem; font-weight: 700; margin-bottom: 1.2rem;
     }
-    .payment-title {
-      font-size: clamp(1.8rem, 4vw, 2.8rem);
-      font-weight: 900;
-      line-height: 1.25;
-      margin-bottom: .8rem;
-      color: #fff;
-    }
+    .payment-title { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; line-height: 1.25; margin-bottom: .8rem; color: #fff; }
     .payment-title span { color: var(--blue); }
-    .payment-desc {
-      color: #94a3b8;
-      font-size: 1rem;
-      line-height: 1.8;
-    }
+    .payment-desc { color: #94a3b8; font-size: 1rem; line-height: 1.8; }
     .payment-desc strong { color: var(--blue); }
 
-    /* PACKAGE SELECTOR */
-    .package-selector {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.2rem;
-      margin-bottom: 2.5rem;
-      animation: fadeUp .6s .1s ease both;
-    }
+    .package-selector { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-bottom: 2.5rem; animation: fadeUp .6s .1s ease both; }
     .pkg-card {
-      background: var(--card-bg);
-      border-radius: 20px;
-      padding: 1.5rem;
-      cursor: pointer;
-      border: 2px solid rgba(0,180,255,0.15);
-      transition: all .3s;
-      position: relative;
-      overflow: hidden;
+      background: var(--card-bg); border-radius: 20px; padding: 1.5rem;
+      cursor: pointer; border: 2px solid rgba(0,180,255,0.15);
+      transition: all .3s; position: relative; overflow: hidden;
     }
     .pkg-card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, var(--blue-dark), var(--blue));
-      opacity: 0;
-      transition: opacity .3s;
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--blue-dark), var(--blue)); opacity: 0; transition: opacity .3s;
     }
-    .pkg-card.active,
-    .pkg-card:hover {
-      border-color: rgba(0,180,255,0.5);
-      box-shadow: 0 0 30px rgba(0,180,255,0.1);
-    }
+    .pkg-card.active, .pkg-card:hover { border-color: rgba(0,180,255,0.5); box-shadow: 0 0 30px rgba(0,180,255,0.1); }
     .pkg-card.active::before { opacity: 1; }
-
-    .pkg-card.vip-pkg {
-      border-color: rgba(240,192,96,0.2);
-    }
-    .pkg-card.vip-pkg::before {
-      background: linear-gradient(90deg, #c8860a, var(--gold));
-    }
-    .pkg-card.vip-pkg.active,
-    .pkg-card.vip-pkg:hover {
-      border-color: rgba(240,192,96,0.5);
-      box-shadow: 0 0 30px rgba(240,192,96,0.1);
-    }
-
-    .pkg-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: .6rem;
-    }
-    .pkg-name {
-      font-size: 1.1rem;
-      font-weight: 900;
-      color: #fff;
-    }
+    .pkg-card.vip-pkg { border-color: rgba(240,192,96,0.2); }
+    .pkg-card.vip-pkg::before { background: linear-gradient(90deg, #c8860a, var(--gold)); }
+    .pkg-card.vip-pkg.active, .pkg-card.vip-pkg:hover { border-color: rgba(240,192,96,0.5); box-shadow: 0 0 30px rgba(240,192,96,0.1); }
+    .pkg-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: .6rem; }
+    .pkg-name { font-size: 1.1rem; font-weight: 900; color: #fff; }
     .pkg-radio {
-      width: 20px; height: 20px;
-      border-radius: 50%;
+      width: 20px; height: 20px; border-radius: 50%;
       border: 2px solid rgba(0,180,255,0.4);
-      display: flex; align-items: center; justify-content: center;
-      transition: all .3s;
+      display: flex; align-items: center; justify-content: center; transition: all .3s;
     }
-    .pkg-card.active .pkg-radio {
-      background: var(--blue);
-      border-color: var(--blue);
-      box-shadow: 0 0 10px var(--blue-glow);
-    }
+    .pkg-card.active .pkg-radio { background: var(--blue); border-color: var(--blue); box-shadow: 0 0 10px var(--blue-glow); }
     .pkg-card.vip-pkg .pkg-radio { border-color: rgba(240,192,96,0.4); }
-    .pkg-card.vip-pkg.active .pkg-radio {
-      background: var(--gold);
-      border-color: var(--gold);
-      box-shadow: 0 0 10px var(--gold-glow);
-    }
-    .pkg-radio::after {
-      content: '';
-      width: 8px; height: 8px;
-      border-radius: 50%;
-      background: #fff;
-      display: none;
-    }
+    .pkg-card.vip-pkg.active .pkg-radio { background: var(--gold); border-color: var(--gold); box-shadow: 0 0 10px var(--gold-glow); }
+    .pkg-radio::after { content: ''; width: 8px; height: 8px; border-radius: 50%; background: #fff; display: none; }
     .pkg-card.active .pkg-radio::after { display: block; }
-
-    .pkg-price {
-      font-size: 2rem;
-      font-weight: 900;
-      color: var(--blue);
-      line-height: 1;
-      margin-bottom: .3rem;
-    }
+    .pkg-price { font-size: 2rem; font-weight: 900; color: var(--blue); line-height: 1; margin-bottom: .3rem; }
     .vip-pkg .pkg-price { color: var(--gold); }
-    .pkg-original {
-      font-size: .82rem;
-      color: var(--muted);
-      text-decoration: line-through;
-      margin-bottom: .3rem;
-    }
-    .pkg-desc {
-      font-size: .82rem;
-      color: #64748b;
-      line-height: 1.5;
-    }
+    .pkg-original { font-size: .82rem; color: var(--muted); text-decoration: line-through; margin-bottom: .3rem; }
+    .pkg-desc { font-size: .82rem; color: #64748b; line-height: 1.5; }
     .pkg-badge {
-      display: inline-block;
-      background: linear-gradient(135deg, #c8860a, var(--gold));
-      color: #020810;
-      font-size: .7rem;
-      font-weight: 900;
-      padding: .2rem .6rem;
-      border-radius: 999px;
-      margin-bottom: .5rem;
+      display: inline-block; background: linear-gradient(135deg, #c8860a, var(--gold));
+      color: #020810; font-size: .7rem; font-weight: 900;
+      padding: .2rem .6rem; border-radius: 999px; margin-bottom: .5rem;
     }
 
-    /* PAYMENT CARDS */
-    .payment-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
-      margin-bottom: 2rem;
-      animation: fadeUp .6s .2s ease both;
-    }
+    .payment-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem; animation: fadeUp .6s .2s ease both; }
     .payment-card {
-      background: var(--card-bg);
-      border: 1px solid rgba(0,180,255,0.15);
-      border-radius: 24px;
-      padding: 2rem;
+      background: var(--card-bg); border: 1px solid rgba(0,180,255,0.15);
+      border-radius: 24px; padding: 2rem;
       box-shadow: 0 20px 60px rgba(0,0,0,.4);
-      position: relative;
-      overflow: hidden;
-      transition: transform .3s, box-shadow .3s;
+      position: relative; overflow: hidden; transition: transform .3s, box-shadow .3s;
     }
     .payment-card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 3px;
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
       background: linear-gradient(90deg, var(--blue-dark), var(--blue));
     }
-    .payment-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 30px 80px rgba(0,0,0,.5), 0 0 30px rgba(0,180,255,0.08);
-    }
+    .payment-card:hover { transform: translateY(-4px); box-shadow: 0 30px 80px rgba(0,0,0,.5), 0 0 30px rgba(0,180,255,0.08); }
     .payment-icon {
-      width: 54px; height: 54px;
-      border-radius: 16px;
+      width: 54px; height: 54px; border-radius: 16px;
       display: flex; align-items: center; justify-content: center;
-      font-size: 1.7rem;
-      margin-bottom: 1rem;
-      background: rgba(0,180,255,0.1);
-      border: 1px solid rgba(0,180,255,0.2);
+      font-size: 1.7rem; margin-bottom: 1rem;
+      background: rgba(0,180,255,0.1); border: 1px solid rgba(0,180,255,0.2);
     }
-    .payment-card h2 {
-      color: #fff;
-      font-size: 1.3rem;
-      margin-bottom: .6rem;
-      font-weight: 800;
-    }
-    .payment-card p {
-      color: #94a3b8;
-      line-height: 1.8;
-      font-size: .9rem;
-      margin-bottom: 1.5rem;
-    }
+    .payment-card h2 { color: #fff; font-size: 1.3rem; margin-bottom: .6rem; font-weight: 800; }
+    .payment-card p { color: #94a3b8; line-height: 1.8; font-size: .9rem; margin-bottom: 1.5rem; }
 
-    /* BUTTONS */
     .btn-blue {
-      display: block;
-      width: 100%;
-      padding: 1rem;
-      border: none;
-      border-radius: 12px;
-      font-family: Tajawal, sans-serif;
-      font-size: 1rem;
-      font-weight: 800;
-      cursor: pointer;
-      text-align: center;
-      text-decoration: none;
+      display: block; width: 100%; padding: 1rem; border: none; border-radius: 12px;
+      font-family: Tajawal, sans-serif; font-size: 1rem; font-weight: 800;
+      cursor: pointer; text-align: center; text-decoration: none;
       background: linear-gradient(135deg, var(--blue-dark), var(--blue));
-      color: #fff;
-      box-shadow: 0 4px 20px rgba(0,100,255,0.35);
-      transition: all .3s;
+      color: #fff; box-shadow: 0 4px 20px rgba(0,100,255,0.35); transition: all .3s;
     }
-    .btn-blue:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(0,150,255,0.5);
-    }
+    .btn-blue:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,150,255,0.5); }
     .btn-outline-blue {
-      display: block;
-      width: 100%;
-      padding: 1rem;
-      border: 1px solid rgba(0,180,255,0.4);
-      border-radius: 12px;
-      font-family: Tajawal, sans-serif;
-      font-size: 1rem;
-      font-weight: 800;
-      cursor: pointer;
-      text-align: center;
-      background: rgba(0,180,255,0.05);
-      color: var(--blue);
-      transition: all .3s;
+      display: block; width: 100%; padding: 1rem;
+      border: 1px solid rgba(0,180,255,0.4); border-radius: 12px;
+      font-family: Tajawal, sans-serif; font-size: 1rem; font-weight: 800;
+      cursor: pointer; text-align: center;
+      background: rgba(0,180,255,0.05); color: var(--blue); transition: all .3s;
     }
-    .btn-outline-blue:hover {
-      background: rgba(0,180,255,0.12);
-      border-color: var(--blue);
-    }
+    .btn-outline-blue:hover { background: rgba(0,180,255,0.12); border-color: var(--blue); }
 
-    /* CLIQ BOX */
     .cliq-box {
-      display: none;
-      background: var(--card-bg);
-      border: 1px solid rgba(0,180,255,0.2);
-      border-radius: 28px;
-      padding: 2rem;
-      box-shadow: 0 24px 70px rgba(0,0,0,.4);
-      margin-bottom: 2rem;
-      animation: fadeUp .4s ease both;
-      position: relative;
-      overflow: hidden;
+      display: none; background: var(--card-bg);
+      border: 1px solid rgba(0,180,255,0.2); border-radius: 28px; padding: 2rem;
+      box-shadow: 0 24px 70px rgba(0,0,0,.4); margin-bottom: 2rem;
+      position: relative; overflow: hidden;
     }
     .cliq-box::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 3px;
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
       background: linear-gradient(90deg, var(--blue-dark), var(--blue));
     }
-    .cliq-box.active { display: block; }
-
-    .cliq-top {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 1.5rem;
-      margin-bottom: 1.5rem;
-    }
+    .cliq-box.active { display: block; animation: fadeUp .4s ease both; }
+    .cliq-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 1.5rem; margin-bottom: 1.5rem; }
     .cliq-top h2 { color: #fff; margin-bottom: .4rem; font-size: 1.4rem; }
     .cliq-top p { color: #94a3b8; line-height: 1.8; font-size: .9rem; }
-
     .order-pill {
-      direction: ltr;
-      white-space: nowrap;
-      color: #fff;
+      direction: ltr; white-space: nowrap; color: #fff;
       background: linear-gradient(135deg, var(--blue-dark), var(--blue));
-      padding: .75rem 1.1rem;
-      border-radius: 999px;
-      font-weight: 900;
-      font-size: .85rem;
-      box-shadow: 0 8px 25px rgba(0,100,255,0.3);
-      flex-shrink: 0;
+      padding: .75rem 1.1rem; border-radius: 999px; font-weight: 900;
+      font-size: .85rem; box-shadow: 0 8px 25px rgba(0,100,255,0.3); flex-shrink: 0;
     }
+    .cliq-details { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .9rem; margin-bottom: 1.5rem; }
+    .cliq-detail { background: rgba(0,0,0,.3); border: 1px solid rgba(0,180,255,0.12); border-radius: 16px; padding: 1rem; }
+    .cliq-detail span { display: block; color: #64748b; font-size: .85rem; margin-bottom: .4rem; }
+    .cliq-detail strong { display: block; color: #fff; font-size: 1rem; direction: ltr; text-align: right; }
 
-    .cliq-details {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: .9rem;
-      margin-bottom: 1.5rem;
-    }
-    .cliq-detail {
-      background: rgba(0,0,0,.3);
-      border: 1px solid rgba(0,180,255,0.12);
-      border-radius: 16px;
-      padding: 1rem;
-    }
-    .cliq-detail span {
-      display: block;
-      color: #64748b;
-      font-size: .85rem;
-      margin-bottom: .4rem;
-    }
-    .cliq-detail strong {
-      display: block;
-      color: #fff;
-      font-size: 1rem;
-      direction: ltr;
-      text-align: right;
-    }
-
-    /* FORM */
-    .cliq-form {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 1rem;
-      margin-top: 1rem;
-    }
+    .cliq-form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1rem; }
     .form-field { display: grid; gap: .45rem; }
     .form-field.full { grid-column: 1 / -1; }
-    .form-field label {
-      color: #fff;
-      font-weight: 800;
-      font-size: .95rem;
-    }
+    .form-field label { color: #fff; font-weight: 800; font-size: .95rem; }
     .form-field input {
-      width: 100%;
-      box-sizing: border-box;
-      min-height: 52px;
-      border-radius: 14px;
-      border: 1px solid rgba(0,180,255,0.15);
-      background: rgba(0,0,0,.3);
-      color: #fff;
-      padding: .85rem 1rem;
-      font-family: inherit;
-      font-size: 1rem;
-      outline: none;
-      transition: border-color .3s, box-shadow .3s;
+      width: 100%; box-sizing: border-box; min-height: 52px; border-radius: 14px;
+      border: 1px solid rgba(0,180,255,0.15); background: rgba(0,0,0,.3);
+      color: #fff; padding: .85rem 1rem; font-family: inherit; font-size: 1rem;
+      outline: none; transition: border-color .3s, box-shadow .3s;
     }
-    .form-field input:focus {
-      border-color: rgba(0,180,255,0.6);
-      box-shadow: 0 0 0 4px rgba(0,180,255,0.08);
-    }
-    .form-field input[type="file"] {
-      padding: .9rem;
-      color: #94a3b8;
-    }
+    .form-field input:focus { border-color: rgba(0,180,255,0.6); box-shadow: 0 0 0 4px rgba(0,180,255,0.08); }
+    .form-field input[type="file"] { padding: .9rem; color: #94a3b8; }
     .form-note {
-      grid-column: 1 / -1;
-      color: #64748b;
-      line-height: 1.8;
-      font-size: .88rem;
-      background: rgba(0,180,255,0.04);
-      border: 1px solid rgba(0,180,255,0.1);
-      border-radius: 12px;
-      padding: .9rem 1rem;
+      grid-column: 1 / -1; color: #64748b; line-height: 1.8; font-size: .88rem;
+      background: rgba(0,180,255,0.04); border: 1px solid rgba(0,180,255,0.1);
+      border-radius: 12px; padding: .9rem 1rem;
     }
     .form-note strong { color: var(--blue); }
 
-    .payment-back {
-      display: inline-flex;
-      color: var(--muted);
-      text-decoration: none;
-      font-weight: 700;
-      font-size: .9rem;
-      transition: color .3s;
+    /* STATUS MESSAGE */
+    .status-msg {
+      display: none; grid-column: 1/-1; text-align: center;
+      padding: 1rem; border-radius: 12px; font-weight: 700; font-size: .95rem;
     }
+    .status-msg.success { background: rgba(0,200,100,0.1); border: 1px solid rgba(0,200,100,0.3); color: #00c864; }
+    .status-msg.error   { background: rgba(255,60,60,0.1);  border: 1px solid rgba(255,60,60,0.3);  color: #ff5555; }
+
+    .payment-back { display: inline-flex; color: var(--muted); text-decoration: none; font-weight: 700; font-size: .9rem; transition: color .3s; }
     .payment-back:hover { color: var(--blue); }
 
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 
     @media(max-width: 700px) {
       nav { padding: 1rem 1.25rem; }
       .payment-page { padding: 2rem 1.25rem 4rem; }
-      .package-selector,
-      .payment-grid,
-      .cliq-details,
-      .cliq-form { grid-template-columns: 1fr; }
+      .package-selector, .payment-grid, .cliq-details, .cliq-form { grid-template-columns: 1fr; }
       .cliq-top { flex-direction: column; }
       .order-pill { white-space: normal; }
     }
@@ -482,17 +234,12 @@
 
   <main class="payment-page">
 
-    <!-- HEADER -->
     <div class="payment-header">
       <div class="payment-badge">💳 إتمام الاشتراك</div>
       <h1 class="payment-title">اختر <span>باقتك</span> وطريقة الدفع</h1>
-      <p class="payment-desc">
-        وصول كامل للدورة المكتوبة + الوحدات + البرومبتات + الموارد —
-        <strong>سعر الإطلاق لفترة محدودة</strong>
-      </p>
+      <p class="payment-desc">وصول كامل للدورة المكتوبة + الوحدات + البرومبتات + الموارد — <strong>سعر الإطلاق لفترة محدودة</strong></p>
     </div>
 
-    <!-- PACKAGE SELECTOR -->
     <div class="package-selector">
       <div class="pkg-card active" onclick="selectPackage('standard', this)">
         <div class="pkg-top">
@@ -503,7 +250,6 @@
         <div class="pkg-price">$25</div>
         <div class="pkg-desc">وصول كامل للدورة — دفعة واحدة مدى الحياة</div>
       </div>
-
       <div class="pkg-card vip-pkg" onclick="selectPackage('vip', this)">
         <div class="pkg-badge">⭐ الأكثر قيمة</div>
         <div class="pkg-top">
@@ -516,109 +262,76 @@
       </div>
     </div>
 
-    <!-- PAYMENT METHODS -->
     <div class="payment-grid">
-
       <div class="payment-card">
         <div class="payment-icon">💳</div>
         <h2>الدفع بالبطاقة / Payhip</h2>
         <p>ادفع مباشرة عبر صفحة Payhip الآمنة باستخدام البطاقة أو وسائل الدفع المتاحة هناك.</p>
-        <a id="payhipBtn" class="btn-blue" href="#" target="_blank" rel="noopener">
-          الدفع عبر Payhip ←
-        </a>
+        <a id="payhipBtn" class="btn-blue" href="#" target="_blank" rel="noopener">الدفع عبر Payhip ←</a>
       </div>
-
       <div class="payment-card">
         <div class="payment-icon">📲</div>
         <h2>الدفع عبر CliQ</h2>
         <p>حوّل المبلغ عبر كليك على الاسم والـ Alias الظاهرين بالأسفل، ثم ارفع صورة التحويل.</p>
-        <button class="btn-outline-blue" type="button" onclick="showCliqBox()">
-          الدفع عبر CliQ ←
-        </button>
+        <button class="btn-outline-blue" type="button" onclick="showCliqBox()">الدفع عبر CliQ ←</button>
       </div>
-
     </div>
 
-    <!-- CLIQ BOX -->
     <section id="cliqBox" class="cliq-box">
       <div class="cliq-top">
         <div>
           <h2>بيانات الدفع عبر CliQ</h2>
           <p>بعد التحويل، عبّي النموذج وارفع صورة التحويل.<br/>سيتم تفعيل وصولك بعد التأكد من الدفع.</p>
         </div>
-        <div class="order-pill">
-          <span id="orderIdText">AIFA-...</span>
-        </div>
+        <div class="order-pill"><span id="orderIdText">AIFA-...</span></div>
       </div>
 
       <div class="cliq-details">
-        <div class="cliq-detail">
-          <span>الاسم</span>
-          <strong>Ammar Sa'ed</strong>
-        </div>
-        <div class="cliq-detail">
-          <span>CliQ Alias</span>
-          <strong>AI2026</strong>
-        </div>
-        <div class="cliq-detail">
-          <span>المبلغ</span>
-          <strong id="cliqAmount">Standard — $25</strong>
-        </div>
+        <div class="cliq-detail"><span>الاسم</span><strong>Ammar Sa'ed</strong></div>
+        <div class="cliq-detail"><span>CliQ Alias</span><strong>AI2026</strong></div>
+        <div class="cliq-detail"><span>المبلغ</span><strong id="cliqAmount">Standard — $25</strong></div>
       </div>
 
-      <form
-        method="POST"
-        enctype="multipart/form-data"
-        action="https://formspree.io/f/xbdblbng"
-        class="cliq-form"
-      >
-        <input type="hidden" name="order_id" id="orderIdInput">
-        <input type="hidden" name="package" id="packageInput" value="Standard — $25">
-
+      <div class="cliq-form">
         <div class="form-field">
           <label for="full_name">الاسم الكامل</label>
-          <input id="full_name" type="text" name="full_name" required>
+          <input id="full_name" type="text" placeholder="اسمك الكامل" required>
         </div>
-
         <div class="form-field">
           <label for="email">الإيميل المستخدم للدورة</label>
-          <input id="email" type="email" name="email" required>
+          <input id="email" type="email" placeholder="email@example.com" required>
         </div>
-
         <div class="form-field">
           <label for="whatsapp">رقم الواتساب</label>
-          <input id="whatsapp" type="tel" name="whatsapp" required>
+          <input id="whatsapp" type="tel" placeholder="+962XXXXXXXXX" required>
         </div>
-
         <div class="form-field">
           <label for="transfer_image">صورة التحويل</label>
-          <input id="transfer_image" type="file" name="transfer_image" accept="image/*" required>
+          <input id="transfer_image" type="file" accept="image/*" required>
         </div>
-
         <p class="form-note">
           <strong>مهم:</strong> استخدم نفس الإيميل الذي تريد الدخول به إلى الدورة. بعد مراجعة التحويل سيتم تفعيل الوصول على هذا الإيميل.
         </p>
-
+        <div class="status-msg" id="statusMsg"></div>
         <div class="form-field full">
-          <button type="submit" class="btn-blue">
-            إرسال صورة التحويل ←
-          </button>
+          <button type="button" class="btn-blue" id="submitBtn" onclick="submitForm()">إرسال صورة التحويل ←</button>
         </div>
-      </form>
+      </div>
     </section>
 
     <a class="payment-back" href="pricing.html">← الرجوع لصفحة الأسعار</a>
-
   </main>
 
   <script>
+    const BOT_TOKEN = '8872295082:AAF3sEDeGSzUEzs3HiisWr9pgpqlSFndUgA';
+    const CHAT_ID   = '1274642579';
     const PAYHIP_STANDARD = "https://payhip.com/buy?s=1&cart_links%5B%5D=aZ9Oi&qty%5BaZ9Oi%5D=1";
     const PAYHIP_VIP      = "https://payhip.com/buy?s=1&cart_links%5B%5D=aZ9Oi&qty%5BaZ9Oi%5D=1";
 
     let currentPackage = 'standard';
 
     function generateOrderId() {
-      const now = new Date();
+      const now  = new Date();
       const yyyy = now.getFullYear();
       const mm   = String(now.getMonth() + 1).padStart(2, "0");
       const dd   = String(now.getDate()).padStart(2, "0");
@@ -627,28 +340,77 @@
     }
 
     const orderId = generateOrderId();
-    document.getElementById("orderIdText").textContent  = orderId;
-    document.getElementById("orderIdInput").value       = orderId;
-    document.getElementById("payhipBtn").href           = PAYHIP_STANDARD;
+    document.getElementById("orderIdText").textContent = orderId;
+    document.getElementById("payhipBtn").href = PAYHIP_STANDARD;
 
     function selectPackage(type, el) {
       document.querySelectorAll('.pkg-card').forEach(c => c.classList.remove('active'));
       el.classList.add('active');
       currentPackage = type;
-
-      const isVip    = type === 'vip';
-      const label    = isVip ? 'VIP — $99' : 'Standard — $25';
-      const payhipUrl = isVip ? PAYHIP_VIP : PAYHIP_STANDARD;
-
-      document.getElementById("cliqAmount").textContent  = label;
-      document.getElementById("packageInput").value      = label;
-      document.getElementById("payhipBtn").href          = payhipUrl;
+      const isVip = type === 'vip';
+      document.getElementById("cliqAmount").textContent = isVip ? 'VIP — $99' : 'Standard — $25';
+      document.getElementById("payhipBtn").href = isVip ? PAYHIP_VIP : PAYHIP_STANDARD;
     }
 
     function showCliqBox() {
       const box = document.getElementById("cliqBox");
       box.classList.add("active");
       box.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function showStatus(type, msg) {
+      const el = document.getElementById('statusMsg');
+      el.className = 'status-msg ' + type;
+      el.textContent = msg;
+      el.style.display = 'block';
+    }
+
+    async function submitForm() {
+      const name    = document.getElementById('full_name').value.trim();
+      const email   = document.getElementById('email').value.trim();
+      const whatsapp= document.getElementById('whatsapp').value.trim();
+      const fileInput = document.getElementById('transfer_image');
+      const file    = fileInput.files[0];
+      const pkg     = currentPackage === 'vip' ? 'VIP — $99' : 'Standard — $25';
+
+      if (!name || !email || !whatsapp || !file) {
+        showStatus('error', '⚠️ يرجى تعبئة جميع الحقول ورفع صورة التحويل');
+        return;
+      }
+
+      const btn = document.getElementById('submitBtn');
+      btn.textContent = '⏳ جاري الإرسال...';
+      btn.disabled = true;
+
+      try {
+        // 1. Send text message
+        const text = `🛍️ طلب جديد!\n\n📦 الباقة: ${pkg}\n🔖 رقم الطلب: ${orderId}\n👤 الاسم: ${name}\n📧 الإيميل: ${email}\n📱 الواتساب: ${whatsapp}`;
+
+        await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ chat_id: CHAT_ID, text })
+        });
+
+        // 2. Send image
+        const formData = new FormData();
+        formData.append('chat_id', CHAT_ID);
+        formData.append('photo', file);
+        formData.append('caption', `📸 صورة التحويل — ${orderId}`);
+
+        await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendPhoto`, {
+          method: 'POST',
+          body: formData
+        });
+
+        showStatus('success', '✅ تم الإرسال بنجاح! سيتم تفعيل وصولك خلال 24 ساعة.');
+        btn.textContent = '✅ تم الإرسال';
+
+      } catch (err) {
+        showStatus('error', '❌ حدث خطأ، يرجى المحاولة مرة أخرى.');
+        btn.textContent = 'إرسال صورة التحويل ←';
+        btn.disabled = false;
+      }
     }
   </script>
 
