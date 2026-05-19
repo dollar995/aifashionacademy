@@ -199,6 +199,52 @@
       main { padding: 2.5rem 1.25rem; }
       .info-card { padding: 1.5rem; }
     }
+
+    /* WELCOME HERO */
+    .welcome-hero {
+      background: linear-gradient(135deg, rgba(0,100,255,0.15) 0%, rgba(0,180,255,0.08) 50%, rgba(0,100,255,0.12) 100%);
+      border-bottom: 1px solid rgba(0,180,255,0.15);
+      padding: 4rem 2rem 3rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .welcome-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(0,180,255,0.08), transparent);
+    }
+    .welcome-hero-inner { position: relative; z-index: 1; max-width: 640px; margin: 0 auto; }
+    .confetti-icon {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      display: block;
+      animation: popIn .6s cubic-bezier(.36,.07,.19,.97) both;
+    }
+    @keyframes popIn {
+      0%   { transform: scale(0) rotate(-10deg); opacity: 0; }
+      70%  { transform: scale(1.15) rotate(3deg); }
+      100% { transform: scale(1) rotate(0); opacity: 1; }
+    }
+    .welcome-badge {
+      display: inline-flex; align-items: center; gap: .4rem;
+      background: rgba(0,180,255,0.1); border: 1px solid rgba(0,180,255,0.25);
+      color: var(--blue); padding: .4rem 1.2rem; border-radius: 999px;
+      font-size: .85rem; font-weight: 700; margin-bottom: 1rem;
+      animation: fadeUp .5s .2s ease both;
+    }
+    .welcome-title {
+      font-size: clamp(1.7rem, 4vw, 2.5rem);
+      font-weight: 900; line-height: 1.2;
+      color: #fff; margin-bottom: .9rem;
+      animation: fadeUp .5s .3s ease both;
+    }
+    .welcome-title span { color: var(--blue); }
+    .welcome-sub {
+      color: #94a3b8; font-size: 1rem; line-height: 1.85;
+      animation: fadeUp .5s .4s ease both;
+    }
   </style>
 </head>
 <body>
@@ -209,6 +255,19 @@
       AI Fashion Academy
     </a>
   </nav>
+
+  <!-- WELCOME HERO -->
+  <section class="welcome-hero">
+    <div class="welcome-hero-inner">
+      <span class="confetti-icon">🎉</span>
+      <div class="welcome-badge">✨ أهلاً بك في الأسرة</div>
+      <h2 class="welcome-title">مبروك! قرارك كان <span>الأذكى</span></h2>
+      <p class="welcome-sub">
+        انضممت لمئات الطلاب العرب الذين يبنون براندات ملابس حقيقية بالذكاء الاصطناعي.<br/>
+        رحلتك بدأت الآن — ونحن معك كل خطوة. 🚀
+      </p>
+    </div>
+  </section>
 
   <main>
     <div class="pending-wrap">
@@ -266,7 +325,7 @@
         📧 استفسار؟ تواصل معنا على
         <a href="mailto:support@aifashion.academy">support@aifashion.academy</a>
         أو
-        <a href="https://wa.me/+962791542019" target="_blank">واتساب</a>
+        <a href="https://wa.me/962XXXXXXXXX" target="_blank">واتساب</a>
       </div>
 
     </div>
