@@ -2416,14 +2416,3 @@ a, button, .card, .quick-card, .module-progress-card, .lesson-card { transition:
   .mark-complete-wrap, .lesson-nav-bottom, .site-footer { display: none !important; }
   .lesson-content, .module-content { box-shadow: none; border: none; padding: 0; }
 }
-.price-meta,
-.price-meta span,
-.price-meta del {
-  color: #000 !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-
-.price-meta del {
-  text-decoration-color: #000 !important;
-}
