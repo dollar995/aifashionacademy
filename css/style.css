@@ -2416,3 +2416,16 @@ a, button, .card, .quick-card, .module-progress-card, .lesson-card { transition:
   .mark-complete-wrap, .lesson-nav-bottom, .site-footer { display: none !important; }
   .lesson-content, .module-content { box-shadow: none; border: none; padding: 0; }
 }
+.original-price,
+.old-price,
+.was-price,
+.price-original,
+.compare-price,
+.regular-price,
+.pricing-card .original-price,
+.pricing-card .old-price,
+.pricing-card .was-price {
+  color: #000 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
