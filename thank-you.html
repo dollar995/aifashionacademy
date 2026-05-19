@@ -11,6 +11,35 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet"/>
 <link href="css/style.css" rel="stylesheet"/>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1526052419532342');
+fbq('track', 'PageView');
+fbq('track', 'Purchase', {
+  value: 97,
+  currency: 'USD',
+  content_name: 'AI Fashion Academy Course',
+  content_type: 'product'
+});
+fbq('track', 'Lead', {
+  content_name: 'AI Fashion Academy',
+  currency: 'USD',
+  value: 97
+});
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1526052419532342&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 <style>
     .thankyou-hero { min-height: 50vh; display: flex; align-items: center; justify-content: center; text-align: center; background: var(--gradient-hero); padding: 4rem 1.5rem; }
     .thankyou-hero h1 { color: var(--white); font-size: 2.5rem; margin-bottom: 1rem; }
