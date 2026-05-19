@@ -2416,3 +2416,9 @@ a, button, .card, .quick-card, .module-progress-card, .lesson-card { transition:
   .mark-complete-wrap, .lesson-nav-bottom, .site-footer { display: none !important; }
   .lesson-content, .module-content { box-shadow: none; border: none; padding: 0; }
 }
+.pricing-card del,
+.pricing-card s,
+.pricing-card strike {
+  color: #000 !important;
+  opacity: 1 !important;
+}
