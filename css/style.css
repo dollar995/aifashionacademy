@@ -385,7 +385,7 @@ p { margin-bottom: 1rem; font-size: 1.05rem; }
 }
 
 .hero-subtitle {
-  color: var(--stone);
+  color: var(--off-white);
   font-size: 1.15rem;
   margin-bottom: 2rem;
   max-width: 90%;
