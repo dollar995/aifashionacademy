@@ -405,6 +405,7 @@
 
         showStatus('success', '✅ تم الإرسال بنجاح! سيتم تفعيل وصولك خلال 24 ساعة.');
         btn.textContent = '✅ تم الإرسال';
+        setTimeout(() => { window.location.href = 'pending.html'; }, 1500);
 
       } catch (err) {
         showStatus('error', '❌ حدث خطأ، يرجى المحاولة مرة أخرى.');
