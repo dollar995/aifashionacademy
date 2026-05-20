@@ -1,7 +1,7 @@
 /* ═══════════════════════════════════════════════════════════════
-   AI Fashion Academy — Auth Gate v3
+   AI Fashion Academy — Auth Gate v4
    Supabase Auth — No Memberstack
-   ✅ Protected pages require login + paid (student/admin role)
+   ✅ Protected pages require login + any role in user_roles table
    ✅ Unprotected pages show normally
    ═══════════════════════════════════════════════════════════════ */
 (function () {
@@ -102,7 +102,7 @@
       client.from('user_roles').select('role').eq('user_id', session.user.id)
         .then(function(result) {
           var roles = (result.data || []).map(function(r){ return r.role; });
-          var hasPaid = roles.indexOf('student') !== -1 || roles.indexOf('admin') !== -1 || roles.indexOf('instructor') !== -1;
+          var hasPaid = roles.length > 0;
 
           if (!hasPaid) { showPaymentScreen(client); return; }
 
