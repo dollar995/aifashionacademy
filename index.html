@@ -55,7 +55,7 @@
 .countdown-box span{ display:block; color:var(--sand,#d4a574); font-size:2rem; line-height:1; font-weight:900; }
 .countdown-box small{ display:block; margin-top:.35rem; color:var(--stone,#b8b1a7); font-size:.78rem; }
 .pricing-grid-two{
-  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
   align-items:stretch;
   gap:1.5rem;
 }
@@ -70,11 +70,39 @@ font-size:.95rem;
 }
 .price-meta del{ color:rgba(255,255,255,.45); font-weight:700; }
 .pricing-note{ color:var(--stone,#b8b1a7); text-align:center; margin:.35rem 0 1rem; font-size:.95rem; }
+/* SILVER (VIP) */
 .vip-card{
-  border-color:rgba(212,165,116,.45) !important;
-  background:linear-gradient(180deg,rgba(212,165,116,.1),rgba(255,255,255,.03));
+  border-color:rgba(192,192,192,.45) !important;
+  background:linear-gradient(180deg,rgba(192,192,192,.08),rgba(255,255,255,.02));
 }
-.vip-badge{ background:linear-gradient(135deg,#d4a574,#f2d091); color:#111 !important; }
+.vip-badge{
+  background:linear-gradient(135deg,#808080,#d0d0d0,#a0a0a0) !important;
+  color:#111 !important;
+}
+.vip-card .pricing-name{ color:#c8c8c8 !important; }
+.vip-card .pricing-price .amount{ color:#d0d0d0 !important; }
+/* ELITE */
+.elite-card{
+  border-color:rgba(255,215,0,.45) !important;
+  background:linear-gradient(180deg,rgba(255,215,0,.1),rgba(40,30,5,.95));
+  position:relative; overflow:hidden;
+}
+.elite-card::before{
+  content:'';
+  position:absolute; top:0; left:0; right:0; height:3px;
+  background:linear-gradient(90deg,#b8860b,#FFD700,#FFA500,#FFD700,#b8860b);
+  background-size:200% auto;
+  animation:shimmer 3s linear infinite;
+}
+@keyframes shimmer{ 0%{background-position:0% center} 100%{background-position:200% center} }
+.elite-badge{
+  background:linear-gradient(135deg,#b8860b,#FFD700,#FFA500) !important;
+  color:#111 !important;
+  box-shadow:0 4px 15px rgba(255,215,0,.3);
+}
+.elite-card .pricing-name{ color:#FFD700 !important; text-shadow:0 0 20px rgba(255,215,0,.4); }
+.elite-card .pricing-price .amount{ color:#FFD700 !important; text-shadow:0 0 20px rgba(255,215,0,.3); }
+.elite-card .pricing-price .currency{ color:#FFD700 !important; }
 @media(max-width:860px){
   .launch-timer-card{ flex-direction:column; text-align:center; }
   .timer-copy{ text-align:center; }
@@ -634,6 +662,8 @@ font-size:.95rem;
 </div>
 
 <div class="pricing-grid pricing-grid-two">
+
+<!-- Standard -->
 <div class="pricing-card featured">
 <div class="pricing-badge">الباقة الأساسية</div>
 <div class="pricing-name">Standard</div>
@@ -653,9 +683,10 @@ font-size:.95rem;
 <div class="checkout-placeholder"></div>
 </div>
 
+<!-- VIP Silver -->
 <div class="pricing-card vip-card">
-<div class="pricing-badge vip-badge">⭐ الأكثر قيمة</div>
-<div class="pricing-name">VIP</div>
+<div class="pricing-badge vip-badge">🥈 Silver</div>
+<div class="pricing-name">VIP Silver</div>
 <div class="price-meta"><span>السعر الأصلي</span><del>$400</del></div>
 <div class="pricing-price"><span class="currency">$</span><span class="amount">99</span><span class="period">/دفعة واحدة</span></div>
 <p class="pricing-note">دفعة واحدة — وصول مدى الحياة + دعم VIP</p>
@@ -668,10 +699,32 @@ font-size:.95rem;
 <li class="included">متابعة شخصية حتى الإطلاق الأول</li>
 <li class="included">أولوية في الدعم الفني</li>
 </ul>
-<a class="btn btn-primary btn-full checkout-btn" href="payment.html">احجز مقعدك VIP ←</a>
+<a class="btn btn-primary btn-full checkout-btn" href="payment.html" style="background:linear-gradient(135deg,#808080,#d0d0d0);color:#111;">احجز مقعدك Silver ←</a>
 <div class="checkout-placeholder"></div>
-<p style="text-align:center; font-size:.82rem; margin-top:.75rem; color:rgba(212,165,116,0.7);">🎯 المقاعد محدودة — 10 مقاعد فقط لكل دفعة</p>
+<p style="text-align:center; font-size:.82rem; margin-top:.75rem; color:rgba(192,192,192,0.7);">🎯 المقاعد محدودة — 10 مقاعد فقط لكل دفعة</p>
 </div>
+
+<!-- ELITE Gold -->
+<div class="pricing-card elite-card">
+<div class="pricing-badge elite-badge">👑 ELITE — الأقوى</div>
+<div class="pricing-name">ELITE</div>
+<div class="price-meta" style="color:rgba(255,215,0,.6);"><span>السعر الأصلي</span><del style="color:rgba(255,215,0,.4);">$600</del></div>
+<div class="pricing-price"><span class="currency">$</span><span class="amount">300</span><span class="period">/دفعة واحدة</span></div>
+<p class="pricing-note" style="color:rgba(255,215,0,.7);">تجربة مخصصة بالكامل — أنت ومدربك</p>
+<ul class="pricing-features">
+<li class="included" style="color:#f0d070;">كل شي في VIP Silver</li>
+<li class="included" style="color:#f0d070;">دعم مباشر شهر كامل على مدار الساعة</li>
+<li class="included" style="color:#f0d070;">متابعة خاصة 1-on-1 لكل خطوة في البراند</li>
+<li class="included" style="color:#f0d070;">مراجعة كاملة للهوية البصرية والمحتوى</li>
+<li class="included" style="color:#f0d070;">خطة تسويق مخصصة لبراندك تحديداً</li>
+<li class="included" style="color:#f0d070;">وصول مباشر للمدرب عبر واتساب</li>
+<li class="included" style="color:#f0d070;">ضمان النتائج أو استرداد كامل</li>
+</ul>
+<a class="btn btn-primary btn-full checkout-btn" href="payment.html" style="background:linear-gradient(135deg,#b8860b,#FFD700,#FFA500);color:#111;font-weight:900;box-shadow:0 8px 25px rgba(255,215,0,.35);">احجز مقعدك ELITE 👑 ←</a>
+<div class="checkout-placeholder"></div>
+<p style="text-align:center; font-size:.82rem; margin-top:.75rem; color:rgba(255,215,0,.7);">🔥 مقاعد محدودة جداً — 3 مقاعد فقط لكل دفعة</p>
+</div>
+
 </div>
 </div>
 </section>
