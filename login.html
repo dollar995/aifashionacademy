@@ -275,7 +275,7 @@ function doReset() {
   btn.disabled = true; btn.textContent = 'جاري الإرسال...';
   hideMessages();
   client.auth.resetPasswordForEmail(email, {
-    redirectTo: 'https://aifashionacademy.netlify.app/reset-password.html'
+    redirectTo: 'https://aifashion.academy/reset-password.html'
   }).then(function(res) {
     if (res.error) {
       showError('حدث خطأ، تأكد من الإيميل وحاول مجدداً.');
