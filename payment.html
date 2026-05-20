@@ -277,6 +277,16 @@
       </div>
     </div>
 
+    <!-- PayPal Payment Section -->
+    <div class="payment-card" style="margin-bottom:2rem;animation:fadeUp .6s .3s ease both;">
+      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1rem;">
+        <div class="payment-icon" style="font-size:1.4rem;">🅿️</div>
+        <h2 style="margin-bottom:0;">الدفع عبر PayPal</h2>
+      </div>
+      <p>ادفع بأمان عبر PayPal باستخدام حسابك أو بطاقة الائتمان / الخصم مباشرة.</p>
+      <div id="paypal-button-container" style="margin-top:1rem;min-height:50px;"></div>
+    </div>
+
     <section id="cliqBox" class="cliq-box">
       <div class="cliq-top">
         <div>
@@ -413,6 +423,59 @@
         btn.disabled = false;
       }
     }
+
+  </script>
+
+  <!-- PayPal SDK — dynamic load guarantees ready before init -->
+  <script>
+    (function() {
+      var s = document.createElement('script');
+      s.src = 'https://www.paypal.com/sdk/js?client-id=BAAEJY4twW4IoF2APB7hjEG4juL9i18UZj9Guq2py7RgM2&currency=USD';
+      s.onload = function() { initPayPal(); };
+      document.body.appendChild(s);
+    })();
+
+    function initPayPal() {
+      var PAYPAL_PRICES = { standard: '25.00', vip: '99.00' };
+      paypal.Buttons({
+      createOrder: function(data, actions) {
+        const price = PAYPAL_PRICES[currentPackage] || '25.00';
+        const pkgName = currentPackage === 'vip' ? 'AI Fashion Academy VIP' : 'AI Fashion Academy Standard';
+        return actions.order.create({
+          purchase_units: [{
+            description: pkgName,
+            amount: { value: price, currency_code: 'USD' }
+          }]
+        });
+      },
+      onApprove: function(data, actions) {
+        return actions.order.capture().then(function(details) {
+          // Send notification to Telegram
+          const name = details.payer.name.given_name + ' ' + details.payer.name.surname;
+          const email = details.payer.email_address;
+          const pkg = currentPackage === 'vip' ? 'VIP — $99' : 'Standard — $25';
+          const text = `✅ دفع PayPal ناجح!\n\n📦 الباقة: ${pkg}\n🔖 رقم الطلب: ${orderId}\n👤 الاسم: ${name}\n📧 الإيميل: ${email}\n💳 PayPal ID: ${data.orderID}`;
+          fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ chat_id: CHAT_ID, text })
+          });
+          // Redirect to thank you
+          setTimeout(() => { window.location.href = 'thank-you.html'; }, 500);
+        });
+      },
+      onError: function(err) {
+        alert('حدث خطأ في الدفع. يرجى المحاولة مرة أخرى.');
+        console.error(err);
+      },
+      style: {
+        layout: 'vertical',
+        color: 'blue',
+        shape: 'rect',
+        label: 'pay'
+      }
+    }).render('#paypal-button-container');
+    } // end initPayPal
   </script>
 
 </body>
