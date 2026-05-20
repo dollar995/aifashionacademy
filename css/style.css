@@ -1893,7 +1893,7 @@ p { margin-bottom: 1rem; font-size: 1.05rem; }
 
 
 /* Final launch polish: logo, visuals, Memberstack-ready layout */
-.logo-img{width:132px;max-width:132px;max-height:40x;height:auto;object-fit:contain;display:block;filter:drop-shadow(0 8px 18px rgba(0,0,0,.22));}
+.logo-img{width:132px;max-width:132px;max-height:40px;height:auto;object-fit:contain;display:block;filter:drop-shadow(0 8px 18px rgba(0,0,0,.22));}
 .logo-text{font-size:.95rem;}
 @media(max-width:640px){.logo-img{width:132px;max-width:132px;}.logo-text{display:none}.header-inner{padding:0 1rem}.nav-desktop{display:none}}
 .visual-card,.lesson-visual,.module-cover-card{border-radius:var(--radius-lg);overflow:hidden;margin:1.5rem 0;background:var(--navy);border:1px solid rgba(212,165,116,.22);box-shadow:var(--shadow-md)}
@@ -2426,4 +2426,127 @@ a, button, .card, .quick-card, .module-progress-card, .lesson-card { transition:
 
 .price-meta del {
   text-decoration-color: #000 !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   RESPONSIVE OVERHAUL — Mobile & Desktop polish
+   Bug fixes + uniform breakpoints for all pages (lessons, modules,
+   dashboard, login, downloads, files, index).
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Global safety */
+html, body { max-width: 100%; overflow-x: hidden; }
+img, video, iframe, svg { max-width: 100%; height: auto; }
+input, textarea, select, button { max-width: 100%; font-family: inherit; }
+table { width: 100%; border-collapse: collapse; }
+
+/* Container becomes fluid on small screens */
+.container { padding-left: clamp(1rem, 4vw, 1.5rem); padding-right: clamp(1rem, 4vw, 1.5rem); }
+
+/* Auto-fit grids — works on mobile, tablet, desktop */
+.card-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: clamp(1rem, 2.5vw, 1.75rem); }
+.pricing-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: clamp(1rem, 2.5vw, 2rem); }
+.pain-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: clamp(1rem, 2.5vw, 1.5rem); }
+.dashboard-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: clamp(1rem, 2.5vw, 1.5rem); }
+.footer-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: clamp(1.5rem, 3vw, 2rem); }
+
+/* Sections — fluid vertical rhythm */
+.section { padding: clamp(2.5rem, 6vw, 5rem) 0; }
+
+/* Tablet / small desktop */
+@media (max-width: 1024px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 2rem; padding: 3rem 1.25rem; }
+  .hero-visual { order: -1; max-width: 460px; margin: 0 auto; }
+  .hero-subtitle { max-width: 100%; }
+}
+
+/* Hero floating cards — keep inside frame on small screens */
+@media (max-width: 768px) {
+  .hero-visual-inner { max-width: 360px; aspect-ratio: 1; }
+  .hero-visual-inner::before { font-size: 5rem; }
+  .hero-visual-card { padding: 0.6rem 0.8rem; max-width: 160px; min-width: 130px; font-size: 0.8rem; }
+  .hero-visual-card strong { font-size: 0.9rem; }
+  .hero-visual-card span { font-size: 0.72rem; }
+  .hero-visual-card.card-1 { top: 4%; left: 0; }
+  .hero-visual-card.card-2 { bottom: 6%; right: 0; }
+  .hero-visual-card.card-3 { top: 46%; right: 2%; }
+  .hero-stats { gap: 1.25rem; justify-content: space-around; width: 100%; }
+  .hero-stat-number { font-size: 1.5rem; }
+}
+
+/* Mobile nav alignment with shrinking header */
+@media (max-width: 640px) {
+  .mobile-nav { top: 64px; padding: 1rem 1.25rem; }
+  .header-actions { gap: 0.5rem; }
+  .header-actions .btn { padding: 0.55rem 0.9rem; font-size: 0.8rem; }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  h1 { font-size: clamp(1.6rem, 7vw, 2rem); }
+  h2 { font-size: clamp(1.3rem, 5.5vw, 1.7rem); }
+  .hero { padding-top: 64px; min-height: auto; }
+  .hero-grid { padding: 2rem 1rem 3rem; gap: 1.5rem; }
+  .hero-cta { flex-direction: column; width: 100%; }
+  .hero-cta .btn { width: 100%; }
+  .hero-visual-inner { max-width: 280px; }
+  .hero-visual-inner::before { font-size: 3.5rem; }
+  .hero-visual-card { max-width: 140px; min-width: 110px; padding: 0.5rem 0.7rem; }
+  .section-header { margin-bottom: 2rem; }
+  .footer-bottom { flex-direction: column; gap: 0.75rem; text-align: center; }
+}
+
+/* Touch targets — accessibility */
+@media (max-width: 768px) {
+  .btn, a.btn, button.btn { min-height: 44px; }
+  .nav-desktop a, .mobile-nav a { min-height: 40px; display: flex; align-items: center; }
+  input, select, textarea { min-height: 44px; padding: 0.65rem 0.9rem; font-size: 1rem; }
+}
+
+/* Forms — full width on mobile */
+@media (max-width: 640px) {
+  form { width: 100%; }
+  .form-row { flex-direction: column; gap: 0.75rem; }
+  .form-row > * { width: 100%; }
+}
+
+/* Tables horizontal scroll wrapper */
+.table-responsive, .lesson-content table, .module-content table {
+  display: block; width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch;
+}
+@media (min-width: 720px) {
+  .lesson-content table, .module-content table { display: table; }
+}
+
+/* Pricing card featured override on small screens already handled — re-assert */
+@media (max-width: 1024px) {
+  .pricing-card.featured { transform: none; }
+}
+
+/* Login box mobile padding */
+@media (max-width: 480px) {
+  .login-box { padding: 1.75rem 1.1rem; border-radius: 14px; }
+}
+
+/* Dashboard header stacks cleanly */
+@media (max-width: 768px) {
+  .dashboard-header-inner { flex-direction: column; align-items: stretch; text-align: center; gap: 1rem; }
+  .welcome-banner .continue-btn { width: 100%; }
+}
+
+/* Module / lessons cover images cap height on desktop */
+.module-cover-card img, .visual-card img { max-height: 520px; object-fit: cover; }
+@media (max-width: 768px) {
+  .module-cover-card img, .visual-card img { max-height: 320px; }
+}
+
+/* Reading progress bar — ensure on top */
+.reading-progress-bar { pointer-events: none; }
+
+/* Prevent text overflow */
+h1, h2, h3, h4, h5, h6, p, a, span, li { word-wrap: break-word; overflow-wrap: break-word; }
+
+/* Footer links centered on mobile, multi-col on desktop */
+@media (min-width: 768px) {
+  .footer-links { align-items: flex-start; text-align: right; }
 }
