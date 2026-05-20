@@ -7,64 +7,230 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet"/>
-<link href="css/style.css" rel="stylesheet"/>
 <style>
-.login-page{min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#070707 0%,#141414 50%,#070707 100%);padding:2rem;}
-.login-box{background:rgba(20,20,20,.92);border:1px solid rgba(212,165,116,.35);border-radius:24px;padding:3rem 2.5rem;width:100%;max-width:440px;box-shadow:0 22px 60px rgba(0,0,0,.5);}
-.login-logo{text-align:center;margin-bottom:2rem;}
-.login-logo-img{width:120px;height:auto;object-fit:contain;margin:0 auto 1rem;display:block;}
-.login-logo h2{font-size:1.5rem;color:#faf9f6;margin-bottom:.5rem;font-weight:700;}
-.login-logo p{color:#94a3b8;font-size:.9rem;}
-.form-group{margin-bottom:1.25rem;}
-.form-label{display:block;font-size:.85rem;font-weight:600;color:#d4a574;margin-bottom:.5rem;}
-.form-input{width:100%;padding:.875rem 1rem;border:2px solid rgba(212,165,116,.2);border-radius:12px;font-family:Tajawal,sans-serif;font-size:1rem;color:#faf9f6;background:rgba(255,255,255,.05);box-sizing:border-box;transition:border-color .3s;}
-.form-input:focus{outline:none;border-color:#d4a574;}
-.form-input::placeholder{color:#64748b;}
-.btn-login{width:100%;padding:1rem;background:linear-gradient(135deg,#d4a574,#b08d5f);color:#070707;border:none;border-radius:12px;font-family:Tajawal,sans-serif;font-size:1.05rem;font-weight:700;cursor:pointer;margin-top:.5rem;transition:opacity .3s;}
-.btn-login:hover{opacity:.9;}
-.btn-login:disabled{opacity:.6;cursor:not-allowed;}
-.login-footer{text-align:center;margin-top:1.5rem;font-size:.85rem;color:#64748b;}
-.login-footer a{color:#d4a574;text-decoration:none;font-weight:600;}
-.access-message{background:rgba(212,165,116,.08);border:1px solid rgba(212,165,116,.2);border-radius:12px;padding:1rem;margin-bottom:1.5rem;font-size:.85rem;color:#94a3b8;text-align:center;}
-.access-message strong{color:#d4a574;}
-.error-msg{background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.3);color:#fca5a5;padding:.75rem 1rem;border-radius:10px;margin-bottom:1rem;font-size:.9rem;display:none;}
-.success-msg{background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.3);color:#86efac;padding:.75rem 1rem;border-radius:10px;margin-bottom:1rem;font-size:.9rem;display:none;}
-@media(max-width:520px){.login-box{padding:2rem 1.25rem;}}
+  :root {
+    --blue: #00b4ff;
+    --blue-dark: #0066ff;
+    --blue-glow: rgba(0,180,255,0.3);
+    --bg: #020810;
+    --card-bg: rgba(3,12,35,0.92);
+    --text: #faf9f6;
+    --muted: #64748b;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: Tajawal, sans-serif;
+    background: var(--bg);
+    background-image:
+      radial-gradient(ellipse 80% 50% at 20% 20%, rgba(0,100,255,0.12) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 40% at 80% 80%, rgba(0,180,255,0.08) 0%, transparent 50%);
+    min-height: 100vh;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Nav */
+  nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.25rem clamp(1rem,4vw,3rem);
+    border-bottom: 1px solid rgba(0,180,255,0.1);
+    backdrop-filter: blur(10px);
+    background: rgba(2,8,16,0.85);
+    position: sticky; top: 0; z-index: 100;
+  }
+  .nav-logo {
+    display: flex; align-items: center; gap: .6rem;
+    text-decoration: none; color: var(--blue);
+    font-weight: 800; font-size: clamp(.85rem,2.4vw,1rem);
+  }
+  .logo-icon {
+    width: 34px; height: 34px; flex-shrink: 0;
+    background: linear-gradient(135deg, var(--blue-dark), var(--blue));
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 900; font-size: .8rem; color: #fff;
+    box-shadow: 0 0 12px var(--blue-glow);
+  }
+  .nav-back {
+    color: var(--muted); text-decoration: none;
+    font-size: clamp(.8rem,2.2vw,.9rem); transition: color .3s;
+  }
+  .nav-back:hover { color: var(--blue); }
+
+  /* Page */
+  .login-page {
+    flex: 1; display: flex; align-items: center; justify-content: center;
+    padding: 2rem clamp(1rem,4vw,2rem);
+  }
+
+  /* Card */
+  .login-box {
+    background: var(--card-bg);
+    border: 1px solid rgba(0,180,255,0.15);
+    border-radius: 24px;
+    padding: clamp(2rem,5vw,3rem) clamp(1.5rem,4vw,2.5rem);
+    width: 100%; max-width: 460px;
+    box-shadow: 0 25px 60px rgba(0,0,0,.5), 0 0 0 1px rgba(0,180,255,0.05);
+    position: relative; overflow: hidden;
+  }
+  .login-box::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, var(--blue-dark), var(--blue));
+  }
+
+  /* Logo */
+  .login-logo { text-align: center; margin-bottom: 2rem; }
+  .login-logo-img { width: 110px; margin: 0 auto 1rem; display: block; }
+  .login-logo h2 { font-size: 1.5rem; color: #fff; font-weight: 800; margin-bottom: .4rem; }
+  .login-logo p { color: var(--muted); font-size: .9rem; }
+
+  /* Access notice */
+  .access-message {
+    background: rgba(0,180,255,0.07);
+    border: 1px solid rgba(0,180,255,0.2);
+    border-radius: 12px; padding: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: .85rem; color: #94a3b8;
+    text-align: center; line-height: 1.6;
+  }
+  .access-message strong { color: var(--blue); }
+
+  /* Form */
+  .form-group { margin-bottom: 1.25rem; }
+  .form-label { display: block; font-size: .85rem; font-weight: 600; color: var(--blue); margin-bottom: .5rem; }
+  .form-input {
+    width: 100%; padding: .875rem 1rem;
+    border: 1.5px solid rgba(0,180,255,0.2);
+    border-radius: 12px;
+    font-family: Tajawal, sans-serif; font-size: 1rem;
+    color: #f1f5f9; background: rgba(255,255,255,0.04);
+    transition: border-color .3s, box-shadow .3s;
+  }
+  .form-input:focus {
+    outline: none;
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgba(0,180,255,0.12);
+  }
+  .form-input::placeholder { color: #1e293b; }
+
+  /* Buttons */
+  .btn-primary {
+    width: 100%; padding: 1rem;
+    background: linear-gradient(135deg, var(--blue-dark), var(--blue));
+    color: #fff; border: none; border-radius: 12px;
+    font-family: Tajawal, sans-serif; font-size: 1.05rem; font-weight: 700;
+    cursor: pointer; margin-top: .5rem;
+    transition: opacity .3s, transform .2s;
+    box-shadow: 0 0 20px rgba(0,180,255,0.2);
+  }
+  .btn-primary:hover { opacity: .9; transform: translateY(-1px); }
+  .btn-primary:disabled { opacity: .5; cursor: not-allowed; transform: none; }
+  .btn-secondary {
+    width: 100%; padding: .8rem;
+    background: transparent;
+    color: var(--muted);
+    border: 1px solid rgba(0,180,255,0.15);
+    border-radius: 12px;
+    font-family: Tajawal, sans-serif; font-size: .9rem; font-weight: 600;
+    cursor: pointer; margin-top: .75rem;
+    transition: color .3s, border-color .3s;
+  }
+  .btn-secondary:hover { color: var(--blue); border-color: rgba(0,180,255,0.4); }
+
+  /* Divider */
+  .divider {
+    display: flex; align-items: center; gap: .75rem;
+    margin: 1.25rem 0; color: #1e293b; font-size: .8rem;
+  }
+  .divider::before, .divider::after {
+    content: ''; flex: 1; height: 1px; background: rgba(0,180,255,0.1);
+  }
+
+  /* Messages */
+  .error-msg {
+    background: rgba(239,68,68,.08); border: 1px solid rgba(239,68,68,.3);
+    color: #fca5a5; padding: .75rem 1rem; border-radius: 10px;
+    margin-bottom: 1rem; font-size: .9rem; display: none;
+  }
+  .success-msg {
+    background: rgba(0,180,255,.08); border: 1px solid rgba(0,180,255,.3);
+    color: #7dd3fc; padding: .75rem 1rem; border-radius: 10px;
+    margin-bottom: 1rem; font-size: .9rem; display: none;
+  }
+
+  /* Footer */
+  .login-footer { text-align: center; margin-top: 1.5rem; font-size: .85rem; color: #334155; }
+  .login-footer a { color: var(--blue); text-decoration: none; font-weight: 600; }
+  .login-footer a:hover { text-decoration: underline; }
+
+  @media (max-width: 520px) {
+    .login-box { padding: 2rem 1.25rem; }
+  }
 </style>
 </head>
 <body>
+
+<!-- Nav -->
+<nav>
+  <a class="nav-logo" href="index.html">
+    <div class="logo-icon">AI</div>
+    AI Fashion Academy
+  </a>
+  <a class="nav-back" href="index.html">← الرئيسية</a>
+</nav>
+
+<!-- Login Page -->
 <div class="login-page">
-<div class="login-box">
-  <div class="login-logo">
-    <img alt="AI Fashion Academy" class="login-logo-img" src="assets/logo/logo.png"/>
-    <h2>تسجيل الدخول</h2>
-    <p>ادخل بحسابك للوصول الكامل إلى جميع محتوى الدورة.</p>
-  </div>
+  <div class="login-box">
 
-  <div class="access-message">
-    <strong>وصول كامل بعد الشراء</strong><br/>
-    بعد شراء الدورة، ستصلك رسالة إيميل فيها رابط لضبط كلمة مرورك والدخول للمنصة.
-  </div>
+    <div class="login-logo">
+      <img alt="AI Fashion Academy" class="login-logo-img" src="assets/logo/logo.png"/>
+      <h2>تسجيل الدخول</h2>
+      <p>ادخل بحسابك للوصول الكامل إلى جميع محتوى الدورة.</p>
+    </div>
 
-  <div class="error-msg" id="errorMsg"></div>
-  <div class="success-msg" id="successMsg"></div>
+    <div class="access-message">
+      <strong>وصول كامل بعد الشراء</strong><br/>
+      بعد شراء الدورة، ستصلك رسالة إيميل فيها رابط لضبط كلمة مرورك والدخول للمنصة.
+    </div>
 
-  <div class="form-group">
-    <label class="form-label" for="email">البريد الإلكتروني</label>
-    <input class="form-input" id="email" placeholder="your@email.com" required type="email"/>
-  </div>
-  <div class="form-group">
-    <label class="form-label" for="password">كلمة المرور</label>
-    <input class="form-input" id="password" placeholder="••••••••" required type="password"/>
-  </div>
+    <div class="error-msg" id="errorMsg"></div>
+    <div class="success-msg" id="successMsg"></div>
 
-  <button class="btn-login" id="loginBtn" onclick="doLogin()">تسجيل الدخول</button>
+    <!-- Login Form -->
+    <div id="loginForm">
+      <div class="form-group">
+        <label class="form-label" for="email">البريد الإلكتروني</label>
+        <input class="form-input" id="email" placeholder="your@email.com" type="email"/>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="password">كلمة المرور</label>
+        <input class="form-input" id="password" placeholder="••••••••" type="password"/>
+      </div>
+      <button class="btn-primary" id="loginBtn" onclick="doLogin()">تسجيل الدخول ←</button>
+      <div class="divider">أو</div>
+      <button class="btn-secondary" onclick="showForgotForm()">🔑 نسيت كلمة المرور؟</button>
+    </div>
 
-  <div class="login-footer">
-    <p>مش مسجل بعد؟ <a href="payment.html">اشترك بالكورس الآن</a></p>
-    <p style="margin-top:.75rem;font-size:.75rem;color:#334155;">🔒 بياناتك محمية ومشفرة.</p>
+    <!-- Forgot Password Form -->
+    <div id="forgotForm" style="display:none;">
+      <div class="form-group">
+        <label class="form-label" for="resetEmail">البريد الإلكتروني</label>
+        <input class="form-input" id="resetEmail" placeholder="your@email.com" type="email"/>
+      </div>
+      <button class="btn-primary" id="resetBtn" onclick="doReset()">إرسال رابط إعادة التعيين ←</button>
+      <div class="divider">أو</div>
+      <button class="btn-secondary" onclick="showLoginForm()">← العودة لتسجيل الدخول</button>
+    </div>
+
+    <div class="login-footer">
+      <p>مش مسجل بعد؟ <a href="payment.html">اشترك بالكورس الآن</a></p>
+      <p style="margin-top:.75rem;font-size:.75rem;">🔒 بياناتك محمية ومشفرة.</p>
+    </div>
+
   </div>
-</div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
@@ -75,12 +241,10 @@ var client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY, {
   auth: { persistSession: true, storageKey: 'aifa-auth' }
 });
 
-// Check if already logged in
 client.auth.getSession().then(function(res) {
   if (res.data.session) {
     var params = new URLSearchParams(location.search);
-    var redirect = params.get('redirect');
-    location.href = redirect || 'dashboard.html';
+    location.href = params.get('redirect') || 'dashboard.html';
   }
 });
 
@@ -88,45 +252,60 @@ function doLogin() {
   var email = document.getElementById('email').value.trim();
   var password = document.getElementById('password').value;
   var btn = document.getElementById('loginBtn');
-  var errDiv = document.getElementById('errorMsg');
-  var sucDiv = document.getElementById('successMsg');
-
-  if (!email || !password) {
-    showError('يرجى إدخال البريد الإلكتروني وكلمة المرور');
-    return;
-  }
-
-  btn.disabled = true;
-  btn.textContent = 'جاري الدخول...';
-  errDiv.style.display = 'none';
-
-  client.auth.signInWithPassword({ email: email, password: password })
-    .then(function(res) {
-      if (res.error) {
-        showError('بيانات الدخول غير صحيحة. تحقق من إيميلك وكلمة المرور.');
-        btn.disabled = false;
-        btn.textContent = 'تسجيل الدخول';
-        return;
-      }
-      sucDiv.textContent = 'تم الدخول بنجاح! جاري التحويل...';
-      sucDiv.style.display = 'block';
-      setTimeout(function() {
-        var params = new URLSearchParams(location.search);
-        var redirect = params.get('redirect');
-        location.href = redirect || 'dashboard.html';
-      }, 1000);
-    });
+  if (!email || !password) { showError('يرجى إدخال البريد الإلكتروني وكلمة المرور'); return; }
+  btn.disabled = true; btn.textContent = 'جاري الدخول...';
+  hideMessages();
+  client.auth.signInWithPassword({ email: email, password: password }).then(function(res) {
+    if (res.error) {
+      showError('بيانات الدخول غير صحيحة. تحقق من إيميلك وكلمة المرور.');
+      btn.disabled = false; btn.textContent = 'تسجيل الدخول ←'; return;
+    }
+    showSuccess('✅ تم الدخول بنجاح! جاري التحويل...');
+    setTimeout(function() {
+      var params = new URLSearchParams(location.search);
+      location.href = params.get('redirect') || 'dashboard.html';
+    }, 1000);
+  });
 }
 
-function showError(msg) {
-  var e = document.getElementById('errorMsg');
-  e.textContent = msg;
-  e.style.display = 'block';
+function doReset() {
+  var email = document.getElementById('resetEmail').value.trim();
+  var btn = document.getElementById('resetBtn');
+  if (!email) { showError('يرجى إدخال بريدك الإلكتروني'); return; }
+  btn.disabled = true; btn.textContent = 'جاري الإرسال...';
+  hideMessages();
+  client.auth.resetPasswordForEmail(email, {
+    redirectTo: 'https://aifashionacademy.netlify.app/reset-password.html'
+  }).then(function(res) {
+    if (res.error) {
+      showError('حدث خطأ، تأكد من الإيميل وحاول مجدداً.');
+      btn.disabled = false; btn.textContent = 'إرسال رابط إعادة التعيين ←'; return;
+    }
+    showSuccess('✅ تم الإرسال! راجع بريدك الإلكتروني وافتح الرابط لإعادة تعيين كلمة المرور.');
+    btn.disabled = false; btn.textContent = 'إرسال رابط إعادة التعيين ←';
+  });
 }
 
-// Allow Enter key
+function showForgotForm() {
+  hideMessages();
+  document.getElementById('loginForm').style.display = 'none';
+  document.getElementById('forgotForm').style.display = 'block';
+}
+function showLoginForm() {
+  hideMessages();
+  document.getElementById('forgotForm').style.display = 'none';
+  document.getElementById('loginForm').style.display = 'block';
+}
+function showError(msg) { var e=document.getElementById('errorMsg'); e.textContent=msg; e.style.display='block'; }
+function showSuccess(msg) { var s=document.getElementById('successMsg'); s.textContent=msg; s.style.display='block'; }
+function hideMessages() {
+  document.getElementById('errorMsg').style.display='none';
+  document.getElementById('successMsg').style.display='none';
+}
 document.addEventListener('keydown', function(e) {
-  if (e.key === 'Enter') doLogin();
+  if (e.key !== 'Enter') return;
+  if (document.getElementById('forgotForm').style.display !== 'none') doReset();
+  else doLogin();
 });
 </script>
 </body>
