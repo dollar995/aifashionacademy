@@ -124,15 +124,16 @@ nav {
 /* CARDS GRID */
 .cards-section {
   padding: 3rem 2rem 6rem;
-  max-width: 1000px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 .cards-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
   align-items: start;
 }
+@media(max-width:900px){ .cards-grid{ grid-template-columns:1fr; } }
 
 /* CARD BASE */
 .card {
@@ -164,22 +165,43 @@ nav {
   background: linear-gradient(90deg, var(--blue-dark), var(--blue));
 }
 
-/* VIP CARD */
+/* VIP SILVER CARD */
 .card-vip {
-  border: 1px solid rgba(240,192,96,0.35);
-  box-shadow: 0 20px 60px rgba(0,0,0,.5), 0 0 40px rgba(240,192,96,0.08);
+  border: 1px solid rgba(192,192,192,0.35);
+  box-shadow: 0 20px 60px rgba(0,0,0,.5), 0 0 40px rgba(192,192,192,0.06);
   animation-delay: .5s;
 }
 .card-vip:hover {
-  box-shadow: 0 30px 80px rgba(0,0,0,.6), 0 0 50px rgba(240,192,96,0.15);
+  box-shadow: 0 30px 80px rgba(0,0,0,.6), 0 0 50px rgba(200,200,200,0.12);
 }
 .card-vip::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #c8860a, var(--gold), #c8860a);
+  background: linear-gradient(90deg, #808080, #e0e0e0, #a0a0a0);
 }
+
+/* ELITE CARD */
+.card-elite {
+  border: 1px solid rgba(255,215,0,0.4);
+  box-shadow: 0 20px 60px rgba(0,0,0,.5), 0 0 50px rgba(255,215,0,0.1);
+  animation-delay: .6s;
+  background: linear-gradient(160deg, rgba(3,12,35,0.95), rgba(40,30,5,0.96));
+}
+.card-elite:hover {
+  box-shadow: 0 30px 80px rgba(0,0,0,.6), 0 0 60px rgba(255,215,0,0.18);
+}
+.card-elite::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #b8860b, #FFD700, #FFA500, #FFD700, #b8860b);
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+}
+@keyframes shimmer { 0%{background-position:0% center} 100%{background-position:200% center} }
 
 /* POPULAR BADGE */
 .popular-badge {
@@ -204,7 +226,8 @@ nav {
   margin-bottom: .75rem;
 }
 .card-standard .card-type { color: var(--blue); }
-.card-vip .card-type { color: var(--gold); }
+.card-vip .card-type { color: #c0c0c0; }
+.card-elite .card-type { color: #FFD700; }
 
 .card-name {
   font-size: 1.6rem;
@@ -249,13 +272,16 @@ nav {
 .card-standard .price-currency,
 .card-standard .price-amount { color: var(--blue); }
 .card-vip .price-currency,
-.card-vip .price-amount { color: var(--gold); }
+.card-vip .price-amount { color: #d0d0d0; }
+.card-elite .price-currency,
+.card-elite .price-amount { color: #FFD700; text-shadow: 0 0 20px rgba(255,215,0,0.4); }
 
 .price-note {
   font-size: .8rem;
   color: var(--muted);
 }
-.card-vip .price-note { color: rgba(240,192,96,0.6); }
+.card-vip .price-note { color: rgba(192,192,192,0.6); }
+.card-elite .price-note { color: rgba(255,215,0,0.7); }
 
 /* FEATURES */
 .features {
@@ -286,8 +312,12 @@ nav {
   color: var(--blue);
 }
 .card-vip .feat-icon {
-  background: rgba(240,192,96,0.15);
-  color: var(--gold);
+  background: rgba(192,192,192,0.15);
+  color: #c0c0c0;
+}
+.card-elite .feat-icon {
+  background: rgba(255,215,0,0.15);
+  color: #FFD700;
 }
 
 /* DIVIDER */
@@ -322,24 +352,45 @@ nav {
   box-shadow: 0 8px 30px rgba(0,150,255,0.5);
 }
 .card-vip .btn-buy {
-  background: linear-gradient(135deg, #c8860a, var(--gold));
-  color: #020810;
-  box-shadow: 0 4px 20px var(--gold-glow);
+  background: linear-gradient(135deg, #808080, #d0d0d0);
+  color: #111;
+  box-shadow: 0 4px 20px rgba(192,192,192,0.3);
 }
 .card-vip .btn-buy:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(240,192,96,0.4);
+  box-shadow: 0 8px 30px rgba(200,200,200,0.4);
+}
+.card-elite .btn-buy {
+  background: linear-gradient(135deg, #b8860b, #FFD700, #FFA500);
+  color: #111;
+  font-weight: 900;
+  box-shadow: 0 4px 20px rgba(255,215,0,0.4);
+}
+.card-elite .btn-buy:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(255,215,0,0.5);
 }
 
 /* VIP EXTRAS */
 .vip-extras {
   margin-top: 1rem;
-  background: rgba(240,192,96,0.05);
-  border: 1px solid rgba(240,192,96,0.15);
+  background: rgba(192,192,192,0.05);
+  border: 1px solid rgba(192,192,192,0.15);
   border-radius: 12px;
   padding: .9rem 1rem;
   font-size: .82rem;
-  color: rgba(240,192,96,0.8);
+  color: rgba(200,200,200,0.8);
+  text-align: center;
+  line-height: 1.6;
+}
+.elite-extras {
+  margin-top: 1rem;
+  background: rgba(255,215,0,0.05);
+  border: 1px solid rgba(255,215,0,0.2);
+  border-radius: 12px;
+  padding: .9rem 1rem;
+  font-size: .82rem;
+  color: rgba(255,215,0,0.85);
   text-align: center;
   line-height: 1.6;
 }
@@ -576,18 +627,18 @@ nav {
       <a class="btn-buy" href="payment.html">ابدأ الآن بـ $25 ←</a>
     </div>
 
-    <!-- VIP CARD -->
+    <!-- VIP SILVER CARD -->
     <div class="card card-vip">
-      <div class="popular-badge">⭐ الأكثر قيمة</div>
+      <div class="popular-badge" style="background:linear-gradient(135deg,#808080,#d0d0d0);color:#111;">🥈 Silver</div>
       <div class="card-type">الباقة المميزة</div>
-      <div class="card-name">VIP</div>
+      <div class="card-name" style="color:#c8c8c8;">VIP Silver</div>
       <p class="card-desc">لمن يريد نتائج أسرع — دعم شخصي مباشر ومتابعة حتى تطلق أول منتج فعلياً على الإنترنت.</p>
 
       <div class="price-box">
         <div class="price-original">السعر الأصلي: $400</div>
         <div class="price-current">
           <span class="price-currency">$</span>
-          <span class="price-amount">99$</span>
+          <span class="price-amount">99</span>
         </div>
         <div class="price-note">دفعة واحدة — وصول مدى الحياة + دعم VIP</div>
       </div>
@@ -604,10 +655,45 @@ nav {
         <li><span class="feat-icon">✓</span> أولوية في الدعم الفني</li>
       </ul>
 
-      <a class="btn-buy" href="payment.html">احجز مقعدك VIP ←</a>
+      <a class="btn-buy" href="payment.html">احجز مقعدك Silver ←</a>
 
       <div class="vip-extras">
         🎯 المقاعد محدودة — 10 مقاعد فقط لكل دفعة
+      </div>
+    </div>
+
+    <!-- ELITE CARD -->
+    <div class="card card-elite">
+      <div class="popular-badge" style="background:linear-gradient(135deg,#b8860b,#FFD700);color:#111;box-shadow:0 4px 15px rgba(255,215,0,.3);">👑 ELITE</div>
+      <div class="card-type">الباقة الذهبية</div>
+      <div class="card-name" style="color:#FFD700;text-shadow:0 0 20px rgba(255,215,0,.4);">ELITE</div>
+      <p class="card-desc" style="color:rgba(255,215,0,.6);">تجربة مخصصة بالكامل — دعم مباشر شهر كامل ومتابعة خاصة لكل خطوة في مسيرة براندك.</p>
+
+      <div class="price-box">
+        <div class="price-original" style="color:rgba(255,215,0,.4);">السعر الأصلي: $600</div>
+        <div class="price-current">
+          <span class="price-currency">$</span>
+          <span class="price-amount">300</span>
+        </div>
+        <div class="price-note">دفعة واحدة — تجربة متكاملة مع المدرب</div>
+      </div>
+
+      <ul class="features">
+        <li><span class="feat-icon">✓</span> كل شي في VIP Silver</li>
+        <div class="feat-divider" style="background:rgba(255,215,0,.1);"></div>
+        <li><span class="feat-icon">★</span> دعم مباشر شهر كامل على مدار الساعة</li>
+        <li><span class="feat-icon">★</span> متابعة خاصة 1-on-1 لكل خطوة في البراند</li>
+        <li><span class="feat-icon">★</span> مراجعة كاملة للهوية البصرية والمحتوى</li>
+        <li><span class="feat-icon">★</span> خطة تسويق مخصصة لبراندك تحديداً</li>
+        <li><span class="feat-icon">★</span> وصول مباشر للمدرب عبر واتساب</li>
+        <div class="feat-divider" style="background:rgba(255,215,0,.1);"></div>
+        <li><span class="feat-icon">✓</span> ضمان النتائج أو استرداد كامل</li>
+      </ul>
+
+      <a class="btn-buy" href="payment.html">احجز مقعدك ELITE 👑 ←</a>
+
+      <div class="elite-extras">
+        🔥 مقاعد محدودة جداً — 3 مقاعد فقط لكل دفعة
       </div>
     </div>
 
